@@ -1,2 +1,2 @@
 # Hollow
-Hollow é um jogo de plataforma no estilo Metroidvania 2D com temáticas introspectivas, focando em um personagem jogável inicialmente destituído de características marcantes que, ao longo do jogo, recebe o conhecimento de variados conceitos e um grau de controle sobre os mesmos.
+Hollow é um jogo de plataforma 2D no estilo _Metroidvania_ cujo objetivo é honrar as convenções do gênero - incentivo à exploração do cenário, aquisição de novas habilidades que oferecem novas opções de combate e movimentação, descoberta de segredos - porém jogar com tais convenções, perguntando ao jogador: "o que pode ser considerado uma 'habilidade'?"
