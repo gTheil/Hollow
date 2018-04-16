@@ -23,7 +23,7 @@ public class Player : MonoBehaviour {
 	
 	// Atualiza a cada frame
 	void Update () {
-		onGround = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground")); // Dispara uma linha da posição atual do personagem até a posição do chão
+		onGround = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground")); // Dispara uma linha da posição atual do personagem até a posição do chão
 
 		// Se o personagem estiver no chão, ele é incapaz de realizar um pulo duplo
 		if (onGround) {
@@ -63,7 +63,7 @@ public class Player : MonoBehaviour {
 	}
 
 	// Chamada ao personagem se virar da direita para a esquerda ou vice-versa
-	private void Flip () {
+	void Flip () {
 		facingRight = !facingRight; // Inverte o valor de facingRight, fazendo o personagem virar a esquerda se estiver virado a direita e vice-versa
 		Vector3 scale = transform.localScale; // Recebe o valor da escala do personagem
 		scale.x *= -1; // Inverte o valor x (horizontal) da escala entre valores positivos e negativos
