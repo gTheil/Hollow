@@ -1,0 +1,6060 @@
+fileFormatVersion: 2
+guid: 1c31f62b31289cc46906b8058e3d6298
+timeCreated: 1500484638
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PlayStation - Castlevania Symphony of the Night - Alucard_0
+    21300002: PlayStation - Castlevania Symphony of the Night - Alucard_1
+    21300004: PlayStation - Castlevania Symphony of the Night - Alucard_2
+    21300006: PlayStation - Castlevania Symphony of the Night - Alucard_3
+    21300008: PlayStation - Castlevania Symphony of the Night - Alucard_4
+    21300010: PlayStation - Castlevania Symphony of the Night - Alucard_5
+    21300012: PlayStation - Castlevania Symphony of the Night - Alucard_6
+    21300014: PlayStation - Castlevania Symphony of the Night - Alucard_7
+    21300016: PlayStation - Castlevania Symphony of the Night - Alucard_8
+    21300018: PlayStation - Castlevania Symphony of the Night - Alucard_9
+    21300020: PlayStation - Castlevania Symphony of the Night - Alucard_10
+    21300022: PlayStation - Castlevania Symphony of the Night - Alucard_11
+    21300024: PlayStation - Castlevania Symphony of the Night - Alucard_12
+    21300026: PlayStation - Castlevania Symphony of the Night - Alucard_13
+    21300028: PlayStation - Castlevania Symphony of the Night - Alucard_14
+    21300030: PlayStation - Castlevania Symphony of the Night - Alucard_15
+    21300032: PlayStation - Castlevania Symphony of the Night - Alucard_16
+    21300034: PlayStation - Castlevania Symphony of the Night - Alucard_17
+    21300036: PlayStation - Castlevania Symphony of the Night - Alucard_18
+    21300038: PlayStation - Castlevania Symphony of the Night - Alucard_19
+    21300040: PlayStation - Castlevania Symphony of the Night - Alucard_20
+    21300042: PlayStation - Castlevania Symphony of the Night - Alucard_21
+    21300044: PlayStation - Castlevania Symphony of the Night - Alucard_22
+    21300046: PlayStation - Castlevania Symphony of the Night - Alucard_23
+    21300048: PlayStation - Castlevania Symphony of the Night - Alucard_24
+    21300050: PlayStation - Castlevania Symphony of the Night - Alucard_25
+    21300052: PlayStation - Castlevania Symphony of the Night - Alucard_26
+    21300054: PlayStation - Castlevania Symphony of the Night - Alucard_27
+    21300056: PlayStation - Castlevania Symphony of the Night - Alucard_28
+    21300058: PlayStation - Castlevania Symphony of the Night - Alucard_29
+    21300060: PlayStation - Castlevania Symphony of the Night - Alucard_30
+    21300062: PlayStation - Castlevania Symphony of the Night - Alucard_31
+    21300064: PlayStation - Castlevania Symphony of the Night - Alucard_32
+    21300066: PlayStation - Castlevania Symphony of the Night - Alucard_33
+    21300068: PlayStation - Castlevania Symphony of the Night - Alucard_34
+    21300070: PlayStation - Castlevania Symphony of the Night - Alucard_35
+    21300072: PlayStation - Castlevania Symphony of the Night - Alucard_36
+    21300074: PlayStation - Castlevania Symphony of the Night - Alucard_37
+    21300076: PlayStation - Castlevania Symphony of the Night - Alucard_38
+    21300078: PlayStation - Castlevania Symphony of the Night - Alucard_39
+    21300080: PlayStation - Castlevania Symphony of the Night - Alucard_40
+    21300082: PlayStation - Castlevania Symphony of the Night - Alucard_41
+    21300084: PlayStation - Castlevania Symphony of the Night - Alucard_42
+    21300086: PlayStation - Castlevania Symphony of the Night - Alucard_43
+    21300088: PlayStation - Castlevania Symphony of the Night - Alucard_44
+    21300090: PlayStation - Castlevania Symphony of the Night - Alucard_45
+    21300092: PlayStation - Castlevania Symphony of the Night - Alucard_46
+    21300094: PlayStation - Castlevania Symphony of the Night - Alucard_47
+    21300096: PlayStation - Castlevania Symphony of the Night - Alucard_48
+    21300098: PlayStation - Castlevania Symphony of the Night - Alucard_49
+    21300100: PlayStation - Castlevania Symphony of the Night - Alucard_50
+    21300102: PlayStation - Castlevania Symphony of the Night - Alucard_51
+    21300104: PlayStation - Castlevania Symphony of the Night - Alucard_52
+    21300106: PlayStation - Castlevania Symphony of the Night - Alucard_53
+    21300108: PlayStation - Castlevania Symphony of the Night - Alucard_54
+    21300110: PlayStation - Castlevania Symphony of the Night - Alucard_55
+    21300112: PlayStation - Castlevania Symphony of the Night - Alucard_56
+    21300114: PlayStation - Castlevania Symphony of the Night - Alucard_57
+    21300116: PlayStation - Castlevania Symphony of the Night - Alucard_58
+    21300118: PlayStation - Castlevania Symphony of the Night - Alucard_59
+    21300120: PlayStation - Castlevania Symphony of the Night - Alucard_60
+    21300122: PlayStation - Castlevania Symphony of the Night - Alucard_61
+    21300124: PlayStation - Castlevania Symphony of the Night - Alucard_62
+    21300126: PlayStation - Castlevania Symphony of the Night - Alucard_63
+    21300128: PlayStation - Castlevania Symphony of the Night - Alucard_64
+    21300130: PlayStation - Castlevania Symphony of the Night - Alucard_65
+    21300132: PlayStation - Castlevania Symphony of the Night - Alucard_66
+    21300134: PlayStation - Castlevania Symphony of the Night - Alucard_67
+    21300136: PlayStation - Castlevania Symphony of the Night - Alucard_68
+    21300138: PlayStation - Castlevania Symphony of the Night - Alucard_69
+    21300140: PlayStation - Castlevania Symphony of the Night - Alucard_70
+    21300142: PlayStation - Castlevania Symphony of the Night - Alucard_71
+    21300144: PlayStation - Castlevania Symphony of the Night - Alucard_72
+    21300146: PlayStation - Castlevania Symphony of the Night - Alucard_73
+    21300148: PlayStation - Castlevania Symphony of the Night - Alucard_74
+    21300150: PlayStation - Castlevania Symphony of the Night - Alucard_75
+    21300152: PlayStation - Castlevania Symphony of the Night - Alucard_76
+    21300154: PlayStation - Castlevania Symphony of the Night - Alucard_77
+    21300156: PlayStation - Castlevania Symphony of the Night - Alucard_78
+    21300158: PlayStation - Castlevania Symphony of the Night - Alucard_79
+    21300160: PlayStation - Castlevania Symphony of the Night - Alucard_80
+    21300162: PlayStation - Castlevania Symphony of the Night - Alucard_81
+    21300164: PlayStation - Castlevania Symphony of the Night - Alucard_82
+    21300166: PlayStation - Castlevania Symphony of the Night - Alucard_83
+    21300168: PlayStation - Castlevania Symphony of the Night - Alucard_84
+    21300170: PlayStation - Castlevania Symphony of the Night - Alucard_85
+    21300172: PlayStation - Castlevania Symphony of the Night - Alucard_86
+    21300174: PlayStation - Castlevania Symphony of the Night - Alucard_87
+    21300176: PlayStation - Castlevania Symphony of the Night - Alucard_88
+    21300178: PlayStation - Castlevania Symphony of the Night - Alucard_89
+    21300180: PlayStation - Castlevania Symphony of the Night - Alucard_90
+    21300182: PlayStation - Castlevania Symphony of the Night - Alucard_91
+    21300184: PlayStation - Castlevania Symphony of the Night - Alucard_92
+    21300186: PlayStation - Castlevania Symphony of the Night - Alucard_93
+    21300188: PlayStation - Castlevania Symphony of the Night - Alucard_94
+    21300190: PlayStation - Castlevania Symphony of the Night - Alucard_95
+    21300192: PlayStation - Castlevania Symphony of the Night - Alucard_96
+    21300194: PlayStation - Castlevania Symphony of the Night - Alucard_97
+    21300196: PlayStation - Castlevania Symphony of the Night - Alucard_98
+    21300198: PlayStation - Castlevania Symphony of the Night - Alucard_99
+    21300200: PlayStation - Castlevania Symphony of the Night - Alucard_100
+    21300202: PlayStation - Castlevania Symphony of the Night - Alucard_101
+    21300204: PlayStation - Castlevania Symphony of the Night - Alucard_102
+    21300206: PlayStation - Castlevania Symphony of the Night - Alucard_103
+    21300208: PlayStation - Castlevania Symphony of the Night - Alucard_104
+    21300210: PlayStation - Castlevania Symphony of the Night - Alucard_105
+    21300212: PlayStation - Castlevania Symphony of the Night - Alucard_106
+    21300214: PlayStation - Castlevania Symphony of the Night - Alucard_107
+    21300216: PlayStation - Castlevania Symphony of the Night - Alucard_108
+    21300218: PlayStation - Castlevania Symphony of the Night - Alucard_109
+    21300220: PlayStation - Castlevania Symphony of the Night - Alucard_110
+    21300222: PlayStation - Castlevania Symphony of the Night - Alucard_111
+    21300224: PlayStation - Castlevania Symphony of the Night - Alucard_112
+    21300226: PlayStation - Castlevania Symphony of the Night - Alucard_113
+    21300228: PlayStation - Castlevania Symphony of the Night - Alucard_114
+    21300230: PlayStation - Castlevania Symphony of the Night - Alucard_115
+    21300232: PlayStation - Castlevania Symphony of the Night - Alucard_116
+    21300234: PlayStation - Castlevania Symphony of the Night - Alucard_117
+    21300236: PlayStation - Castlevania Symphony of the Night - Alucard_118
+    21300238: PlayStation - Castlevania Symphony of the Night - Alucard_119
+    21300240: PlayStation - Castlevania Symphony of the Night - Alucard_120
+    21300242: PlayStation - Castlevania Symphony of the Night - Alucard_121
+    21300244: PlayStation - Castlevania Symphony of the Night - Alucard_122
+    21300246: PlayStation - Castlevania Symphony of the Night - Alucard_123
+    21300248: PlayStation - Castlevania Symphony of the Night - Alucard_124
+    21300250: PlayStation - Castlevania Symphony of the Night - Alucard_125
+    21300252: PlayStation - Castlevania Symphony of the Night - Alucard_126
+    21300254: PlayStation - Castlevania Symphony of the Night - Alucard_127
+    21300256: PlayStation - Castlevania Symphony of the Night - Alucard_128
+    21300258: PlayStation - Castlevania Symphony of the Night - Alucard_129
+    21300260: PlayStation - Castlevania Symphony of the Night - Alucard_130
+    21300262: PlayStation - Castlevania Symphony of the Night - Alucard_131
+    21300264: PlayStation - Castlevania Symphony of the Night - Alucard_132
+    21300266: PlayStation - Castlevania Symphony of the Night - Alucard_133
+    21300268: PlayStation - Castlevania Symphony of the Night - Alucard_134
+    21300270: PlayStation - Castlevania Symphony of the Night - Alucard_135
+    21300272: PlayStation - Castlevania Symphony of the Night - Alucard_136
+    21300274: PlayStation - Castlevania Symphony of the Night - Alucard_137
+    21300276: PlayStation - Castlevania Symphony of the Night - Alucard_138
+    21300278: PlayStation - Castlevania Symphony of the Night - Alucard_139
+    21300280: PlayStation - Castlevania Symphony of the Night - Alucard_140
+    21300282: PlayStation - Castlevania Symphony of the Night - Alucard_141
+    21300284: PlayStation - Castlevania Symphony of the Night - Alucard_142
+    21300286: PlayStation - Castlevania Symphony of the Night - Alucard_143
+    21300288: PlayStation - Castlevania Symphony of the Night - Alucard_144
+    21300290: PlayStation - Castlevania Symphony of the Night - Alucard_145
+    21300292: PlayStation - Castlevania Symphony of the Night - Alucard_146
+    21300294: PlayStation - Castlevania Symphony of the Night - Alucard_147
+    21300296: PlayStation - Castlevania Symphony of the Night - Alucard_148
+    21300298: PlayStation - Castlevania Symphony of the Night - Alucard_149
+    21300300: PlayStation - Castlevania Symphony of the Night - Alucard_150
+    21300302: PlayStation - Castlevania Symphony of the Night - Alucard_151
+    21300304: PlayStation - Castlevania Symphony of the Night - Alucard_152
+    21300306: PlayStation - Castlevania Symphony of the Night - Alucard_153
+    21300308: PlayStation - Castlevania Symphony of the Night - Alucard_154
+    21300310: PlayStation - Castlevania Symphony of the Night - Alucard_155
+    21300312: PlayStation - Castlevania Symphony of the Night - Alucard_156
+    21300314: PlayStation - Castlevania Symphony of the Night - Alucard_157
+    21300316: PlayStation - Castlevania Symphony of the Night - Alucard_158
+    21300318: PlayStation - Castlevania Symphony of the Night - Alucard_159
+    21300320: PlayStation - Castlevania Symphony of the Night - Alucard_160
+    21300322: PlayStation - Castlevania Symphony of the Night - Alucard_161
+    21300324: PlayStation - Castlevania Symphony of the Night - Alucard_162
+    21300326: PlayStation - Castlevania Symphony of the Night - Alucard_163
+    21300328: PlayStation - Castlevania Symphony of the Night - Alucard_164
+    21300330: PlayStation - Castlevania Symphony of the Night - Alucard_165
+    21300332: PlayStation - Castlevania Symphony of the Night - Alucard_166
+    21300334: PlayStation - Castlevania Symphony of the Night - Alucard_167
+    21300336: PlayStation - Castlevania Symphony of the Night - Alucard_168
+    21300338: PlayStation - Castlevania Symphony of the Night - Alucard_169
+    21300340: PlayStation - Castlevania Symphony of the Night - Alucard_170
+    21300342: PlayStation - Castlevania Symphony of the Night - Alucard_171
+    21300344: PlayStation - Castlevania Symphony of the Night - Alucard_172
+    21300346: PlayStation - Castlevania Symphony of the Night - Alucard_173
+    21300348: PlayStation - Castlevania Symphony of the Night - Alucard_174
+    21300350: PlayStation - Castlevania Symphony of the Night - Alucard_175
+    21300352: PlayStation - Castlevania Symphony of the Night - Alucard_176
+    21300354: PlayStation - Castlevania Symphony of the Night - Alucard_177
+    21300356: PlayStation - Castlevania Symphony of the Night - Alucard_178
+    21300358: PlayStation - Castlevania Symphony of the Night - Alucard_179
+    21300360: PlayStation - Castlevania Symphony of the Night - Alucard_180
+    21300362: PlayStation - Castlevania Symphony of the Night - Alucard_181
+    21300364: PlayStation - Castlevania Symphony of the Night - Alucard_182
+    21300366: PlayStation - Castlevania Symphony of the Night - Alucard_183
+    21300368: PlayStation - Castlevania Symphony of the Night - Alucard_184
+    21300370: PlayStation - Castlevania Symphony of the Night - Alucard_185
+    21300372: PlayStation - Castlevania Symphony of the Night - Alucard_186
+    21300374: PlayStation - Castlevania Symphony of the Night - Alucard_187
+    21300376: PlayStation - Castlevania Symphony of the Night - Alucard_188
+    21300378: PlayStation - Castlevania Symphony of the Night - Alucard_189
+    21300380: PlayStation - Castlevania Symphony of the Night - Alucard_190
+    21300382: PlayStation - Castlevania Symphony of the Night - Alucard_191
+    21300384: PlayStation - Castlevania Symphony of the Night - Alucard_192
+    21300386: PlayStation - Castlevania Symphony of the Night - Alucard_193
+    21300388: PlayStation - Castlevania Symphony of the Night - Alucard_194
+    21300390: PlayStation - Castlevania Symphony of the Night - Alucard_195
+    21300392: PlayStation - Castlevania Symphony of the Night - Alucard_196
+    21300394: PlayStation - Castlevania Symphony of the Night - Alucard_197
+    21300396: PlayStation - Castlevania Symphony of the Night - Alucard_198
+    21300398: PlayStation - Castlevania Symphony of the Night - Alucard_199
+    21300400: PlayStation - Castlevania Symphony of the Night - Alucard_200
+    21300402: PlayStation - Castlevania Symphony of the Night - Alucard_201
+    21300404: PlayStation - Castlevania Symphony of the Night - Alucard_202
+    21300406: PlayStation - Castlevania Symphony of the Night - Alucard_203
+    21300408: PlayStation - Castlevania Symphony of the Night - Alucard_204
+    21300410: PlayStation - Castlevania Symphony of the Night - Alucard_205
+    21300412: PlayStation - Castlevania Symphony of the Night - Alucard_206
+    21300414: PlayStation - Castlevania Symphony of the Night - Alucard_207
+    21300416: PlayStation - Castlevania Symphony of the Night - Alucard_208
+    21300418: PlayStation - Castlevania Symphony of the Night - Alucard_209
+    21300420: PlayStation - Castlevania Symphony of the Night - Alucard_210
+    21300422: PlayStation - Castlevania Symphony of the Night - Alucard_211
+    21300424: PlayStation - Castlevania Symphony of the Night - Alucard_212
+    21300426: PlayStation - Castlevania Symphony of the Night - Alucard_213
+    21300428: PlayStation - Castlevania Symphony of the Night - Alucard_214
+    21300430: PlayStation - Castlevania Symphony of the Night - Alucard_215
+    21300432: PlayStation - Castlevania Symphony of the Night - Alucard_216
+    21300434: PlayStation - Castlevania Symphony of the Night - Alucard_217
+    21300436: PlayStation - Castlevania Symphony of the Night - Alucard_218
+    21300438: PlayStation - Castlevania Symphony of the Night - Alucard_219
+    21300440: PlayStation - Castlevania Symphony of the Night - Alucard_220
+    21300442: PlayStation - Castlevania Symphony of the Night - Alucard_221
+    21300444: PlayStation - Castlevania Symphony of the Night - Alucard_222
+    21300446: PlayStation - Castlevania Symphony of the Night - Alucard_223
+    21300448: PlayStation - Castlevania Symphony of the Night - Alucard_224
+    21300450: PlayStation - Castlevania Symphony of the Night - Alucard_225
+    21300452: PlayStation - Castlevania Symphony of the Night - Alucard_226
+    21300454: PlayStation - Castlevania Symphony of the Night - Alucard_227
+    21300456: PlayStation - Castlevania Symphony of the Night - Alucard_228
+    21300458: PlayStation - Castlevania Symphony of the Night - Alucard_229
+    21300460: PlayStation - Castlevania Symphony of the Night - Alucard_230
+    21300462: PlayStation - Castlevania Symphony of the Night - Alucard_231
+    21300464: PlayStation - Castlevania Symphony of the Night - Alucard_232
+    21300466: PlayStation - Castlevania Symphony of the Night - Alucard_233
+    21300468: PlayStation - Castlevania Symphony of the Night - Alucard_234
+    21300470: PlayStation - Castlevania Symphony of the Night - Alucard_235
+    21300472: PlayStation - Castlevania Symphony of the Night - Alucard_236
+    21300474: PlayStation - Castlevania Symphony of the Night - Alucard_237
+    21300476: PlayStation - Castlevania Symphony of the Night - Alucard_238
+    21300478: PlayStation - Castlevania Symphony of the Night - Alucard_239
+    21300480: PlayStation - Castlevania Symphony of the Night - Alucard_240
+    21300482: PlayStation - Castlevania Symphony of the Night - Alucard_241
+    21300484: PlayStation - Castlevania Symphony of the Night - Alucard_242
+    21300486: PlayStation - Castlevania Symphony of the Night - Alucard_243
+    21300488: PlayStation - Castlevania Symphony of the Night - Alucard_244
+    21300490: PlayStation - Castlevania Symphony of the Night - Alucard_245
+    21300492: PlayStation - Castlevania Symphony of the Night - Alucard_246
+    21300494: PlayStation - Castlevania Symphony of the Night - Alucard_247
+    21300496: PlayStation - Castlevania Symphony of the Night - Alucard_248
+    21300498: PlayStation - Castlevania Symphony of the Night - Alucard_249
+    21300500: PlayStation - Castlevania Symphony of the Night - Alucard_250
+    21300502: PlayStation - Castlevania Symphony of the Night - Alucard_251
+    21300504: PlayStation - Castlevania Symphony of the Night - Alucard_252
+    21300506: PlayStation - Castlevania Symphony of the Night - Alucard_253
+    21300508: PlayStation - Castlevania Symphony of the Night - Alucard_254
+    21300510: PlayStation - Castlevania Symphony of the Night - Alucard_255
+    21300512: PlayStation - Castlevania Symphony of the Night - Alucard_256
+    21300514: PlayStation - Castlevania Symphony of the Night - Alucard_257
+    21300516: PlayStation - Castlevania Symphony of the Night - Alucard_258
+    21300518: PlayStation - Castlevania Symphony of the Night - Alucard_259
+    21300520: PlayStation - Castlevania Symphony of the Night - Alucard_260
+    21300522: PlayStation - Castlevania Symphony of the Night - Alucard_261
+    21300524: PlayStation - Castlevania Symphony of the Night - Alucard_262
+    21300526: PlayStation - Castlevania Symphony of the Night - Alucard_263
+    21300528: PlayStation - Castlevania Symphony of the Night - Alucard_264
+    21300530: PlayStation - Castlevania Symphony of the Night - Alucard_265
+    21300532: PlayStation - Castlevania Symphony of the Night - Alucard_266
+    21300534: PlayStation - Castlevania Symphony of the Night - Alucard_267
+    21300536: PlayStation - Castlevania Symphony of the Night - Alucard_268
+    21300538: PlayStation - Castlevania Symphony of the Night - Alucard_269
+    21300540: PlayStation - Castlevania Symphony of the Night - Alucard_270
+    21300542: PlayStation - Castlevania Symphony of the Night - Alucard_271
+    21300544: PlayStation - Castlevania Symphony of the Night - Alucard_272
+    21300546: PlayStation - Castlevania Symphony of the Night - Alucard_273
+    21300548: PlayStation - Castlevania Symphony of the Night - Alucard_274
+    21300550: PlayStation - Castlevania Symphony of the Night - Alucard_275
+    21300552: PlayStation - Castlevania Symphony of the Night - Alucard_276
+    21300554: PlayStation - Castlevania Symphony of the Night - Alucard_277
+    21300556: PlayStation - Castlevania Symphony of the Night - Alucard_278
+    21300558: PlayStation - Castlevania Symphony of the Night - Alucard_279
+    21300560: PlayStation - Castlevania Symphony of the Night - Alucard_280
+    21300562: PlayStation - Castlevania Symphony of the Night - Alucard_281
+    21300564: PlayStation - Castlevania Symphony of the Night - Alucard_282
+    21300566: PlayStation - Castlevania Symphony of the Night - Alucard_283
+    21300568: PlayStation - Castlevania Symphony of the Night - Alucard_284
+    21300570: PlayStation - Castlevania Symphony of the Night - Alucard_285
+    21300572: PlayStation - Castlevania Symphony of the Night - Alucard_286
+    21300574: PlayStation - Castlevania Symphony of the Night - Alucard_287
+    21300576: PlayStation - Castlevania Symphony of the Night - Alucard_288
+    21300578: PlayStation - Castlevania Symphony of the Night - Alucard_289
+    21300580: PlayStation - Castlevania Symphony of the Night - Alucard_290
+    21300582: PlayStation - Castlevania Symphony of the Night - Alucard_291
+    21300584: PlayStation - Castlevania Symphony of the Night - Alucard_292
+    21300586: PlayStation - Castlevania Symphony of the Night - Alucard_293
+    21300588: PlayStation - Castlevania Symphony of the Night - Alucard_294
+    21300590: PlayStation - Castlevania Symphony of the Night - Alucard_295
+    21300592: PlayStation - Castlevania Symphony of the Night - Alucard_296
+    21300594: PlayStation - Castlevania Symphony of the Night - Alucard_297
+    21300596: PlayStation - Castlevania Symphony of the Night - Alucard_298
+    21300598: PlayStation - Castlevania Symphony of the Night - Alucard_299
+    21300600: PlayStation - Castlevania Symphony of the Night - Alucard_300
+    21300602: PlayStation - Castlevania Symphony of the Night - Alucard_301
+    21300604: PlayStation - Castlevania Symphony of the Night - Alucard_302
+    21300606: PlayStation - Castlevania Symphony of the Night - Alucard_303
+    21300608: PlayStation - Castlevania Symphony of the Night - Alucard_304
+    21300610: PlayStation - Castlevania Symphony of the Night - Alucard_305
+    21300612: PlayStation - Castlevania Symphony of the Night - Alucard_306
+    21300614: PlayStation - Castlevania Symphony of the Night - Alucard_307
+    21300616: PlayStation - Castlevania Symphony of the Night - Alucard_308
+    21300618: PlayStation - Castlevania Symphony of the Night - Alucard_309
+    21300620: PlayStation - Castlevania Symphony of the Night - Alucard_310
+    21300622: PlayStation - Castlevania Symphony of the Night - Alucard_311
+    21300624: PlayStation - Castlevania Symphony of the Night - Alucard_312
+    21300626: PlayStation - Castlevania Symphony of the Night - Alucard_313
+    21300628: PlayStation - Castlevania Symphony of the Night - Alucard_314
+    21300630: PlayStation - Castlevania Symphony of the Night - Alucard_315
+    21300632: PlayStation - Castlevania Symphony of the Night - Alucard_316
+    21300634: PlayStation - Castlevania Symphony of the Night - Alucard_317
+    21300636: PlayStation - Castlevania Symphony of the Night - Alucard_318
+    21300638: PlayStation - Castlevania Symphony of the Night - Alucard_319
+    21300640: PlayStation - Castlevania Symphony of the Night - Alucard_320
+    21300642: PlayStation - Castlevania Symphony of the Night - Alucard_321
+    21300644: PlayStation - Castlevania Symphony of the Night - Alucard_322
+    21300646: PlayStation - Castlevania Symphony of the Night - Alucard_323
+    21300648: PlayStation - Castlevania Symphony of the Night - Alucard_324
+    21300650: PlayStation - Castlevania Symphony of the Night - Alucard_325
+    21300652: PlayStation - Castlevania Symphony of the Night - Alucard_326
+    21300654: PlayStation - Castlevania Symphony of the Night - Alucard_327
+    21300656: PlayStation - Castlevania Symphony of the Night - Alucard_328
+    21300658: PlayStation - Castlevania Symphony of the Night - Alucard_329
+    21300660: PlayStation - Castlevania Symphony of the Night - Alucard_330
+    21300662: PlayStation - Castlevania Symphony of the Night - Alucard_331
+    21300664: PlayStation - Castlevania Symphony of the Night - Alucard_332
+    21300666: PlayStation - Castlevania Symphony of the Night - Alucard_333
+    21300668: PlayStation - Castlevania Symphony of the Night - Alucard_334
+    21300670: PlayStation - Castlevania Symphony of the Night - Alucard_335
+    21300672: PlayStation - Castlevania Symphony of the Night - Alucard_336
+    21300674: PlayStation - Castlevania Symphony of the Night - Alucard_337
+    21300676: PlayStation - Castlevania Symphony of the Night - Alucard_338
+    21300678: PlayStation - Castlevania Symphony of the Night - Alucard_339
+    21300680: PlayStation - Castlevania Symphony of the Night - Alucard_340
+    21300682: PlayStation - Castlevania Symphony of the Night - Alucard_341
+    21300684: PlayStation - Castlevania Symphony of the Night - Alucard_342
+    21300686: PlayStation - Castlevania Symphony of the Night - Alucard_343
+    21300688: PlayStation - Castlevania Symphony of the Night - Alucard_344
+    21300690: PlayStation - Castlevania Symphony of the Night - Alucard_345
+    21300692: PlayStation - Castlevania Symphony of the Night - Alucard_346
+    21300694: PlayStation - Castlevania Symphony of the Night - Alucard_347
+    21300696: PlayStation - Castlevania Symphony of the Night - Alucard_348
+    21300698: PlayStation - Castlevania Symphony of the Night - Alucard_349
+    21300700: PlayStation - Castlevania Symphony of the Night - Alucard_350
+    21300702: PlayStation - Castlevania Symphony of the Night - Alucard_351
+    21300704: PlayStation - Castlevania Symphony of the Night - Alucard_352
+    21300706: PlayStation - Castlevania Symphony of the Night - Alucard_353
+    21300708: PlayStation - Castlevania Symphony of the Night - Alucard_354
+    21300710: PlayStation - Castlevania Symphony of the Night - Alucard_355
+    21300712: PlayStation - Castlevania Symphony of the Night - Alucard_356
+    21300714: PlayStation - Castlevania Symphony of the Night - Alucard_357
+    21300716: PlayStation - Castlevania Symphony of the Night - Alucard_358
+    21300718: PlayStation - Castlevania Symphony of the Night - Alucard_359
+    21300720: PlayStation - Castlevania Symphony of the Night - Alucard_360
+    21300722: PlayStation - Castlevania Symphony of the Night - Alucard_361
+    21300724: PlayStation - Castlevania Symphony of the Night - Alucard_362
+    21300726: PlayStation - Castlevania Symphony of the Night - Alucard_363
+    21300728: PlayStation - Castlevania Symphony of the Night - Alucard_364
+    21300730: PlayStation - Castlevania Symphony of the Night - Alucard_365
+    21300732: PlayStation - Castlevania Symphony of the Night - Alucard_366
+    21300734: PlayStation - Castlevania Symphony of the Night - Alucard_367
+    21300736: PlayStation - Castlevania Symphony of the Night - Alucard_368
+    21300738: PlayStation - Castlevania Symphony of the Night - Alucard_369
+    21300740: PlayStation - Castlevania Symphony of the Night - Alucard_370
+    21300742: PlayStation - Castlevania Symphony of the Night - Alucard_371
+    21300744: PlayStation - Castlevania Symphony of the Night - Alucard_372
+    21300746: PlayStation - Castlevania Symphony of the Night - Alucard_373
+    21300748: PlayStation - Castlevania Symphony of the Night - Alucard_374
+    21300750: PlayStation - Castlevania Symphony of the Night - Alucard_375
+    21300752: PlayStation - Castlevania Symphony of the Night - Alucard_376
+    21300754: PlayStation - Castlevania Symphony of the Night - Alucard_377
+    21300756: PlayStation - Castlevania Symphony of the Night - Alucard_378
+    21300758: PlayStation - Castlevania Symphony of the Night - Alucard_379
+    21300760: PlayStation - Castlevania Symphony of the Night - Alucard_380
+    21300762: PlayStation - Castlevania Symphony of the Night - Alucard_381
+    21300764: PlayStation - Castlevania Symphony of the Night - Alucard_382
+    21300766: PlayStation - Castlevania Symphony of the Night - Alucard_383
+    21300768: PlayStation - Castlevania Symphony of the Night - Alucard_384
+    21300770: PlayStation - Castlevania Symphony of the Night - Alucard_385
+    21300772: PlayStation - Castlevania Symphony of the Night - Alucard_386
+    21300774: PlayStation - Castlevania Symphony of the Night - Alucard_387
+    21300776: PlayStation - Castlevania Symphony of the Night - Alucard_388
+    21300778: PlayStation - Castlevania Symphony of the Night - Alucard_389
+    21300780: PlayStation - Castlevania Symphony of the Night - Alucard_390
+    21300782: PlayStation - Castlevania Symphony of the Night - Alucard_391
+    21300784: PlayStation - Castlevania Symphony of the Night - Alucard_392
+    21300786: PlayStation - Castlevania Symphony of the Night - Alucard_393
+    21300788: PlayStation - Castlevania Symphony of the Night - Alucard_394
+    21300790: PlayStation - Castlevania Symphony of the Night - Alucard_395
+    21300792: PlayStation - Castlevania Symphony of the Night - Alucard_396
+    21300794: PlayStation - Castlevania Symphony of the Night - Alucard_397
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1268
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1268
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1268
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1268
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1268
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_5
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1268
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_6
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1268
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_7
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1268
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_8
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1268
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_9
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1268
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_10
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1268
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_11
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1268
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_12
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1268
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_13
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1268
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_14
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1268
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_15
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1268
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_16
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1268
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_17
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1268
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_18
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1267
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_19
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1256
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_20
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1256
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_21
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1193
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_22
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1193
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_23
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1193
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_24
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1193
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_25
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1193
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_26
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1193
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_27
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1193
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_28
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1193
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_29
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1191
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_30
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1191
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_31
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1191
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_32
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1191
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_33
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1191
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_34
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1191
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_35
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1191
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_36
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1133
+        width: 32
+        height: 46
+      alignment: 9
+      pivot: {x: 0.67709315, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_37
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1133
+        width: 30
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6222285, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_38
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1133
+        width: 29
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5804638, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1133
+        width: 29
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5344843, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1133
+        width: 29
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5229892, y: 0.51587206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_41
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1133
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_42
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1133
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_43
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1133
+        width: 26
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5384627, y: 0.5075739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_44
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1133
+        width: 27
+        height: 45
+      alignment: 9
+      pivot: {x: 0.53703815, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_45
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1133
+        width: 34
+        height: 45
+      alignment: 9
+      pivot: {x: 0.68628377, y: 0.5074083}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_46
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1133
+        width: 39
+        height: 45
+      alignment: 9
+      pivot: {x: 0.75642353, y: 0.5148139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_47
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1133
+        width: 37
+        height: 44
+      alignment: 9
+      pivot: {x: 0.74325645, y: 0.5151506}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_48
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1133
+        width: 39
+        height: 43
+      alignment: 9
+      pivot: {x: 0.7222337, y: 0.5155029}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_49
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1133
+        width: 37
+        height: 43
+      alignment: 9
+      pivot: {x: 0.70721763, y: 0.50775003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_50
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1133
+        width: 39
+        height: 42
+      alignment: 9
+      pivot: {x: 0.6282114, y: 0.5079375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_51
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1133
+        width: 34
+        height: 44
+      alignment: 9
+      pivot: {x: 0.6764796, y: 0.49242333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_52
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1118
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_53
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1118
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_54
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1118
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_55
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1118
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_56
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1116
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_57
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1062
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_58
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1062
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_59
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1062
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_60
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1062
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_61
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1062
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_62
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1062
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_63
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1061
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_64
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1061
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_65
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1061
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_66
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1061
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_67
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1045
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_68
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1045
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_69
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1045
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_70
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1045
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_71
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1043
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_72
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1045
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_73
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1045
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_74
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1045
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_75
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1045
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_76
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1045
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_77
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 997
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_78
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 997
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_79
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 997
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_80
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 995
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_81
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 995
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_82
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 995
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_83
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 995
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_84
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 995
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_85
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 995
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_86
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 995
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_87
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 995
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_88
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 995
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_89
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 995
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_90
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 995
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_91
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 995
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_92
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 995
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_93
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 995
+        width: 18
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_94
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 982
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_95
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 982
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_96
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 982
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_97
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 982
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_98
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 982
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_99
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 980
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_100
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 913
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_101
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 913
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_102
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 913
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_103
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 913
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_104
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 913
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_105
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 913
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_106
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 913
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_107
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 914
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_108
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 914
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_109
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 914
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_110
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 914
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_111
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 914
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_112
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 914
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_113
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 899
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_114
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 899
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_115
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 899
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_116
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 899
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_117
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 899
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_118
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 899
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_119
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 899
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_120
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 899
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_121
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 797
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_122
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 797
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_123
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 797
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_124
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 797
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_125
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 797
+        width: 18
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_126
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 797
+        width: 18
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_127
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 797
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_128
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 797
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_129
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 797
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_130
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 797
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_131
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 797
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_132
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 797
+        width: 41
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_133
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 797
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_134
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 797
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_135
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 797
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_136
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 797
+        width: 18
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_137
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 797
+        width: 18
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_138
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 797
+        width: 17
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_139
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 805
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_140
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 799
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_141
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 808
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_142
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 783
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_143
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 783
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_144
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 783
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_145
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 781
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_146
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 783
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_147
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 783
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_148
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 783
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_149
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 783
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_150
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 783
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_151
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 781
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_152
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 783
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_153
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 781
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_154
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 783
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_155
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 783
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_156
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 781
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_157
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 783
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_158
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 781
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_159
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 783
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_160
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 781
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_161
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 714
+        width: 43
+        height: 45
+      alignment: 9
+      pivot: {x: 0.7585693, y: 0.5177463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_162
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 714
+        width: 44
+        height: 43
+      alignment: 9
+      pivot: {x: 0.745907, y: 0.53714347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_163
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 714
+        width: 47
+        height: 40
+      alignment: 9
+      pivot: {x: 0.71115273, y: 0.5399292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_164
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 714
+        width: 47
+        height: 39
+      alignment: 9
+      pivot: {x: 0.6941616, y: 0.53071475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_165
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 714
+        width: 45
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6628228, y: 0.49112684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_166
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 714
+        width: 44
+        height: 46
+      alignment: 9
+      pivot: {x: 0.7096079, y: 0.44791844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_167
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 714
+        width: 45
+        height: 50
+      alignment: 9
+      pivot: {x: 0.71606106, y: 0.45208496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_168
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 714
+        width: 46
+        height: 57
+      alignment: 9
+      pivot: {x: 0.78299546, y: 0.42994878}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_169
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 714
+        width: 45
+        height: 62
+      alignment: 9
+      pivot: {x: 0.83719146, y: 0.4172826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_170
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 714
+        width: 45
+        height: 48
+      alignment: 9
+      pivot: {x: 0.73136526, y: 0.46184158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_171
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 714
+        width: 43
+        height: 46
+      alignment: 9
+      pivot: {x: 0.7614675, y: 0.49203625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_172
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 714
+        width: 40
+        height: 45
+      alignment: 9
+      pivot: {x: 0.7802078, y: 0.48371854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_173
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 714
+        width: 36
+        height: 44
+      alignment: 9
+      pivot: {x: 0.7796631, y: 0.45493108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_174
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 714
+        width: 31
+        height: 45
+      alignment: 9
+      pivot: {x: 0.7441249, y: 0.4412435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_175
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 699
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_176
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 699
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_177
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 699
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_178
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 697
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_179
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 630
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_180
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 630
+        width: 60
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_181
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 630
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_182
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 630
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_183
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 630
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_184
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 630
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_185
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 630
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_186
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 630
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_187
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 630
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_188
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 630
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_189
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 630
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_190
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 645
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_191
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 645
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_192
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 645
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_193
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 645
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_194
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 587
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_195
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 587
+        width: 51
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_196
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 587
+        width: 49
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_197
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 587
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_198
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 587
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_199
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 587
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_200
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 587
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_201
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 587
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_202
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 587
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_203
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 587
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_204
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 587
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_205
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 587
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_206
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 576
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_207
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 576
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_208
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 576
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_209
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 576
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_210
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 576
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_211
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 570
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_212
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 570
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_213
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 570
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_214
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 570
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_215
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 570
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_216
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 570
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_217
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 570
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_218
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 570
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_219
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 570
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_220
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 570
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_221
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 570
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_222
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 568
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_223
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 570
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_224
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 570
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_225
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 507
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_226
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 507
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_227
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 507
+        width: 60
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_228
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 507
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_229
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 507
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_230
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 507
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_231
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 507
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_232
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 507
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_233
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 507
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_234
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 507
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_235
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 507
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_236
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 507
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_237
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 516
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_238
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 516
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_239
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 516
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_240
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 516
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_241
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 516
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_242
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 516
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_243
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 514
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_244
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 516
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_245
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 516
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_246
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 516
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_247
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 481
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_248
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 500
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_249
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 500
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_250
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 502
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_251
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 502
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_252
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 502
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_253
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 500
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_254
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 449
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_255
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 449
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_256
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 449
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_257
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 449
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_258
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 449
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_259
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 449
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_260
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 449
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_261
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 449
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_262
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 488
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_263
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 488
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_264
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 488
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_265
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 488
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_266
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 488
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_267
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 488
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_268
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 488
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_269
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 488
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_270
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 488
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_271
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 464
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_272
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 464
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_273
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 464
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_274
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 464
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_275
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 464
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_276
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 464
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_277
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 464
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_278
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 464
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_279
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 464
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_280
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 464
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_281
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 464
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_282
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 464
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_283
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 464
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_284
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 432
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_285
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 432
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_286
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 432
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_287
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 432
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_288
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 432
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_289
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 432
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_290
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 430
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_291
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 432
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_292
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 432
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_293
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 364
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_294
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 364
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_295
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 364
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_296
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 364
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_297
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 364
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_298
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 364
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_299
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 364
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_300
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 364
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_301
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 364
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_302
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 364
+        width: 67
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_303
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 364
+        width: 68
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_304
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 364
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_305
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 364
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_306
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 364
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_307
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 347
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_308
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 347
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_309
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 347
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_310
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 347
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_311
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 345
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_312
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 347
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_313
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 347
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_314
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 347
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_315
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 347
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_316
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 347
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_317
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 347
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_318
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 345
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_319
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 347
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_320
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 347
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_321
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 347
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_322
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 347
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_323
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 270
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_324
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 270
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_325
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 270
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_326
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 270
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_327
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 270
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_328
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 270
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_329
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 270
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_330
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 270
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_331
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 270
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_332
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 270
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_333
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 270
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_334
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 270
+        width: 69
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_335
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 270
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_336
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 270
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_337
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 255
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_338
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 255
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_339
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 255
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_340
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 255
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_341
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 255
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_342
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 253
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_343
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 255
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_344
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 255
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_345
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 255
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_346
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 255
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_347
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 255
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_348
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 191
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_349
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 191
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_350
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 191
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_351
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 191
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_352
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 193
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_353
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 193
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_354
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 193
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_355
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 193
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_356
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 193
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_357
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 193
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_358
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 193
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_359
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 193
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_360
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 193
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_361
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 181
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_362
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 181
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_363
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 181
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_364
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 105
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_365
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 105
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_366
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 105
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_367
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 105
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_368
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 105
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_369
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 105
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_370
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 105
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_371
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 105
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_372
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 126
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_373
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 126
+        width: 51
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_374
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 126
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_375
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 26
+        width: 107
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_376
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 26
+        width: 107
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_377
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 26
+        width: 107
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_378
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 26
+        width: 107
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_379
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 30
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_380
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 30
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_381
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 30
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_382
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 30
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_383
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 30
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_384
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 30
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_385
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 30
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_386
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 11
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_387
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 11
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_388
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 11
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_389
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 11
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_390
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 15
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_391
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 15
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_392
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 15
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_393
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 13
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_394
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 15
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_395
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 15
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_396
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 15
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_397
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 15
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
