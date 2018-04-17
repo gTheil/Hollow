@@ -4,39 +4,29 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-	public float maxSpeed; // Velocidade máxima na qual o personagem se move
+	public float maxSpeed; // Velocidade na qual o personagem se move
 	public Transform groundCheck; // Verifica se o personagem encontra-se no chão
-	public float jumpForce;
+	public float jumpForce; // Força vertical aplicada ao RigidBody do personagem durante o pulo
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
-	private bool facingRight = true; // Determina a direção em que o personage está virado; ao inicializar, o personagem estará virado para a direita
+	private bool facingRight = true; // Determina a direção em que o personagem está virado; ao inicializar, o personagem estará virado para a direita
 	private bool onGround; // Determina se o personagem está no chão ou no ar
 	private bool jump = false; // Determina se o personagem está num estado de pulo
-	private bool doubleJump; // Determina se o personagem está num estado de pulo duplo
 
 	// Inicialização
 	void Start () {
 		rb = GetComponent<Rigidbody2D> (); // Atribui a rb o valor do componente RigidBody dado ao GameObject Player
-		speed = maxSpeed; // Inicializa a velocidade do personagem como sua velocidade máxima
+		speed = maxSpeed; // Inicializa a velocidade do personagem com a maxSpeed definida no GameObject
 	}
 	
 	// Atualiza a cada frame
 	void Update () {
 		onGround = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground")); // Dispara uma linha da posição atual do personagem até a posição do chão
 
-		// Se o personagem estiver no chão, ele é incapaz de realizar um pulo duplo
-		if (onGround) {
-			doubleJump = false;
-		}
-
-		// Se o botão de pulo for pressionado enquanto o personagem estiver no chão OU estiver no ar e não estiver em estado de pulo duplo, ele estará em estado de pulo
-		if (Input.GetButtonDown ("Jump") && (onGround || !doubleJump)) {
+		// Se o botão de pulo for pressionado enquanto o personagem estiver no chão, ele estará em estado de pulo
+		if (Input.GetButtonDown ("Jump") && (onGround))
 			jump = true;
-			// Se o personagem não estiver no chão e ainda não realizou um pulo duplo, ele torna-se capaz de realizar um pulo duplo
-			if (!doubleJump && !onGround)
-				doubleJump = true;
-		}
 	}
 
 	// Atualiza em um intervalo específico
