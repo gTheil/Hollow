@@ -10,7 +10,7 @@ public class MapWeapon : MonoBehaviour {
 
 	// Inicialização
 	void Start () {
-		// Atribui ao objeto a imagem da arma associada a ele
+		// Atribui ao objeto no mapa a imagem da arma associada a ele
 		sprite = GetComponent<SpriteRenderer>();
 		sprite.sprite = weapon.image;
 	}
@@ -20,6 +20,7 @@ public class MapWeapon : MonoBehaviour {
 		Player player = other.GetComponent<Player>();
 		if (player != null) {
 			player.AddWeapon(weapon); // Chama o método AddWeapon da classe Player, equipando a arma associada ao objeto cujo personagem entrou em contato 
+			Destroy(gameObject);
 		}
 	}
 }

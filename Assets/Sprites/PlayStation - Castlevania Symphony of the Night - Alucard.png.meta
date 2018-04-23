@@ -402,6 +402,7 @@ TextureImporter:
     21300790: PlayStation - Castlevania Symphony of the Night - Alucard_395
     21300792: PlayStation - Castlevania Symphony of the Night - Alucard_396
     21300794: PlayStation - Castlevania Symphony of the Night - Alucard_397
+    21300796: PlayStation - Castlevania Symphony of the Night - Alucard_398
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -6054,6 +6055,20 @@ TextureImporter:
         y: 15
         width: 5
         height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlayStation - Castlevania Symphony of the Night - Alucard_398
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 779
+        width: 7
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
