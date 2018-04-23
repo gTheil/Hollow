@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
 	private bool facingRight = true; // Determina a direção em que o personagem está virado; ao inicializar, o personagem estará virado para a direita
 	private bool onGround; // Determina se o personagem está no chão ou no ar
 	private bool jump; // Determina se o personagem está em estado de pulo
+	private Weapon equippedWeapon; // Verifica a arma atualmente equipada no personagem
 
 	// Inicialização
 	void Start () {
@@ -64,6 +65,12 @@ public class Player : MonoBehaviour {
 		Vector3 scale = transform.localScale; // Recebe o valor da escala do personagem
 		scale.x *= -1; // Inverte o valor x (horizontal) da escala entre valores positivos e negativos
 		transform.localScale = scale; // Atualiza o valor da escala do personagem com o novo valor positivo ou negativo pra virar sua imagem
+	}
+
+	// Método chamado ao equipar uma arma
+	public void AddWeapon (Weapon weapon) {
+		equippedWeapon = weapon; // Equipa a arma no personagem
+		GetComponentInChildren<Attack>().SetDamage(equippedWeapon.attack); // Passa o valor de ataque da arma ao dano total do ataque
 	}
 
 }
