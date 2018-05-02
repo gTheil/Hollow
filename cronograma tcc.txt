@@ -1,0 +1,11 @@
+| Etapa                   | Março    | Abril    | Maio     | Junho    | Julho    | Agosto   | Setembro | Outubro  | Novembro |
+| ----------------------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| Elaborar Proposta       | V        |          |          |          |          |          |          |          |          |
+| Definir Tecnologias     |          | V        |          |          |          |          |          |          |          |
+| Elaborar Diagramas      |          | O        |          |          |          |          |          |          |          |
+| Desenvolver Mecânicas   |          | O        | O        |          |          |          |          |          |          |
+| Desenvolver Habilidades |          |          |          | X        | X        | X        |          |          |          |
+| Desenvolver Inimigos    |          |          |          | X        | X        | X        |          |          |          |
+| Desenvolver Mapa        |          |          |          |          |          |          | X        | X        |          |
+| Implementar Arte        |          |          |          | X        |          |          |          | X        | X        |
+| Implementar Áudio       |          |          |          |          |          |          |          |          | X        |
