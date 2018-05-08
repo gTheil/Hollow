@@ -2,8 +2,8 @@
 | ----------------------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
 | Elaborar Proposta       | V        |          |          |          |          |          |          |          |          |
 | Definir Tecnologias     |          | V        |          |          |          |          |          |          |          |
-| Elaborar Diagramas      |          | O        |          |          |          |          |          |          |          |
-| Desenvolver Mecânicas   |          | O        | O        |          |          |          |          |          |          |
+| Elaborar Diagramas      |          | O        | O        |          |          |          |          |          |          |
+| Desenvolver Mecânicas   |          | O        | O        | O        |          |          |          |          |          |
 | Desenvolver Habilidades |          |          |          | X        | X        | X        |          |          |          |
 | Desenvolver Inimigos    |          |          |          | X        | X        | X        |          |          |          |
 | Desenvolver Mapa        |          |          |          |          |          |          | X        | X        |          |
