@@ -18,7 +18,7 @@ public class Attack : MonoBehaviour {
 	}
 
 	// Seta o dano do ataque
-	public void SetWeapon(int damageValue){
+	public void SetDamage(int damageValue){
 		damage = damageValue;
 	}
 }

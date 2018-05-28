@@ -89,7 +89,7 @@ public class Player : MonoBehaviour {
 	// Método chamado ao coletar uma arma
 	public void AddWeapon (Weapon weapon) {
 		weaponEquipped = weapon; // Equipa a arma no personagem
-		attack.SetWeapon(weaponEquipped.damage); // Passa o valor de dano da arma equipada ao dano do ataque
+		attack.SetDamage(weaponEquipped.damage); // Passa o valor de dano da arma equipada ao dano do ataque
 	}
 
 	// Efetua o ataque do personagem
