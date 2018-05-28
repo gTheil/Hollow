@@ -17,10 +17,12 @@ public class MapWeapon : MonoBehaviour {
 
 	// Chamado ao personagem entrar em contato com o objeto no mapa
 	private void OnTriggerEnter2D(Collider2D other) {
+		// Verifica se foi o personage que entrou em contato com o objeto
 		Player player = other.GetComponent<Player>();
 		if (player != null) {
-			player.AddWeapon(weapon); // Chama o método AddWeapon da classe Player, equipando a arma associada ao objeto cujo personagem entrou em contato 
-			Destroy(gameObject);
+			player.AddWeapon(weapon); // Equipa a arma associada ao objeto cujo personagem entrou em contato 
+			Inventory.inventory.AddWeapon(weapon); // Adiciona ao inventário do jogador a arma associada ao objeto cujo personagem entrou em contato 
+			Destroy(gameObject); // Remove o objeto do mapa
 		}
 	}
 }
