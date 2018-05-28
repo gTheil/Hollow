@@ -8,6 +8,9 @@ public class Player : MonoBehaviour {
 	public Transform groundCheck; // Verifica se o personagem encontra-se no chão
 	public float jumpForce; // Força vertical aplicada ao RigidBody do personagem durante o pulo
 	public float fireRate; // Intervalo de tempo durante o qual um ataque é executado
+	public Consumable consumable; // Consumível que estará presente na barra de status do personagem para uso rápido ao ser selecionado
+	public int maxHP; // Valor máximo de vida do personagem
+	public int maxMP; // Valor máximo de mana do personagem
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
@@ -18,6 +21,8 @@ public class Player : MonoBehaviour {
 	private Animator anim; // Gerencia as animações do personagem
 	private Attack attack; // Referência ao script de ataque para facilitar a chamada da animação da arma
 	private float nextAttack; // Contagem para possibilitar o personagem a atacar novamente
+	private int hp; // Valor atual de vida do personagem
+	private int mp; // Valor atual de mana do personagem
 
 	// Inicialização
 	void Start () {
@@ -44,6 +49,10 @@ public class Player : MonoBehaviour {
 		// Se o comando de ataque 1 (botão esquerdo do mouse) for executado enquanto o personagem tem uma arma equipada e sua contagem para o próximo ataque já foi encerrada
 		if (Input.GetButtonDown ("Fire1") && Time.time > nextAttack && weaponEquipped != null) {
 			Attack(); // O personagem realizará um ataque
+		}
+
+		if (Input.GetButtonDown ("Fire2")) {
+			QuickItem(consumable);
 		}
 	}
 
@@ -90,4 +99,18 @@ public class Player : MonoBehaviour {
 		nextAttack = Time.time + fireRate; // O personagem deverá esperar o tempo de ataque para poder atacar novamente
 	}
 
+	// Utiliza o consumível na barra de status
+	public void QuickItem (Consumable consumable) {
+		hp += consumable.hpGain; // Aumenta o valor de vida do personagem de acordo com o aumento de vida do consumível utilizado
+		// Impede que o valor atual de vida do personagem ultrapasse o valor máximo
+		if (hp >= maxHP) {
+			hp = maxHP;
+		}
+		mp += consumable.mpGain; // Aumenta o valor de mana do personagem de acordo com o aumento de mana do consumível utilizado
+		// Impede que o valor atual de mana do personagem ultrapasse o valor máximo
+		if (mp >= maxMP) {
+			mp = maxMP;
+		}
+		Inventory.inventory.RemoveConsumable(consumable); // Remove o consumível utilizado do inventário
+	}
 }

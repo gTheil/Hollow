@@ -17,7 +17,7 @@ public class MapWeapon : MonoBehaviour {
 
 	// Chamado ao personagem entrar em contato com o objeto no mapa
 	private void OnTriggerEnter2D(Collider2D other) {
-		// Verifica se foi o personage que entrou em contato com o objeto
+		// Verifica se foi o personagem que entrou em contato com o objeto
 		Player player = other.GetComponent<Player>();
 		if (player != null) {
 			player.AddWeapon(weapon); // Equipa a arma associada ao objeto cujo personagem entrou em contato 

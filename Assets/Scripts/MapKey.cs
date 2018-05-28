@@ -17,7 +17,7 @@ public class MapKey : MonoBehaviour {
 
 	// Chamado ao personagem entrar em contato com o objeto no mapa
 	private void OnTriggerEnter2D(Collider2D other){
-		// Verifica se foi o personage que entrou em contato com o objeto
+		// Verifica se foi o personagem que entrou em contato com o objeto
 		Player player = other.GetComponent<Player>();
 		if (player != null) {
 			Inventory.inventory.AddKey(key); // Adiciona ao inventário do jogador a chave associada ao objeto cujo personagem entrou em contato 
