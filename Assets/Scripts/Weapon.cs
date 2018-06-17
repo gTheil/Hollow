@@ -12,5 +12,4 @@ public class Weapon : ScriptableObject {
 	public Sprite image; // Imagem para representar visualmente a arma
 	public AnimationClip animation; // Animação reproduzida ao atacar com a arma
 	public string message; // Mensagem exibida ao coletar a arma
-
 }
