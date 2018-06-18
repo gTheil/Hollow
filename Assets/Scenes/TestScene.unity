@@ -2622,6 +2622,7 @@ MonoBehaviour:
   itemList: {fileID: 1596738293797784, guid: 5b0b9140c904a124291fb57849de9359, type: 2}
   content: {fileID: 931465808}
   items: []
+  descriptionText: {fileID: 1628104386}
 --- !u!1 &1521911849
 GameObject:
   m_ObjectHideFlags: 0
