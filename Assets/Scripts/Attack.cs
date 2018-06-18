@@ -26,4 +26,11 @@ public class Attack : MonoBehaviour {
 	public int GetDamage() {
 		return damage;
 	}
+
+	// Método que causa dano ao inimigo quando este entrar em contato com o ataque
+	private void OnTriggerEnter2D(Collider2D other) {
+		Enemy enemy = other.GetComponent<Enemy>();
+		if (enemy != null)
+			enemy.TakeDamage(damage);
+	}
 }

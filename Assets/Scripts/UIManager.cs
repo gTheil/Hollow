@@ -35,6 +35,7 @@ public class UIManager : MonoBehaviour {
 		UpdateAttributes();
 
 		if (Input.GetKeyDown(KeyCode.P)) { // Ao jogador pressionar o botão de menu
+			player.isPaused = !player.isPaused; // Pausa o jogador
 			menuActive = !menuActive; // Abre o menu se o mesmo estiver fechado, fecha-o se estiver aberto
 			optionID = 0; // Reseta a posição do cursor para a primeira opção selecionável
 			optionPanel.SetActive(true); // Ativa o painel de opções
@@ -57,24 +58,24 @@ public class UIManager : MonoBehaviour {
 				cursorPosition = items[optionID].transform.position; // Determina a posição dos itens na lista
 				cursor.position = new Vector3(cursorPosition.x - 75, cursorPosition.y, cursorPosition.z); // Determina a posição do cursor em relação aos itens da lista
 			}
-			if (Input.GetKeyDown (KeyCode.DownArrow)) { // Ao jogar pressionar a seta para baixo
+			if (Input.GetKeyDown (KeyCode.DownArrow)) { // Ao jogador pressionar a seta para baixo
 				if (!itemListActive && optionID >= menuOptions.Length - 1)
-					optionID = menuOptions.Length - 1;
+					optionID = menuOptions.Length - 1; // Impede o jogador de descer o cursor abaixo da última opção
 				else if (itemListActive && optionID >= items.Count - 1) {
-					if (items.Count == 0)
-						optionID = 0;
+					if (items.Count == 0) // Caso não haja itens
+						optionID = 0; // Impede o jogador de mover o cursor
 					else
-						optionID = items.Count - 1;
+						optionID = items.Count - 1; // Impede o jogador de descer o cursor abaixo do último item
 				}
 				else
 				optionID++; // Move o cursor para a próxima opção
 				if (itemListActive && items.Count > 0) { // Caso a lista de itens esteja ativa e não esteja vazia
-					scrollVertical.value -= (1f / (items.Count - 1));
+					scrollVertical.value -= (1f / (items.Count - 1)); // Desce a barra de rolagem da lista
 					UpdateDescription(); // Atualiza o campo de descrição de acordo com o item selecionado
 				}
 			} else if (Input.GetKeyDown(KeyCode.UpArrow)) { // Ao jogador pressionar a seta para cima
 				if (optionID == 0)
-					optionID = 0;
+					optionID = 0; // Impede o jogador de subir o cursor acima da primeira opção
 				else
 				optionID--; // Move o cursor para a opção anterior
 				if (itemListActive && items.Count > 0) { // Caso a lista de itens esteja ativa e não esteja vazia
@@ -170,8 +171,8 @@ public class UIManager : MonoBehaviour {
 			player.AddArmor(items[optionID].armor); // Equipa no personagem a armadura selecionada
 		else if (items[optionID].consumable != null) { // Caso hajam consumíveis na lista e um seja selecionado
 			player.consumable = items[optionID].consumable; // Equipa no slot de uso rápido o consumível selecionado
-			menuActive = false; // Fecha o menu
-			pauseMenu.SetActive(false);
+			menuActive = false; // Fecha a tela de menu
+			pauseMenu.SetActive(false); // Desativa o menu
 		}
 	}
 }

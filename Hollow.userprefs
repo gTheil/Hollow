@@ -5,18 +5,18 @@
       <File FileName="Assets\Scripts\CameraFollow.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Weapon.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MapWeapon.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Attack.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Attack.cs" Line="30" Column="80" />
       <File FileName="Assets\Scripts\Key.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MapKey.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Inventory.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Inventory.cs" Line="31" Column="44" />
       <File FileName="Assets\Scripts\Door.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Consumable.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MapConsumable.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\UIManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UIManager.cs" Line="175" Column="50" />
       <File FileName="Assets\Scripts\ItemList.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Armor.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player.cs" Line="91" Column="3" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="45" Column="3" />
+      <File FileName="Assets\Scripts\Player.cs" Line="181" Column="86" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="95" Column="197" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

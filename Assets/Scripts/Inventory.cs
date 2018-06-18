@@ -27,6 +27,10 @@ public class Inventory : MonoBehaviour {
 		weapons.Add(weapon); // Adiciona a arma coletada à lista de armas no inventário
 	}
 
+	public void AddArmor(Armor armor) {
+		armors.Add(armor); // Adiciona a armadura coletada à lista de armas no inventário
+	}
+
 	public void AddKey(Key key) {
 		keys.Add(key); // Adiciona a chave coletada à lista de armas no inventário
 	}

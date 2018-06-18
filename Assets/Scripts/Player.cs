@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour {
 	public int maxHP; // Valor máximo de vida do personagem
 	public int maxMP; // Valor máximo de mana do personagem
 	public int def; // Valor de defesa do personagem
+	public bool isPaused = false; // Determina se o menu está aberto
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
@@ -25,6 +27,9 @@ public class Player : MonoBehaviour {
 	private float nextAttack; // Contagem para possibilitar o personagem a atacar novamente
 	private int hp; // Valor atual de vida do personagem
 	private int mp; // Valor atual de mana do personagem
+	private bool canDamage = true; // Determina se o jogador pode receber dano
+	private SpriteRenderer sprite; // Referência à imagem do jogador
+	private bool isDead = false; // Determina se o personagem está morto
 
 	// Inicialização
 	void Start () {
@@ -32,47 +37,55 @@ public class Player : MonoBehaviour {
 		speed = maxSpeed; // Inicializa a velocidade do personagem com a maxSpeed definida no GameObject
 		anim = GetComponent<Animator>(); // Inicializa o gerenciador de animações
 		attack = GetComponentInChildren<Attack>(); // Inicializa o componente "Attack"
-		hp = maxHP;
-		mp = maxMP;
+		hp = maxHP; // Iguala a vida atual à total
+		mp = maxMP; // Iguala a mana atual à total
+		sprite = GetComponent<SpriteRenderer>(); // Inicializa a imagem do jogador
 	}
 	
 	// Atualiza a cada frame
 	void Update () {
-		onGround = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground")); // Dispara uma linha da posição atual do personagem até a posição do chão
+		if (!isDead && !isPaused) { // Caso o personagem esteja vivo e o menu fechado 
+			onGround = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground")); // Dispara uma linha da posição atual do personagem até a posição do chão
 
-		// Se o comando de pulo (barra de espaço) for executado enquanto o personagem estiver no chão
-		if (Input.GetButtonDown ("Jump") && (onGround)) {
-			Jump (); // O personagem realizará um pulo
-			jump = true; // Ele será permitido realizar um segundo pulo
-		}
-		// Se o comando de pulo (barra de espaço) for executado no ar durante o estado de pulo
-		if (Input.GetButtonDown ("Jump") && (!onGround) && jump == true) {
-			Jump (); // O personagem realizará um segundo pulo
-			jump = false; // Ele será impedido de executar pulos subsequentes
-		}
-		// Se o comando de ataque 1 (botão esquerdo do mouse) for executado enquanto o personagem tem uma arma equipada e sua contagem para o próximo ataque já foi encerrada
-		if (Input.GetButtonDown ("Fire1") && Time.time > nextAttack && weaponEquipped != null) {
-			Attack(); // O personagem realizará um ataque
-		}
+			// Se o comando de pulo (barra de espaço) for executado enquanto o personagem estiver no chão
+			if (Input.GetButtonDown ("Jump") && (onGround)) {
+				Jump (); // O personagem realizará um pulo
+				jump = true; // Ele será permitido realizar um segundo pulo
+			}
+			// Se o comando de pulo (barra de espaço) for executado no ar durante o estado de pulo
+			if (Input.GetButtonDown ("Jump") && (!onGround) && jump == true) {
+				Jump (); // O personagem realizará um segundo pulo
+				jump = false; // Ele será impedido de executar pulos subsequentes
+			}
+			// Se o comando de ataque 1 (botão esquerdo do mouse) for executado enquanto o personagem tem uma arma equipada e sua contagem para o próximo ataque já foi encerrada
+			if (Input.GetButtonDown ("Fire1") && Time.time > nextAttack && weaponEquipped != null) {
+				Attack (); // O personagem realizará um ataque
+			}
 
-		if (Input.GetButtonDown ("Fire2")) {
-			QuickItem(consumable);
+			// Se o botão direito do mouse for pressionado
+			if (Input.GetButtonDown ("Fire2")) {
+				QuickItem (consumable); // utiliza o item consumível equipado
+			}
 		}
 	}
 
 	// Atualiza em um intervalo específico
 	void FixedUpdate () {
-		float h = Input.GetAxisRaw("Horizontal"); // Variável que controla a posição X (horizontal) do personagem
-		rb.velocity = new Vector2(h * speed, rb.velocity.y); // Variável que controla o movimento na horizontal e vertical do personagem
+		if (!isDead && !isPaused) { // Caso o personagem esteja vivo e o menu fechado
+			float h = Input.GetAxisRaw ("Horizontal"); // Variável que controla a posição X (horizontal) do personagem
 
-		// Se a posição horizontal for maior que 0, ou seja, o personagem estiver se movendo para a direita, a função Flip é chamada para virar a imagem do personagem
-		if (h > 0 && !facingRight) {
-			Flip();
-		}
+			if (canDamage)
+				rb.velocity = new Vector2 (h * speed, rb.velocity.y); // Variável que controla o movimento na horizontal e vertical do personagem
+
+			// Se a posição horizontal for maior que 0, ou seja, o personagem estiver se movendo para a direita, a função Flip é chamada para virar a imagem do personagem
+			if (h > 0 && !facingRight) {
+				Flip ();
+			}
 
 		// Se a posição horizontal for menor que 0, ou seja, o personagem estiver se movendo para a esquerda, a função Flip é chamada para virar a imagem do personagem
 		else if (h < 0 && facingRight) {
-			Flip();
+				Flip ();
+			}
 		}
 	}
 
@@ -132,5 +145,39 @@ public class Player : MonoBehaviour {
 	// Método que retorna o valor de MP atual do personagem
 	public int GetMP() {
 		return mp;
+	}
+
+	// Método chamado ao personagem colidir com um inimigo
+	public void TakeDamage(int damage) {
+		if (canDamage) { // Caso o personagem possa receber dano
+			canDamage = false; // É colocado em um estado de invencibilidade
+			hp -= (damage - def); // Diminui a vida atual do personagem pela diferença entre o dano do inimigo e a defesa do personagem
+			if (hp <= 0) { // Caso o dano recebido faça a vida atual do personagem ser menor ou igual a zero
+				hp = 0; // Iguala sua vida a zero
+				isDead = true; // O coloca em estado de morte
+				anim.SetTrigger ("Dead"); // Roda a animação de morte do personagem
+				Invoke ("ReloadScene", 3f); // Recarrega a cena após três segundos
+			} else { // Caso contrário
+				StartCoroutine(DamageCoroutine()); // Roda a rotina de dano
+			}
+		}
+	}
+
+	// Método que recarrega a cena atual
+	void ReloadScene() {
+		SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex);
+	}
+
+	// Rotina de dano
+	IEnumerator DamageCoroutine() {
+		// Faz com que a imagem do personagem pisque ao receber dano
+		for (float i = 0; i < 0.6f; i+= 0.2f) {
+			sprite.enabled = false;
+			yield return new WaitForSeconds(0.1f);
+			sprite.enabled = true;
+			yield return new WaitForSeconds(0.1f);
+		}
+
+		canDamage = true; // Coloca o personagem em um estado no qual ele pode receber dano
 	}
 }
