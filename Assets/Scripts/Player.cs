@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
 	public Consumable consumable; // Consumível que estará presente na barra de status do personagem para uso rápido ao ser selecionado
 	public int maxHP; // Valor máximo de vida do personagem
 	public int maxMP; // Valor máximo de mana do personagem
+	public int def; // Valor de defesa do personagem
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour {
 	private bool onGround; // Determina se o personagem está no chão ou no ar
 	private bool jump; // Determina se o personagem está em estado de pulo
 	private Weapon weaponEquipped; // Referência a arma atualmente equipada no personagem
+	private Armor armorEquipped; // Referência a armadura atualmente equipada no personagem
 	private Animator anim; // Gerencia as animações do personagem
 	private Attack attack; // Referência ao script de ataque para facilitar a chamada da animação da arma
 	private float nextAttack; // Contagem para possibilitar o personagem a atacar novamente
@@ -30,6 +32,8 @@ public class Player : MonoBehaviour {
 		speed = maxSpeed; // Inicializa a velocidade do personagem com a maxSpeed definida no GameObject
 		anim = GetComponent<Animator>(); // Inicializa o gerenciador de animações
 		attack = GetComponentInChildren<Attack>(); // Inicializa o componente "Attack"
+		hp = maxHP;
+		mp = maxMP;
 	}
 	
 	// Atualiza a cada frame
@@ -92,6 +96,12 @@ public class Player : MonoBehaviour {
 		attack.SetDamage(weaponEquipped.damage); // Passa o valor de dano da arma equipada ao dano do ataque
 	}
 
+	// Método chamado ao coletar uma armadura
+	public void AddArmor (Armor armor) {
+		armorEquipped = armor; // Equipa a armadura no personagem
+		def = armorEquipped.defense; // Passa o valor de defesa da armadura equipada à defesa do jogador
+	}
+
 	// Efetua o ataque do personagem
 	void Attack () {
 		anim.SetTrigger("Attack"); // Roda a animação de ataque do personagem
@@ -112,5 +122,15 @@ public class Player : MonoBehaviour {
 			mp = maxMP;
 		}
 		Inventory.inventory.RemoveConsumable(consumable); // Remove o consumível utilizado do inventário
+	}
+
+	// Método que retorna o valor de HP atual do personagem
+	public int GetHP() {
+		return hp;
+	}
+
+	// Método que retorna o valor de MP atual do personagem
+	public int GetMP() {
+		return mp;
 	}
 }

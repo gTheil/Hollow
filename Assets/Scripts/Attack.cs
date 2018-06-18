@@ -21,4 +21,9 @@ public class Attack : MonoBehaviour {
 	public void SetDamage(int damageValue){
 		damage = damageValue;
 	}
+
+	// Retorna o dano do ataque
+	public int GetDamage() {
+		return damage;
+	}
 }

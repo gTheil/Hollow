@@ -14,19 +14,25 @@ public class UIManager : MonoBehaviour {
 	public RectTransform content; // Referência ao conteúdo das opções do menu
 	public List<ItemList> items; // Referência à classe ItemList para manipulação
 	public Text descriptionText; // Referência ao texto de descrição de um item
+	public Scrollbar scrollVertical; // Variável que controla a rolagem vertical da lista de itens
+	public Text hpText, mpText, atkText, defText; // Variáveis que contêm os textos dos atributos do personagem
 
 	private bool menuActive = false; // Determina se o jogador está com o menu aberto
 	private int optionID = 0; // Posição do cursor no array de opções selecionáveis
 	private Inventory inventory; // Referência ao inventário do jogador
 	private bool itemListActive = false; // Determina se a lista de itens está aberta
+	private Player player; // Referência ao jogador
 
-	// Atribui a variável inventory o inventário do jogador
+	// Inicialização de personagem e inventário
 	void Start () {
 		inventory = Inventory.inventory;
+		player = FindObjectOfType<Player>();
 	}
 	
 	// Atualizado a cada frame
 	void Update () {
+
+		UpdateAttributes();
 
 		if (Input.GetKeyDown(KeyCode.P)) { // Ao jogador pressionar o botão de menu
 			menuActive = !menuActive; // Abre o menu se o mesmo estiver fechado, fecha-o se estiver aberto
@@ -52,34 +58,55 @@ public class UIManager : MonoBehaviour {
 				cursor.position = new Vector3(cursorPosition.x - 75, cursorPosition.y, cursorPosition.z); // Determina a posição do cursor em relação aos itens da lista
 			}
 			if (Input.GetKeyDown (KeyCode.DownArrow)) { // Ao jogar pressionar a seta para baixo
+				if (!itemListActive && optionID >= menuOptions.Length - 1)
+					optionID = menuOptions.Length - 1;
+				else if (itemListActive && optionID >= items.Count - 1) {
+					if (items.Count == 0)
+						optionID = 0;
+					else
+						optionID = items.Count - 1;
+				}
+				else
 				optionID++; // Move o cursor para a próxima opção
-				if (optionID > (menuOptions.Length - 1)) { // Caso seja feito na última opção,
-					optionID = 0; // move o cursor para a primeira opção
+				if (itemListActive && items.Count > 0) { // Caso a lista de itens esteja ativa e não esteja vazia
+					scrollVertical.value -= (1f / (items.Count - 1));
+					UpdateDescription(); // Atualiza o campo de descrição de acordo com o item selecionado
 				}
 			} else if (Input.GetKeyDown(KeyCode.UpArrow)) { // Ao jogador pressionar a seta para cima
+				if (optionID == 0)
+					optionID = 0;
+				else
 				optionID--; // Move o cursor para a opção anterior
-				if (optionID < 0) { // Caso seja feito na primeira opção,
-					optionID = (menuOptions.Length - 1); // move o cursor para a última opção
+				if (itemListActive && items.Count > 0) { // Caso a lista de itens esteja ativa e não esteja vazia
+					scrollVertical.value += (1f / (items.Count - 1));
+					UpdateDescription(); // Atualiza o campo de descrição de acordo com o item selecionado
 				}
 			}
 
 			if (Input.GetButtonDown ("Submit") && !itemListActive) { // Ao jogador selecionar uma das opções
-				optionPanel.SetActive(false); // Desativa o painel de opções do menu
-				itemPanel.SetActive(true); // Ativa o painel de itens no menu
-				RefreshItemList(); // Limpa a lista de itens
-				UpdateItemList(optionID); // Gera a os itens dentro da lista de acordo com a opção selecionada
+				optionPanel.SetActive (false); // Desativa o painel de opções do menu
+				itemPanel.SetActive (true); // Ativa o painel de itens no menu
+				RefreshItemList (); // Limpa a lista de itens
+				UpdateItemList (optionID); // Gera a os itens dentro da lista de acordo com a opção selecionada
 				optionID = 0; // Posiciona o cursor no primeiro item da lista
 				if (items.Count > 0) // Caso a lista de itens não esteja vazia
-				UpdateDescription(); // Exibe o texto de descrição do item selecionado
+				UpdateDescription (); // Exibe o texto de descrição do item selecionado
 				itemListActive = true; // Ativa a lista de itens
+			} else if (Input.GetButtonDown ("Submit") && itemListActive) { // Ao jogador selecionar um item dentro da lista
+				if (items.Count > 0) {
+					UseItem(); // O item é equipado ou utilizado
+				}
 			}
 		}
 
 	}
 
+	// Método que atualiza o campo de descrição do menu
 	void UpdateDescription(){
 		if (items[optionID].weapon != null) // Caso hajam armas na lista de itens
 			descriptionText.text = items[optionID].weapon.description; // Atribui ao campo de descrição o texto de descrição da arma selecionada
+		else if (items[optionID].armor != null) // Caso hajam armaduras na lista de itens
+			descriptionText.text = items[optionID].armor.description; // Atribui ao campo de descrição o texto de descrição da armadura selecionada
 		else if (items[optionID].consumable != null) // Caso hajam consumíveis na lista de itens
 			descriptionText.text = items[optionID].consumable.description; // Atribui ao campo de descrição o texto de descrição do consumível selecionado
 		else if (items[optionID].key != null) // Caso hajam chaves na lista de itens
@@ -96,10 +123,18 @@ public class UIManager : MonoBehaviour {
 
 	// Método que gera os itens dentro da lista de acordo com a opção selecionada
 	void UpdateItemList (int option) {
+		scrollVertical.value = 1; // Reseta a posição da barra de rolagem
 		if (option == 0) { // Caso seja a primeira opção
 			for (int i = 0; i < inventory.weapons.Count; i++) { // Para cada arma no inventário
 				GameObject tempItem = Instantiate(itemList, content.transform); // Instancia a lista de itens para que possa ser manipulada
 				tempItem.GetComponent<ItemList>().SetUpWeapon(inventory.weapons[i]); // Adiciona a arma do inventário à lista de itens
+				items.Add(tempItem.GetComponent<ItemList>());
+			}
+		}
+		else if (option == 1) { // Caso seja a segunda opção
+			for (int i = 0; i < inventory.armors.Count; i++) { // Para cada armadura no inventário
+				GameObject tempItem = Instantiate(itemList, content.transform); // Instancia a lista de itens para que possa ser manipulada
+				tempItem.GetComponent<ItemList>().SetUpArmor(inventory.armors[i]); // Adiciona a armadura do inventário à lista de itens
 				items.Add(tempItem.GetComponent<ItemList>());
 			}
 		}
@@ -116,6 +151,27 @@ public class UIManager : MonoBehaviour {
 				tempItem.GetComponent<ItemList>().SetUpKey(inventory.keys[i]); // Adiciona a chave do inventário à lista de itens
 				items.Add(tempItem.GetComponent<ItemList>());
 			}
+		}
+	}
+
+	// Método que atualiza os textos dos atributos no menu de acordo com os atributos do personagem
+	void UpdateAttributes() {
+		hpText.text = "Vida: " + player.GetHP() + "/" + player.maxHP;
+		mpText.text = "Mana: " + player.GetMP() + "/" + player.maxMP;
+		atkText.text = "Ataque: " + player.GetComponentInChildren<Attack>().GetDamage();
+		defText.text = "Defesa: " + player.def;
+	}
+
+	// Método que chama funções de equipar armas/armaduras e utilizar consumíveis
+	void UseItem() {
+		if (items[optionID].weapon != null) // Caso hajam armas na lista e uma seja selecionada
+			player.AddWeapon(items[optionID].weapon); // Equipa no personagem a arma selecionada
+		else if (items[optionID].armor != null) // Caso hajam armaduras na lista e uma seja selecionada
+			player.AddArmor(items[optionID].armor); // Equipa no personagem a armadura selecionada
+		else if (items[optionID].consumable != null) { // Caso hajam consumíveis na lista e um seja selecionado
+			player.consumable = items[optionID].consumable; // Equipa no slot de uso rápido o consumível selecionado
+			menuActive = false; // Fecha o menu
+			pauseMenu.SetActive(false);
 		}
 	}
 }

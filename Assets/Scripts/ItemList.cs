@@ -8,8 +8,9 @@ public class ItemList : MonoBehaviour {
 	public Image image; // Referência à imagem associada a um item
 	public Text text; // Referência aos textos associados a um item
 	public Weapon weapon; // Referência à classe de itens Armas
-	public Key key; // Referência à classe de itens Chaves
+	public Armor armor; // Referência à classe de itens Armaduras
 	public Consumable consumable; // Referência à classe de itens Consumíveis
+	public Key key; // Referência à classe de itens Chaves
 
 	// Método que gera um item do tipo Arma na Lista de Itens
 	public void SetUpWeapon(Weapon menuWeapon) {
@@ -18,11 +19,11 @@ public class ItemList : MonoBehaviour {
 		text.text = weapon.weaponName;
 	}
 
-	// Método que gera um item do tipo Chave na Lista de Itens
-	public void SetUpKey(Key menuKey) {
-		key = menuKey;
-		image.sprite = key.image;
-		text.text = key.keyName;
+	// Método que gera um item do tipo Armadura na Lista de Itens
+	public void SetUpArmor(Armor menuArmor) {
+		armor = menuArmor;
+		image.sprite = armor.image;
+		text.text = armor.armorName;
 	}
 
 	// Método que gera um item do tipo Consumível na Lista de Itens
@@ -31,4 +32,12 @@ public class ItemList : MonoBehaviour {
 		image.sprite = consumable.image;
 		text.text = consumable.itemName;
 	}
+
+	// Método que gera um item do tipo Chave na Lista de Itens
+	public void SetUpKey(Key menuKey) {
+		key = menuKey;
+		image.sprite = key.image;
+		text.text = key.keyName;
+	}
+		
 }

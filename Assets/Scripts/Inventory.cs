@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour {
 	public static Inventory inventory; // Referência ao inventário do jogador
 
 	public List<Weapon> weapons; // Lista de armas do jogador
+	public List<Armor> armors; // Lista de armaduras do jogador
 	public List<Key> keys; // Lista de chaves do jogador
 	public List<Consumable> consumables; // Lista de consumíveis do jogador
 
