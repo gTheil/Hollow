@@ -14,6 +14,7 @@ public class Player : MonoBehaviour {
 	public int maxMP; // Valor máximo de mana do personagem
 	public int def; // Valor de defesa do personagem
 	public bool isPaused = false; // Determina se o menu está aberto
+	public int gold; // Quantidade de ouro do personagem
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
@@ -62,8 +63,8 @@ public class Player : MonoBehaviour {
 				Attack (); // O personagem realizará um ataque
 			}
 
-			// Se o botão direito do mouse for pressionado
-			if (Input.GetButtonDown ("Fire2")) {
+			// Se o botão direito do mouse for pressionado e um consumível estiver equipado
+			if (Input.GetButtonDown ("Fire2") && consumable != null) {
 				QuickItem (consumable); // utiliza o item consumível equipado
 			}
 		}
@@ -163,9 +164,9 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	// Método que recarrega a cena atual
+	// Método chamado ao personagem morrer
 	void ReloadScene() {
-		SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex);
+		SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex); // Recarrega a cena atual
 	}
 
 	// Rotina de dano

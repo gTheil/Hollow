@@ -20,6 +20,7 @@ public class Inventory : MonoBehaviour {
 			Destroy(gameObject);
 		}
 
+		// Faz com que o inventário permaneça o mesmo caso outra cena seja carregada
 		DontDestroyOnLoad(gameObject);
 	}
 	

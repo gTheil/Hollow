@@ -15,7 +15,7 @@ public class UIManager : MonoBehaviour {
 	public List<ItemList> items; // Referência à classe ItemList para manipulação
 	public Text descriptionText; // Referência ao texto de descrição de um item
 	public Scrollbar scrollVertical; // Variável que controla a rolagem vertical da lista de itens
-	public Text hpText, mpText, atkText, defText; // Variáveis que contêm os textos dos atributos do personagem
+	public Text hpText, mpText, goldText, atkText, defText; // Variáveis que contêm os textos dos atributos do personagem
 
 	private bool menuActive = false; // Determina se o jogador está com o menu aberto
 	private int optionID = 0; // Posição do cursor no array de opções selecionáveis
@@ -35,7 +35,7 @@ public class UIManager : MonoBehaviour {
 		UpdateAttributes();
 
 		if (Input.GetKeyDown(KeyCode.P)) { // Ao jogador pressionar o botão de menu
-			player.isPaused = !player.isPaused; // Pausa o jogador
+			player.isPaused = !player.isPaused; // Pausa o jogador se não estiver e vice-versa
 			menuActive = !menuActive; // Abre o menu se o mesmo estiver fechado, fecha-o se estiver aberto
 			optionID = 0; // Reseta a posição do cursor para a primeira opção selecionável
 			optionPanel.SetActive(true); // Ativa o painel de opções
@@ -159,6 +159,7 @@ public class UIManager : MonoBehaviour {
 	void UpdateAttributes() {
 		hpText.text = "Vida: " + player.GetHP() + "/" + player.maxHP;
 		mpText.text = "Mana: " + player.GetMP() + "/" + player.maxMP;
+		goldText.text = "Ouro: " + player.gold;
 		atkText.text = "Ataque: " + player.GetComponentInChildren<Attack>().GetDamage();
 		defText.text = "Defesa: " + player.def;
 	}
@@ -173,6 +174,7 @@ public class UIManager : MonoBehaviour {
 			player.consumable = items[optionID].consumable; // Equipa no slot de uso rápido o consumível selecionado
 			menuActive = false; // Fecha a tela de menu
 			pauseMenu.SetActive(false); // Desativa o menu
+			player.isPaused = false; // Despausa o jogador
 		}
 	}
 }

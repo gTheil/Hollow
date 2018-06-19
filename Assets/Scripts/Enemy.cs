@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour {
 	public Consumable consumable; // O item específico que será deixado para trás
 	public int attack; // Valor de dano que o inimigo causará ao personagem quando se colidirem
 	public float knockback; // Distância que o inimigo empurrará o personagem quando se colidirem
+	public int gold; // Quantidade de ouro que o inimigo concede ao morrer
 
 	private Transform player; // Referência ao personagem
 	private Rigidbody2D rb; // Componente que adiciona física
@@ -62,6 +63,7 @@ public class Enemy : MonoBehaviour {
 			isDead = true; // Colocado em estado de morte
 			rb.velocity = Vector2.zero; // Seu corpo para de se mover
 			anim.SetTrigger("Dead"); // Roda sua animação de morte
+			FindObjectOfType<Player>().gold += gold;
 			if (consumable != null) { // Caso algum consumível tenha sido atribuído ao inimigo
 				GameObject tempItem = Instantiate(drop, transform.position, transform.rotation); // Instancia um objeto no cenário
 				tempItem.GetComponent<MapConsumable>().consumable = consumable; // Atribui ao objeto um consumível
