@@ -45,7 +45,7 @@ public class Player : MonoBehaviour {
 	
 	// Atualiza a cada frame
 	void Update () {
-		if (!isDead && !isPaused) { // Caso o personagem esteja vivo e o menu fechado 
+		if (!isDead && !isPaused && Time.time > nextAttack) { // Caso o personagem esteja vivo e o menu fechado 
 			onGround = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground")); // Dispara uma linha da posição atual do personagem até a posição do chão
 
 			// Se o comando de pulo (barra de espaço) for executado enquanto o personagem estiver no chão
@@ -72,11 +72,13 @@ public class Player : MonoBehaviour {
 
 	// Atualiza em um intervalo específico
 	void FixedUpdate () {
-		if (!isDead && !isPaused) { // Caso o personagem esteja vivo e o menu fechado
+		if (!isDead && !isPaused && Time.time > nextAttack) { // Caso o personagem esteja vivo e o menu fechado
 			float h = Input.GetAxisRaw ("Horizontal"); // Variável que controla a posição X (horizontal) do personagem
 
 			if (canDamage)
 				rb.velocity = new Vector2 (h * speed, rb.velocity.y); // Variável que controla o movimento na horizontal e vertical do personagem
+
+			anim.SetFloat("Speed", Mathf.Abs(h)); // Roda a animação de movimento enquanto o personagem estiver se movimentando
 
 			// Se a posição horizontal for maior que 0, ou seja, o personagem estiver se movendo para a direita, a função Flip é chamada para virar a imagem do personagem
 			if (h > 0 && !facingRight) {
@@ -156,8 +158,8 @@ public class Player : MonoBehaviour {
 			if (hp <= 0) { // Caso o dano recebido faça a vida atual do personagem ser menor ou igual a zero
 				hp = 0; // Iguala sua vida a zero
 				isDead = true; // O coloca em estado de morte
-				anim.SetTrigger ("Dead"); // Roda a animação de morte do personagem
-				Invoke ("ReloadScene", 3f); // Recarrega a cena após três segundos
+				anim.SetTrigger("Dead"); // Roda a animação de morte do personagem
+				Invoke("ReloadScene", 3f); // Recarrega a cena após três segundos
 			} else { // Caso contrário
 				StartCoroutine(DamageCoroutine()); // Roda a rotina de dano
 			}

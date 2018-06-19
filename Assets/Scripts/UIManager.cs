@@ -16,6 +16,8 @@ public class UIManager : MonoBehaviour {
 	public Text descriptionText; // Referência ao texto de descrição de um item
 	public Scrollbar scrollVertical; // Variável que controla a rolagem vertical da lista de itens
 	public Text hpText, mpText, goldText, atkText, defText; // Variáveis que contêm os textos dos atributos do personagem
+	public Text hpUI, mpUI, goldUI, itemUI; // Variáveis que contêm os textos da barra de status
+	public Image consumableImage;
 
 	private bool menuActive = false; // Determina se o jogador está com o menu aberto
 	private int optionID = 0; // Posição do cursor no array de opções selecionáveis
@@ -32,6 +34,7 @@ public class UIManager : MonoBehaviour {
 	// Atualizado a cada frame
 	void Update () {
 
+		UpdateUI();
 		UpdateAttributes();
 
 		if (Input.GetKeyDown(KeyCode.P)) { // Ao jogador pressionar o botão de menu
@@ -172,9 +175,18 @@ public class UIManager : MonoBehaviour {
 			player.AddArmor(items[optionID].armor); // Equipa no personagem a armadura selecionada
 		else if (items[optionID].consumable != null) { // Caso hajam consumíveis na lista e um seja selecionado
 			player.consumable = items[optionID].consumable; // Equipa no slot de uso rápido o consumível selecionado
+			consumableImage.sprite = items[optionID].consumable.image; // Atualiza a imagem do item de uso rápido na barra de status
 			menuActive = false; // Fecha a tela de menu
 			pauseMenu.SetActive(false); // Desativa o menu
 			player.isPaused = false; // Despausa o jogador
 		}
+	}
+
+	// Método que atualiza os textos dos recursos na barra de status
+	void UpdateUI() {
+		hpUI.text = player.GetHP().ToString();
+		mpUI.text = "Mana: " + player.GetMP();
+		goldUI.text = "Ouro: " + player.gold;
+		itemUI.text = "x" + inventory.CountConsumable(player.consumable);
 	}
 }

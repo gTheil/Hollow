@@ -62,4 +62,14 @@ public class Inventory : MonoBehaviour {
 			}
 		}
 	}
+
+	// Método que retorna o a quantidade, no inventário do jogador, do item equipado no slot de uso rápido
+	public int CountConsumable(Consumable consumable) {
+		int numberOfConsumables = 0;
+		for (int i = 0; i < consumables.Count; i++) {
+			if (consumable == consumables[i])
+				numberOfConsumables++;
+		}
+		return numberOfConsumables;
+	}
 }
