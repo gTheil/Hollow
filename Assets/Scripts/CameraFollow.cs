@@ -14,15 +14,15 @@ public class CameraFollow : MonoBehaviour
 	private Transform player;		// Reference to the player's transform.
 
 
-	/*void Start ()
+	void Start ()
 	{
 		// Setting up the reference.
 		player = GameObject.FindGameObjectWithTag("Player").transform;
-		maxXAndY.x = GameManager.gameManager.maxCamX;
-		maxXAndY.y = GameManager.gameManager.maxCamY;
-		minXAndY.x = GameManager.gameManager.minCamX;
-		minXAndY.y = GameManager.gameManager.minCamY;
-	}*/
+		//maxXAndY.x = GameManager.gameManager.maxCamX;
+		//maxXAndY.y = GameManager.gameManager.maxCamY;
+		//minXAndY.x = GameManager.gameManager.minCamX;
+		//minXAndY.y = GameManager.gameManager.minCamY;
+	}
 
 
 	bool CheckXMargin()

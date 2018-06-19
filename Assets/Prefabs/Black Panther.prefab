@@ -123,6 +123,9 @@ MonoBehaviour:
   hp: 50
   drop: {fileID: 1177782873489132, guid: 883267e1366f4574b84e8a93fed70a2d, type: 2}
   consumable: {fileID: 0}
+  attack: 0
+  knockback: 0
+  gold: 0
 --- !u!212 &212782071501790842
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -154,8 +157,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 693817453
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300010, guid: e5c84d2b221e7c84da76870888bf21b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
