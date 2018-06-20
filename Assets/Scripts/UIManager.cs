@@ -38,7 +38,6 @@ public class UIManager : MonoBehaviour {
 		UpdateAttributes();
 
 		if (Input.GetKeyDown(KeyCode.P)) { // Ao jogador pressionar o botão de menu
-			player.isPaused = !player.isPaused; // Pausa o jogador se não estiver e vice-versa
 			menuActive = !menuActive; // Abre o menu se o mesmo estiver fechado, fecha-o se estiver aberto
 			optionID = 0; // Reseta a posição do cursor para a primeira opção selecionável
 			optionPanel.SetActive(true); // Ativa o painel de opções
@@ -47,8 +46,10 @@ public class UIManager : MonoBehaviour {
 			descriptionText.text = ""; // Limpa o campo de descrição no menu
 			if (menuActive) {
 				pauseMenu.SetActive(true);
+				Time.timeScale = 0; // Pausa o jogo
 			} else {
 				pauseMenu.SetActive(false);
+				Time.timeScale = 1; // Despausa o jogo
 			}
 		}
 
@@ -178,7 +179,7 @@ public class UIManager : MonoBehaviour {
 			consumableImage.sprite = items[optionID].consumable.image; // Atualiza a imagem do item de uso rápido na barra de status
 			menuActive = false; // Fecha a tela de menu
 			pauseMenu.SetActive(false); // Desativa o menu
-			player.isPaused = false; // Despausa o jogador
+			Time.timeScale = 1; // Despausa o jogo
 		}
 	}
 

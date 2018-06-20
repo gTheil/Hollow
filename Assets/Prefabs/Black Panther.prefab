@@ -120,11 +120,11 @@ MonoBehaviour:
   wakeUpX: 10
   wakeUpY: 5
   speed: 4
-  hp: 50
+  hp: 100
   drop: {fileID: 1177782873489132, guid: 883267e1366f4574b84e8a93fed70a2d, type: 2}
   consumable: {fileID: 11400000, guid: 4adf5971b7f492f4f97b7d2f3056be83, type: 2}
   attack: 50
-  knockback: 5
+  knockback: 7
   gold: 50
 --- !u!212 &212782071501790842
 SpriteRenderer:

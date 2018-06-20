@@ -13,7 +13,6 @@ public class Player : MonoBehaviour {
 	public int maxHP; // Valor máximo de vida do personagem
 	public int maxMP; // Valor máximo de mana do personagem
 	public int def; // Valor de defesa do personagem
-	public bool isPaused = false; // Determina se o menu está aberto
 	public int gold; // Quantidade de ouro do personagem
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
@@ -31,6 +30,7 @@ public class Player : MonoBehaviour {
 	private bool canDamage = true; // Determina se o jogador pode receber dano
 	private SpriteRenderer sprite; // Referência à imagem do jogador
 	private bool isDead = false; // Determina se o personagem está morto
+	private CameraFollow camera; // Referência ao script que controla a movimentação da câmera
 
 	// Inicialização
 	void Start () {
@@ -41,11 +41,12 @@ public class Player : MonoBehaviour {
 		hp = maxHP; // Iguala a vida atual à total
 		mp = maxMP; // Iguala a mana atual à total
 		sprite = GetComponent<SpriteRenderer>(); // Inicializa a imagem do jogador
+		camera = FindObjectOfType<CameraFollow>(); // Inicializa a posição da câmera
 	}
 	
 	// Atualiza a cada frame
 	void Update () {
-		if (!isDead && !isPaused && Time.time > nextAttack) { // Caso o personagem esteja vivo e o menu fechado 
+		if (!isDead && Time.time > nextAttack) { // Caso o personagem esteja vivo e o menu fechado 
 			onGround = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground")); // Dispara uma linha da posição atual do personagem até a posição do chão
 
 			// Se o comando de pulo (barra de espaço) for executado enquanto o personagem estiver no chão
@@ -72,7 +73,7 @@ public class Player : MonoBehaviour {
 
 	// Atualiza em um intervalo específico
 	void FixedUpdate () {
-		if (!isDead && !isPaused && Time.time > nextAttack) { // Caso o personagem esteja vivo e o menu fechado
+		if (!isDead && Time.time > nextAttack) { // Caso o personagem esteja vivo e o menu fechado
 			float h = Input.GetAxisRaw ("Horizontal"); // Variável que controla a posição X (horizontal) do personagem
 
 			if (canDamage)
@@ -158,6 +159,7 @@ public class Player : MonoBehaviour {
 			if (hp <= 0) { // Caso o dano recebido faça a vida atual do personagem ser menor ou igual a zero
 				hp = 0; // Iguala sua vida a zero
 				isDead = true; // O coloca em estado de morte
+				camera.enabled = false; // Trava a câmera
 				anim.SetTrigger("Dead"); // Roda a animação de morte do personagem
 				Invoke("ReloadScene", 3f); // Recarrega a cena após três segundos
 			} else { // Caso contrário
