@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Weapon2
   m_EditorClassIdentifier: 
   itemID: 2
-  weaponName: Weapon Two
-  description: It's the second weapon.
+  weaponName: Arma Dois
+  description: Concede 100 de Ataque.
   damage: 100
   image: {fileID: 21300006, guid: fc26f483f9de71146874da8abe8a1053, type: 3}
   animation: {fileID: 7400000, guid: 3d49e0699f2e7ed428d6a138a8f6c9e5, type: 2}

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: PotionDual
   m_EditorClassIdentifier: 
   itemID: 3
-  itemName: Dual Potion
-  description: It's a dual potion.
+  itemName: "Po\xE7\xE3o Dupla"
+  description: Restaura 100 de Vida e Mana.
   image: {fileID: 21300022, guid: a3a39e3162b2f7b4e8b89435945d943a, type: 3}
   hpGain: 100
   mpGain: 100

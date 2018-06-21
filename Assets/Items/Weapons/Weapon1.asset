@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Weapon1
   m_EditorClassIdentifier: 
   itemID: 1
-  weaponName: Weapon One
-  description: It's the first weapon.
+  weaponName: Arma Um
+  description: Concede 50 de Ataque.
   damage: 50
   image: {fileID: 21300020, guid: fc26f483f9de71146874da8abe8a1053, type: 3}
   animation: {fileID: 7400000, guid: 771245487f6f52f4caf2f0a14bf03cde, type: 2}

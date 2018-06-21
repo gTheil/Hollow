@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: PotionMP
   m_EditorClassIdentifier: 
   itemID: 2
-  itemName: Mana Potion
-  description: It's a mana potion.
+  itemName: "Po\xE7\xE3o de Mana"
+  description: Restaura 50 de Mana.
   image: {fileID: 21300020, guid: a3a39e3162b2f7b4e8b89435945d943a, type: 3}
   hpGain: 0
   mpGain: 50
