@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Lista de habilidades do personagem
+public enum PlayerSkill {
+	jump, attack, death
+}
+
 public class Player : MonoBehaviour {
 
 	public float maxSpeed; // Velocidade na qual o personagem se move
@@ -14,6 +19,13 @@ public class Player : MonoBehaviour {
 	public int maxMP; // Valor máximo de mana do personagem
 	public int def; // Valor de defesa do personagem
 	public int gold; // Quantidade de ouro do personagem
+	public bool jumpSkill = false; // Determina se o personagem possui a habilidade Pulo
+	public bool attackSkill = false; // Determina se o personagem possui a habilidade Ataque
+	public bool deathSkill = false; // Determina se o personagem possui a habilidade Morte
+	public Skill skillJump; // Referência à habilidade Pulo que consta no inventário
+	public Skill skillAttack; // Referência à habilidade Ataque que consta no inventário
+	public Skill skillDeath; // Referência à habilidade Morte que consta no inventário
+	public Weapon firstWeapon;
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
@@ -49,18 +61,22 @@ public class Player : MonoBehaviour {
 		if (!isDead && Time.time > nextAttack) { // Caso o personagem esteja vivo e o menu fechado 
 			onGround = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground")); // Dispara uma linha da posição atual do personagem até a posição do chão
 
+			// Concede ao personagem a habilidade Pulo e a adiciona ao seu inventário assim que ele sair do chão
+			if (!jumpSkill && !onGround)
+				SetPlayerSkill(PlayerSkill.jump);
+
 			// Se o comando de pulo (barra de espaço) for executado enquanto o personagem estiver no chão
-			if (Input.GetButtonDown ("Jump") && (onGround)) {
+			if (Input.GetButtonDown ("Jump") && (onGround) && jumpSkill) {
 				Jump (); // O personagem realizará um pulo
 				jump = true; // Ele será permitido realizar um segundo pulo
 			}
 			// Se o comando de pulo (barra de espaço) for executado no ar durante o estado de pulo
-			if (Input.GetButtonDown ("Jump") && (!onGround) && jump == true) {
+			if (Input.GetButtonDown ("Jump") && (!onGround) && jump) {
 				Jump (); // O personagem realizará um segundo pulo
 				jump = false; // Ele será impedido de executar pulos subsequentes
 			}
 			// Se o comando de ataque 1 (botão esquerdo do mouse) for executado enquanto o personagem tem uma arma equipada e sua contagem para o próximo ataque já foi encerrada
-			if (Input.GetButtonDown ("Fire1") && Time.time > nextAttack && weaponEquipped != null) {
+			if (Input.GetButtonDown ("Fire1") && attackSkill && Time.time > nextAttack && weaponEquipped != null) {
 				Attack (); // O personagem realizará um ataque
 			}
 
@@ -153,18 +169,22 @@ public class Player : MonoBehaviour {
 
 	// Método chamado ao personagem colidir com um inimigo
 	public void TakeDamage(int damage) {
+		// Concede ao personagem a habilidade Ataque e a adiciona ao inventário assim que ele receber dano
+		if (!attackSkill)
+			SetPlayerSkill(PlayerSkill.attack);
 		if (canDamage) { // Caso o personagem possa receber dano
 			canDamage = false; // É colocado em um estado de invencibilidade
 			hp -= (damage - def); // Diminui a vida atual do personagem pela diferença entre o dano do inimigo e a defesa do personagem
-			if (hp <= 0) { // Caso o dano recebido faça a vida atual do personagem ser menor ou igual a zero
+			if (hp <= 0) // Caso o dano recebido faça a vida atual do personagem ser menor ou igual a zero
 				hp = 0; // Iguala sua vida a zero
+			if (deathSkill && hp == 0) {
 				isDead = true; // O coloca em estado de morte
 				camera.enabled = false; // Trava a câmera
-				anim.SetTrigger("Dead"); // Roda a animação de morte do personagem
-				Invoke("ReloadScene", 3f); // Recarrega a cena após três segundos
-			} else { // Caso contrário
-				StartCoroutine(DamageCoroutine()); // Roda a rotina de dano
-			}
+				anim.SetTrigger ("Dead"); // Roda a animação de morte do personagem
+				Invoke ("ReloadScene", 3f); // Recarrega a cena após três segundos
+			} 
+			else // Caso contrário
+					StartCoroutine (DamageCoroutine ()); // Roda a rotina de dano
 		}
 	}
 
@@ -184,5 +204,20 @@ public class Player : MonoBehaviour {
 		}
 
 		canDamage = true; // Coloca o personagem em um estado no qual ele pode receber dano
+	}
+
+	// Método que habilita as habilidades do personagem
+	public void SetPlayerSkill(PlayerSkill skill) {
+		if (skill == PlayerSkill.jump) {
+			jumpSkill = true;
+			Inventory.inventory.AddSkill(skillJump);
+		} else if (skill == PlayerSkill.attack) {
+			attackSkill = true;
+			Inventory.inventory.AddSkill(skillAttack);
+			AddWeapon(firstWeapon);
+		} else if (skill == PlayerSkill.death) {
+			deathSkill = true;
+			Inventory.inventory.AddSkill(skillDeath);
+		}
 	}
 }

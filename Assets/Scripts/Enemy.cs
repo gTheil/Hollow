@@ -86,7 +86,11 @@ public class Enemy : MonoBehaviour {
 
 	// Método que remove o inimigo do cenário
 	public void DestroyEnemy() {
-		Destroy(gameObject);
+		Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+		// Concede ao personagem a habilidade Morte e a adiciona ao inventário assim que ele matar um inimigo
+		if (!player.deathSkill)
+			player.SetPlayerSkill(PlayerSkill.death);
+			Destroy(gameObject);
 	}
 
 	// Método chamado ao inimigo colidir com o personagem

@@ -10,6 +10,7 @@ public class Inventory : MonoBehaviour {
 	public List<Armor> armors; // Lista de armaduras do jogador
 	public List<Key> keys; // Lista de chaves do jogador
 	public List<Consumable> consumables; // Lista de consumíveis do jogador
+	public List<Skill> skills; // Lista de habilidades do jogador
 
 	// Inicialização do inventário, impede que haja mais de um inventário em cena para que itens não sejam perdidos ao serem adicionados
 	void Awake () {
@@ -36,6 +37,14 @@ public class Inventory : MonoBehaviour {
 		keys.Add(key); // Adiciona a chave coletada à lista de armas no inventário
 	}
 
+	public void AddConsumable (Consumable consumable) {
+		consumables.Add(consumable); // Adiciona o consumível coletado à lista de consumíveis no inventário
+	}
+
+	public void AddSkill (Skill skill) {
+		skills.Add(skill); // Adiciona a habilidade desbloqueada à lista de habilidades no inventário
+	}
+
 	// Verifica se há uma chave específica na lista de chaves do inventário do jogador
 	public bool CheckKey(Key key) {
 		for (int i = 0; i < keys.Count; i++) {
@@ -45,10 +54,6 @@ public class Inventory : MonoBehaviour {
 			}
 		}
 		return false; // Caso a chave especificada não seja encontrada, retorna o valor de falso
-	}
-
-	public void AddConsumable (Consumable consumable) {
-		consumables.Add(consumable); // Adiciona o consumível coletado à lista de consumíveis no inventário
 	}
 
 	// Chamado ao consumível ser utilizado

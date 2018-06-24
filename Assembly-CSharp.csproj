@@ -63,8 +63,10 @@
      <Compile Include="Assets\Scripts\Key.cs" />
      <Compile Include="Assets\Scripts\MapConsumable.cs" />
      <Compile Include="Assets\Scripts\MapKey.cs" />
+     <Compile Include="Assets\Scripts\MapSkill.cs" />
      <Compile Include="Assets\Scripts\MapWeapon.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\Skill.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
  <Reference Include="UnityEngine.UI">

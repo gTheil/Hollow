@@ -15,7 +15,7 @@ public class UIManager : MonoBehaviour {
 	public List<ItemList> items; // Referência à classe ItemList para manipulação
 	public Text descriptionText; // Referência ao texto de descrição de um item
 	public Scrollbar scrollVertical; // Variável que controla a rolagem vertical da lista de itens
-	public Text hpText, mpText, goldText, atkText, defText; // Variáveis que contêm os textos dos atributos do personagem
+	public Text hpText, mpText, goldText, atkText; // Variáveis que contêm os textos dos atributos do personagem
 	public Text hpUI, mpUI, goldUI, itemUI; // Variáveis que contêm os textos da barra de status
 	public Image consumableImage;
 
@@ -56,7 +56,7 @@ public class UIManager : MonoBehaviour {
 		if (menuActive) { // Se o menu estiver aberto
 			Vector3 cursorPosition = new Vector3(); // Variável que determina a posição do cursor
 			if (!itemListActive) { // Caso a lista de itens não esteja ativa
-				cursorPosition = menuOptions [optionID].position; // Determina a posição das opções selecionáveis
+				cursorPosition = menuOptions[optionID].position; // Determina a posição das opções selecionáveis
 				cursor.position = new Vector3 (cursorPosition.x - 100, cursorPosition.y, cursorPosition.z); // Determina a posição do cursor em relação às opções do menu
 			} else if (itemListActive && items.Count > 0) {
 				cursorPosition = items[optionID].transform.position; // Determina a posição dos itens na lista
@@ -108,10 +108,8 @@ public class UIManager : MonoBehaviour {
 
 	// Método que atualiza o campo de descrição do menu
 	void UpdateDescription(){
-		if (items[optionID].weapon != null) // Caso hajam armas na lista de itens
-			descriptionText.text = items[optionID].weapon.description; // Atribui ao campo de descrição o texto de descrição da arma selecionada
-		else if (items[optionID].armor != null) // Caso hajam armaduras na lista de itens
-			descriptionText.text = items[optionID].armor.description; // Atribui ao campo de descrição o texto de descrição da armadura selecionada
+		if (items[optionID].skill != null) // Caso hajam habilidades na lista de itens
+			descriptionText.text = items[optionID].skill.description; // Atribui ao campo de descrição o texto de descrição da habilidade selecionada
 		else if (items[optionID].consumable != null) // Caso hajam consumíveis na lista de itens
 			descriptionText.text = items[optionID].consumable.description; // Atribui ao campo de descrição o texto de descrição do consumível selecionado
 		else if (items[optionID].key != null) // Caso hajam chaves na lista de itens
@@ -130,27 +128,20 @@ public class UIManager : MonoBehaviour {
 	void UpdateItemList (int option) {
 		scrollVertical.value = 1; // Reseta a posição da barra de rolagem
 		if (option == 0) { // Caso seja a primeira opção
-			for (int i = 0; i < inventory.weapons.Count; i++) { // Para cada arma no inventário
+			for (int i = 0; i < inventory.skills.Count; i++) { // Para cada habilidade no inventário
 				GameObject tempItem = Instantiate(itemList, content.transform); // Instancia a lista de itens para que possa ser manipulada
-				tempItem.GetComponent<ItemList>().SetUpWeapon(inventory.weapons[i]); // Adiciona a arma do inventário à lista de itens
+				tempItem.GetComponent<ItemList>().SetUpSkill(inventory.skills[i]); // Adiciona a habilidade do inventário à lista de itens
 				items.Add(tempItem.GetComponent<ItemList>());
 			}
 		}
 		else if (option == 1) { // Caso seja a segunda opção
-			for (int i = 0; i < inventory.armors.Count; i++) { // Para cada armadura no inventário
-				GameObject tempItem = Instantiate(itemList, content.transform); // Instancia a lista de itens para que possa ser manipulada
-				tempItem.GetComponent<ItemList>().SetUpArmor(inventory.armors[i]); // Adiciona a armadura do inventário à lista de itens
-				items.Add(tempItem.GetComponent<ItemList>());
-			}
-		}
-		else if (option == 2) { // Caso seja a terceira opção
 			for (int i = 0; i < inventory.consumables.Count; i++) { // Para cada consumível no inventário
 				GameObject tempItem = Instantiate(itemList, content.transform); // Instancia a lista de itens para que possa ser manipulada
 				tempItem.GetComponent<ItemList>().SetUpConsumable(inventory.consumables[i]); // Adiciona o consumível do inventário à lista de itens
 				items.Add(tempItem.GetComponent<ItemList>());
 			}
 		}
-		else if (option == 3) { // Caso seja a quarta opção
+		else if (option == 2) { // Caso seja a terceira opção
 			for (int i = 0; i < inventory.keys.Count; i++) { // Para cada chave no inventário
 				GameObject tempItem = Instantiate(itemList, content.transform); // Instancia a lista de itens para que possa ser manipulada
 				tempItem.GetComponent<ItemList>().SetUpKey(inventory.keys[i]); // Adiciona a chave do inventário à lista de itens
@@ -165,16 +156,11 @@ public class UIManager : MonoBehaviour {
 		mpText.text = "Mana: " + player.GetMP() + "/" + player.maxMP;
 		goldText.text = "Ouro: " + player.gold;
 		atkText.text = "Ataque: " + player.GetComponentInChildren<Attack>().GetDamage();
-		defText.text = "Defesa: " + player.def;
 	}
 
 	// Método que chama funções de equipar armas/armaduras e utilizar consumíveis
 	void UseItem() {
-		if (items[optionID].weapon != null) // Caso hajam armas na lista e uma seja selecionada
-			player.AddWeapon(items[optionID].weapon); // Equipa no personagem a arma selecionada
-		else if (items[optionID].armor != null) // Caso hajam armaduras na lista e uma seja selecionada
-			player.AddArmor(items[optionID].armor); // Equipa no personagem a armadura selecionada
-		else if (items[optionID].consumable != null) { // Caso hajam consumíveis na lista e um seja selecionado
+		if (items[optionID].consumable != null) { // Caso hajam consumíveis na lista e um seja selecionado
 			player.consumable = items[optionID].consumable; // Equipa no slot de uso rápido o consumível selecionado
 			consumableImage.sprite = items[optionID].consumable.image; // Atualiza a imagem do item de uso rápido na barra de status
 			menuActive = false; // Fecha a tela de menu

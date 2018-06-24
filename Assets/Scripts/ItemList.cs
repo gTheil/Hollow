@@ -11,6 +11,7 @@ public class ItemList : MonoBehaviour {
 	public Armor armor; // Referência à classe de itens Armaduras
 	public Consumable consumable; // Referência à classe de itens Consumíveis
 	public Key key; // Referência à classe de itens Chaves
+	public Skill skill; // Referência à classe de itens Habilidades
 
 	// Método que gera um item do tipo Arma na Lista de Itens
 	public void SetUpWeapon(Weapon menuWeapon) {
@@ -38,6 +39,13 @@ public class ItemList : MonoBehaviour {
 		key = menuKey;
 		image.sprite = key.image;
 		text.text = key.keyName;
+	}
+
+	// Método que gera um item do tipo Habilidade na Lista de Itens
+	public void SetUpSkill(Skill menuSkill) {
+		skill = menuSkill;
+		image.sprite = skill.image;
+		text.text = skill.skillName;
 	}
 		
 }
