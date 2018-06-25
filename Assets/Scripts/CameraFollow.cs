@@ -13,15 +13,17 @@ public class CameraFollow : MonoBehaviour
 
 	private Transform player;		// Reference to the player's transform.
 
-
-	void Start ()
+	void Awake ()
 	{
 		// Setting up the reference.
 		player = GameObject.FindGameObjectWithTag("Player").transform;
-		//maxXAndY.x = GameManager.gameManager.maxCamX;
-		//maxXAndY.y = GameManager.gameManager.maxCamY;
-		//minXAndY.x = GameManager.gameManager.minCamX;
-		//minXAndY.y = GameManager.gameManager.minCamY;
+	}
+
+	// Inicialização dos valores de posição da câmera de acordo com o GameManager
+	void Start ()
+	{
+		maxXAndY = new Vector2(GameManager.gm.cameraMaxX, GameManager.gm.cameraMaxY);
+		minXAndY = new Vector2(GameManager.gm.cameraMinX, GameManager.gm.cameraMinY);
 	}
 
 

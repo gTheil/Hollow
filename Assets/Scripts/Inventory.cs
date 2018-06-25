@@ -6,11 +6,11 @@ public class Inventory : MonoBehaviour {
 
 	public static Inventory inventory; // Referência ao inventário do jogador
 
-	public List<Weapon> weapons; // Lista de armas do jogador
-	public List<Armor> armors; // Lista de armaduras do jogador
 	public List<Key> keys; // Lista de chaves do jogador
 	public List<Consumable> consumables; // Lista de consumíveis do jogador
 	public List<Skill> skills; // Lista de habilidades do jogador
+
+	public Database database; // Referência à base de dados de itens do jogador
 
 	// Inicialização do inventário, impede que haja mais de um inventário em cena para que itens não sejam perdidos ao serem adicionados
 	void Awake () {
@@ -24,13 +24,22 @@ public class Inventory : MonoBehaviour {
 		// Faz com que o inventário permaneça o mesmo caso outra cena seja carregada
 		DontDestroyOnLoad(gameObject);
 	}
-	
-	public void AddWeapon(Weapon weapon) {
-		weapons.Add(weapon); // Adiciona a arma coletada à lista de armas no inventário
+
+	// Inicialização para carregamento do inventário
+	void Start () {
+		LoadInventory();
 	}
 
-	public void AddArmor(Armor armor) {
-		armors.Add(armor); // Adiciona a armadura coletada à lista de armas no inventário
+	void LoadInventory() {
+		for (int i = 0; i < GameManager.gm.skillID.Length; i++) {
+			AddSkill(database.GetSkill(GameManager.gm.skillID[i]));
+		}
+		for (int i = 0; i < GameManager.gm.consumableID.Length; i++) {
+			AddConsumable(database.GetConsumable(GameManager.gm.consumableID[i]));
+		}
+		for (int i = 0; i < GameManager.gm.keyID.Length; i++) {
+			AddKey(database.GetKey(GameManager.gm.keyID[i]));
+		}
 	}
 
 	public void AddKey(Key key) {

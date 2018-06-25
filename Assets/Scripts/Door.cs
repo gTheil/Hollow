@@ -24,7 +24,8 @@ public class Door : MonoBehaviour {
 			if(Inventory.inventory.CheckKey(key)) {
 				sprite.sprite = doorOpen; // Altera a imagem da porta padrão para a imagem de "porta aberta"
 				boxCollider.enabled = false; // Desativa a caixa de colisão da porta
-			}
+			} else
+				FindObjectOfType<UIManager>().SetMessage("Requer uma Chave!");
 		}
 	}
 }

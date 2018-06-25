@@ -16,4 +16,4 @@ MonoBehaviour:
   description: "Permite que o personagem ataque ao pressionar o Bot\xE3o Esquerdo
     do Mouse."
   image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  message: Ataque Desbloqueado!
+  message: Aprendeu Ataque!

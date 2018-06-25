@@ -25,15 +25,16 @@ public class Player : MonoBehaviour {
 	public Skill skillJump; // Referência à habilidade Pulo que consta no inventário
 	public Skill skillAttack; // Referência à habilidade Ataque que consta no inventário
 	public Skill skillDeath; // Referência à habilidade Morte que consta no inventário
-	public Weapon firstWeapon;
+	public Weapon firstWeapon; // Referência a arma que será equipada automaticamente ao personagem desbloquear o Ataque
+	public Weapon weaponEquipped; // Referência a arma atualmente equipada no personagem
+	public Armor armorEquipped; // Referência a armadura atualmente equipada no personagem
+	public bool saved;
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
 	private bool facingRight = true; // Determina a direção em que o personagem está virado; ao inicializar, o personagem estará virado para a direita
 	private bool onGround; // Determina se o personagem está no chão ou no ar
-	private bool jump; // Determina se o personagem está em estado de pulo
-	private Weapon weaponEquipped; // Referência a arma atualmente equipada no personagem
-	private Armor armorEquipped; // Referência a armadura atualmente equipada no personagem
+	//private bool jump; // Determina se o personagem está em estado de pulo
 	private Animator anim; // Gerencia as animações do personagem
 	private Attack attack; // Referência ao script de ataque para facilitar a chamada da animação da arma
 	private float nextAttack; // Contagem para possibilitar o personagem a atacar novamente
@@ -43,17 +44,17 @@ public class Player : MonoBehaviour {
 	private SpriteRenderer sprite; // Referência à imagem do jogador
 	private bool isDead = false; // Determina se o personagem está morto
 	private CameraFollow camera; // Referência ao script que controla a movimentação da câmera
+	private GameManager gm; // Referência ao GameManager
 
 	// Inicialização
 	void Start () {
 		rb = GetComponent<Rigidbody2D> (); // Atribui a rb o valor do componente RigidBody dado ao GameObject Player
-		speed = maxSpeed; // Inicializa a velocidade do personagem com a maxSpeed definida no GameObject
 		anim = GetComponent<Animator>(); // Inicializa o gerenciador de animações
 		attack = GetComponentInChildren<Attack>(); // Inicializa o componente "Attack"
-		hp = maxHP; // Iguala a vida atual à total
-		mp = maxMP; // Iguala a mana atual à total
 		sprite = GetComponent<SpriteRenderer>(); // Inicializa a imagem do jogador
 		camera = FindObjectOfType<CameraFollow>(); // Inicializa a posição da câmera
+		gm = GameManager.gm;
+		SetPlayer();
 	}
 	
 	// Atualiza a cada frame
@@ -68,13 +69,17 @@ public class Player : MonoBehaviour {
 			// Se o comando de pulo (barra de espaço) for executado enquanto o personagem estiver no chão
 			if (Input.GetButtonDown ("Jump") && (onGround) && jumpSkill) {
 				Jump (); // O personagem realizará um pulo
-				jump = true; // Ele será permitido realizar um segundo pulo
+				//jump = true; // Ele será permitido realizar um segundo pulo
 			}
+
+			/**
 			// Se o comando de pulo (barra de espaço) for executado no ar durante o estado de pulo
 			if (Input.GetButtonDown ("Jump") && (!onGround) && jump) {
 				Jump (); // O personagem realizará um segundo pulo
 				jump = false; // Ele será impedido de executar pulos subsequentes
 			}
+			*/
+
 			// Se o comando de ataque 1 (botão esquerdo do mouse) for executado enquanto o personagem tem uma arma equipada e sua contagem para o próximo ataque já foi encerrada
 			if (Input.GetButtonDown ("Fire1") && attackSkill && Time.time > nextAttack && weaponEquipped != null) {
 				Attack (); // O personagem realizará um ataque
@@ -180,7 +185,12 @@ public class Player : MonoBehaviour {
 			if (deathSkill && hp == 0) {
 				isDead = true; // O coloca em estado de morte
 				camera.enabled = false; // Trava a câmera
-				anim.SetTrigger ("Dead"); // Roda a animação de morte do personagem
+				anim.SetTrigger ("Dead"); // Roda a animação de morte do personagem;
+				if (!saved) {
+					Inventory.inventory.skills.Clear();
+					Inventory.inventory.consumables.Clear();
+					Inventory.inventory.keys.Clear();
+				}
 				Invoke ("ReloadScene", 3f); // Recarrega a cena após três segundos
 			} 
 			else // Caso contrário
@@ -190,7 +200,7 @@ public class Player : MonoBehaviour {
 
 	// Método chamado ao personagem morrer
 	void ReloadScene() {
-		SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex); // Recarrega a cena atual
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Recarrega a cena atual
 	}
 
 	// Rotina de dano
@@ -209,15 +219,37 @@ public class Player : MonoBehaviour {
 	// Método que habilita as habilidades do personagem
 	public void SetPlayerSkill(PlayerSkill skill) {
 		if (skill == PlayerSkill.jump) {
+			FindObjectOfType<UIManager>().SetMessage(skillJump.message);
 			jumpSkill = true;
 			Inventory.inventory.AddSkill(skillJump);
 		} else if (skill == PlayerSkill.attack) {
+			FindObjectOfType<UIManager>().SetMessage(skillAttack.message);
 			attackSkill = true;
 			Inventory.inventory.AddSkill(skillAttack);
 			AddWeapon(firstWeapon);
 		} else if (skill == PlayerSkill.death) {
+			FindObjectOfType<UIManager>().SetMessage(skillDeath.message);
 			deathSkill = true;
 			Inventory.inventory.AddSkill(skillDeath);
 		}
+	}
+
+	public void SetPlayer() {
+		Vector3 playerPosition = new Vector3(gm.positionX, gm.positionY, 0);
+		transform.position = playerPosition;
+		maxHP = gm.maxHP;
+		maxMP = gm.maxMP;
+		speed = maxSpeed;
+		hp = maxHP;
+		mp = maxMP;
+		gold = gm.gold;
+		jumpSkill = gm.jumpSkill;
+		attackSkill = gm.attackSkill;
+		deathSkill = gm.deathSkill;
+
+		if (gm.equipWepID > 0)
+			AddWeapon(Inventory.inventory.database.GetWeapon(gm.equipWepID));
+		if (gm.equipArmID > 0)
+			AddArmor(Inventory.inventory.database.GetArmor(gm.equipArmID));
 	}
 }

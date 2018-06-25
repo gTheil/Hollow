@@ -17,4 +17,4 @@ MonoBehaviour:
   image: {fileID: 21300018, guid: a3a39e3162b2f7b4e8b89435945d943a, type: 3}
   hpGain: 50
   mpGain: 0
-  message: HP Potion Get!
+  message: "Coletou Po\xE7\xE3o de Vida!"

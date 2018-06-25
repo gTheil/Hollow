@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1227959162163062}
+  m_IsPrefabParent: 1
+--- !u!1 &1227959162163062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4399384772925826}
+  - component: {fileID: 114642851343165014}
+  m_Layer: 0
+  m_Name: Database
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4399384772925826
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227959162163062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114642851343165014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227959162163062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6edce05c9abbf7409cef985d00bed68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 11400000, guid: 60894a78e68168f47ad1f84d52b90917, type: 2}
+  - {fileID: 11400000, guid: 663323ff59468a74f8f279b4c47e9af4, type: 2}
+  armors:
+  - {fileID: 11400000, guid: 9ddd99592cb259c4289210056f7d0de3, type: 2}
+  keys:
+  - {fileID: 11400000, guid: 79f48920a0db6e8448934002cb50be72, type: 2}
+  - {fileID: 11400000, guid: c4bd87fa526b952408fe73f1b3df066f, type: 2}
+  consumables:
+  - {fileID: 11400000, guid: 4adf5971b7f492f4f97b7d2f3056be83, type: 2}
+  - {fileID: 11400000, guid: c0fa8732076082142b570b40c0357e45, type: 2}
+  - {fileID: 11400000, guid: 2afe0342134d86b40ac1ee77cfcf73d0, type: 2}
+  skills:
+  - {fileID: 11400000, guid: 46fa10bfe7f32dc48b1bed06f41c0196, type: 2}
+  - {fileID: 11400000, guid: 92f8fd0eb3e73b74c9b006859df073f9, type: 2}
+  - {fileID: 11400000, guid: 3175c81b3ef0cc64997d9885615f4c28, type: 2}

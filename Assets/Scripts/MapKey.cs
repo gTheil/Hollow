@@ -20,6 +20,7 @@ public class MapKey : MonoBehaviour {
 		// Verifica se foi o personagem que entrou em contato com o objeto
 		Player player = other.GetComponent<Player>();
 		if (player != null) {
+			FindObjectOfType<UIManager>().SetMessage(key.message);
 			Inventory.inventory.AddKey(key); // Adiciona ao inventário do jogador a chave associada ao objeto cujo personagem entrou em contato 
 			Destroy(gameObject); // Remove o objeto do mapa
 		}

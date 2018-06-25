@@ -15,4 +15,4 @@ MonoBehaviour:
   skillName: Morte
   description: Permite que o personagem morra ao chegar a 0 de HP. Ops!
   image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  message: Morte Desbloqueada!
+  message: Aprendeu Morte!

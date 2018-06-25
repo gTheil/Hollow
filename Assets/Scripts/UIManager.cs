@@ -15,15 +15,17 @@ public class UIManager : MonoBehaviour {
 	public List<ItemList> items; // Referência à classe ItemList para manipulação
 	public Text descriptionText; // Referência ao texto de descrição de um item
 	public Scrollbar scrollVertical; // Variável que controla a rolagem vertical da lista de itens
-	public Text hpText, mpText, goldText, atkText; // Variáveis que contêm os textos dos atributos do personagem
+	public Text hpText, mpText, goldText, atkText, msgText; // Variáveis que contêm os textos dos atributos do personagem
 	public Text hpUI, mpUI, goldUI, itemUI; // Variáveis que contêm os textos da barra de status
-	public Image consumableImage;
+	public Image consumableImage; // Imagem do consumível equipado
 
 	private bool menuActive = false; // Determina se o jogador está com o menu aberto
 	private int optionID = 0; // Posição do cursor no array de opções selecionáveis
 	private Inventory inventory; // Referência ao inventário do jogador
 	private bool itemListActive = false; // Determina se a lista de itens está aberta
 	private Player player; // Referência ao jogador
+	private bool msgActive = false; // Determina se a mensagem na tela está ativa
+	private float msgTimer; // Contagem para que a mensagem na tela desapareça
 
 	// Inicialização de personagem e inventário
 	void Start () {
@@ -36,6 +38,32 @@ public class UIManager : MonoBehaviour {
 
 		UpdateUI();
 		UpdateAttributes();
+
+		// Caso a mensagem esteja ativa
+		if (msgActive) {
+			Color color = msgText.color;
+			color.a += 1f * Time.deltaTime; // Aumenta o alpha da mensagem
+			msgText.color = color;
+			// Quando o alpha estiver maior ou igual a 1
+			if (color.a >= 1) {
+				msgActive = false;
+				msgTimer = 0; // Inicia a contagem para a mensagem desaparecer
+			}
+		// Após a mensagem ser exibida
+		}
+		else if (!msgActive) {
+			msgTimer += Time.deltaTime; // Incrementa a contagem
+			// Quando a contagem ultrapassar dois segundos
+			if (msgTimer >= 1f) {
+				Color color = msgText.color;
+				color.a -= 1f * Time.deltaTime; // Diminui o alpha da mensagem
+				msgText.color = color;
+				// Quando o alpha for menor ou igual a 0
+				if (color.a <= 0) {
+					msgText.text = ""; // Apaga o texto da mensagem
+				}
+			}
+		}
 
 		if (Input.GetKeyDown(KeyCode.P)) { // Ao jogador pressionar o botão de menu
 			menuActive = !menuActive; // Abre o menu se o mesmo estiver fechado, fecha-o se estiver aberto
@@ -175,5 +203,14 @@ public class UIManager : MonoBehaviour {
 		mpUI.text = "Mana: " + player.GetMP();
 		goldUI.text = "Ouro: " + player.gold;
 		itemUI.text = "x" + inventory.CountConsumable(player.consumable);
+	}
+
+	// Passa um texto para a mensagem na tela
+	public void SetMessage(string msg) {
+		msgText.text = msg;
+		Color color = msgText.color;
+		color.a = 0; // Tira o valor alpha da cor da mensagem
+		msgText.color = color;
+		msgActive = true;
 	}
 }
