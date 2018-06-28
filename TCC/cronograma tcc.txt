@@ -3,9 +3,9 @@
 | Elaborar Proposta       | V        |          |          |          |          |          |          |          |          |
 | Definir Tecnologias     |          | V        |          |          |          |          |          |          |          |
 | Elaborar Diagramas      |          | V        | V        |          |          |          |          |          |          |
-| Desenvolver Mecânicas   |          | O        | O        | O        |          |          |          |          |          |
-| Desenvolver Inimigos    |          |          |          | X        | X        | X        |          |          |          |
-| Desenvolver Habilidades |          |          |          | X        | X        | X        |          |          |          |
+| Desenvolver Mecânicas   |          | V        | V        | V        |          |          |          |          |          |
+| Desenvolver Inimigos    |          |          |          | O        | O        | O        |          |          |          |
+| Desenvolver Habilidades |          |          |          | O        | O        | O        |          |          |          |
 | Desenvolver Magias      |          |          |          |          | X        | X        | X        |          |          |
 | Desenvolver Mapa        |          |          |          |          |          |          | X        | X        |          |
 | Implementar Arte        |          |          |          |          |          |          |          | X        | X        |
