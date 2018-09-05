@@ -66,8 +66,11 @@
      <Compile Include="Assets\Scripts\MapConsumable.cs" />
      <Compile Include="Assets\Scripts\MapKey.cs" />
      <Compile Include="Assets\Scripts\MapSkill.cs" />
+     <Compile Include="Assets\Scripts\Panther.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\PlayerInventory.cs" />
      <Compile Include="Assets\Scripts\SavePoint.cs" />
+     <Compile Include="Assets\Scripts\ShopInventory.cs" />
      <Compile Include="Assets\Scripts\Skill.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />

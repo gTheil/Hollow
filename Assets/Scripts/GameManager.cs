@@ -14,14 +14,15 @@ class PlayerData {
 	public int gold; // Ouro
 	public float positionX, positionY; // Posição do personagem em X e Y
 	public float cameraMinX, cameraMaxX, cameraMinY, cameraMaxY; // Posições mínimas e máximas da câmera em X e Y
-	public int[] skillID; // Conjunto de habilidades
-	public int[] consumableID; // Conjunto de consumíveis
-	public int[] keyID; // Conjunto de chaves
+	public int[] playerSkills; // Conjunto de habilidades
+	public int[] playerConsumables; // Conjunto de consumíveis
+	public int[] playerKeys; // Conjunto de chaves
 	public int equipWepID; // Arma equipada
 	public int equipArmID; // Armadura equipada
 	public bool jumpSkill; // Se o jogador possui habilidade de pulo
 	public bool attackSkill; // Se o jogador possui habilidade de ataque
 	public bool deathSkill; // Se o jogador possui habilidade de morte
+	public int[] shopSkills; // Conjunto de habilidades da loja
 }
 
 public class GameManager : MonoBehaviour {
@@ -34,14 +35,15 @@ public class GameManager : MonoBehaviour {
 	public int gold = 0; // Ouro
 	public float positionX, positionY; // Posição do personagem em X e Y
 	public float cameraMinX, cameraMaxX, cameraMinY, cameraMaxY; // Posições mínimas e máximas da câmera em X e Y
-	public int[] skillID; // Conjunto de habilidades
-	public int[] consumableID; // Conjunto de consumíveis
-	public int[] keyID; // Conjunto de chaves
+	public int[] playerSkills; // Conjunto de habilidades
+	public int[] playerConsumables; // Conjunto de consumíveis
+	public int[] playerKeys; // Conjunto de chaves
 	public int equipWepID; // Arma equipada
 	public int equipArmID; // Armadura equipada
 	public bool jumpSkill = false; // Se o jogador possui habilidade de pulo
 	public bool attackSkill = false; // Se o jogador possui habilidade de ataque
 	public bool deathSkill = false; // Se o jogador possui habilidade de morte
+	public int[] shopSkills; // Conjunto de habilidades da loja
 
 	private string filePath; // Caminho onde o arquivo de save deve ser salvo
 
@@ -66,23 +68,28 @@ public class GameManager : MonoBehaviour {
 		CameraFollow camera = FindObjectOfType<CameraFollow>(); // Referência oa script que controla a movimentação da câmera
 
 		// Instancia vetores para todos os tipos de item encontrados no inventário do jogador
-		skillID = new int[Inventory.inventory.skills.Count]; // Habilidades
-		consumableID = new int[Inventory.inventory.consumables.Count]; // Consumíveis
-		keyID = new int[Inventory.inventory.keys.Count]; // Chaves
+		playerSkills = new int[Inventory.playerInventory.skills.Count]; // Habilidades
+		playerConsumables = new int[Inventory.playerInventory.consumables.Count]; // Consumíveis
+		playerKeys = new int[Inventory.playerInventory.keys.Count]; // Chaves
 
 		// Salva todas as habilidades encontradas no inventário
-		for (int i = 0; i < skillID.Length; i++) {
-			skillID[i] = Inventory.inventory.skills[i].skillID;
+		for (int i = 0; i < playerSkills.Length; i++) {
+			playerSkills[i] = Inventory.playerInventory.skills[i].skillID;
 		}
 
 		// Salva todos os consumíveis encontrados no inventário
-		for (int i = 0; i < consumableID.Length; i++) {
-			consumableID[i] = Inventory.inventory.consumables[i].itemID;
+		for (int i = 0; i < playerConsumables.Length; i++) {
+			playerConsumables[i] = Inventory.playerInventory.consumables[i].itemID;
 		}
 
 		// Salva todas as chaves encontradas no inventário
-		for (int i = 0; i < keyID.Length; i++) {
-			keyID[i] = Inventory.inventory.keys[i].itemID;
+		for (int i = 0; i < playerKeys.Length; i++) {
+			playerKeys[i] = Inventory.playerInventory.keys[i].itemID;
+		}
+
+		// Salva todas as habilidades encontradas no inventário da loja
+		for (int i = 0; i < shopSkills.Length; i++) {
+			shopSkills[i] = Inventory.shopInventory.skills[i].skillID;
 		}
 
 		BinaryFormatter bf = new BinaryFormatter(); // Usado para serializar o arquivo em formato binário
@@ -113,9 +120,10 @@ public class GameManager : MonoBehaviour {
 		data.attackSkill = player.attackSkill; // Se o jogador possui habilidade de ataque
 		data.deathSkill = player.deathSkill; // Se o jogador possui habilidade de morte
 
-		data.skillID = skillID; // Habilidades
-		data.consumableID = consumableID; // Consumíveis
-		data.keyID = keyID; // Chaves
+		data.playerSkills = playerSkills; // Habilidades
+		data.playerConsumables = playerConsumables; // Consumíveis
+		data.playerKeys = playerKeys; // Chaves
+		data.shopSkills = shopSkills; // Habilidades da loja
 
 		bf.Serialize(file, data); // Salva, no arquivo de save, os dados do personagem
 
@@ -146,9 +154,10 @@ public class GameManager : MonoBehaviour {
 			jumpSkill = data.jumpSkill; // Se o jogador possui habilidade de pulo
 			attackSkill = data.attackSkill; // Se o jogador possui habilidade de ataque
 			deathSkill = data.deathSkill; // Se o jogador possui habilidade de morte
-			skillID = data.skillID; // Habilidades
-			consumableID = data.consumableID; // Consumíveis
-			keyID = data.keyID; // Chaves
+			playerSkills = data.playerSkills; // Habilidades
+			playerConsumables = data.playerConsumables; // Consumíveis
+			playerKeys = data.playerKeys; // Chaves
+			shopSkills = data.shopSkills; // Habilidades da loja
 		}
 	}
 }

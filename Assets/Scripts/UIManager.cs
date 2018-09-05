@@ -29,7 +29,7 @@ public class UIManager : MonoBehaviour {
 
 	// Inicialização de personagem e inventário
 	void Start () {
-		inventory = Inventory.inventory;
+		inventory = Inventory.playerInventory;
 		player = FindObjectOfType<Player>();
 	}
 	

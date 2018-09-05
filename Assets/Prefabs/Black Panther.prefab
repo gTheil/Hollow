@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 95939602036351468}
   - component: {fileID: 61957910960393196}
   - component: {fileID: 50823386469216338}
-  - component: {fileID: 114629829702521020}
+  - component: {fileID: 114244134160942744}
   m_Layer: 0
   m_Name: Black Panther
   m_TagString: Untagged
@@ -106,7 +106,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114629829702521020
+--- !u!114 &114244134160942744
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1977970872320190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f30518d51c9cb4a84e473f1125155d, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b69a7aa7e8bee8439dd7a4a29a42548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wakeUpX: 10
@@ -122,7 +122,7 @@ MonoBehaviour:
   speed: 4
   hp: 100
   drop: {fileID: 1177782873489132, guid: 883267e1366f4574b84e8a93fed70a2d, type: 2}
-  consumable: {fileID: 11400000, guid: 4adf5971b7f492f4f97b7d2f3056be83, type: 2}
+  consumable: {fileID: 0}
   attack: 20
   knockback: 7
   gold: 50

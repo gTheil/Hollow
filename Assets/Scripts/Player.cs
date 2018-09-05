@@ -159,7 +159,7 @@ public class Player : MonoBehaviour {
 		if (mp >= maxMP) {
 			mp = maxMP;
 		}
-		Inventory.inventory.RemoveConsumable(consumable); // Remove o consumível utilizado do inventário
+		Inventory.playerInventory.RemoveConsumable(consumable); // Remove o consumível utilizado do inventário
 	}
 
 	// Método que retorna o valor de HP atual do personagem
@@ -187,9 +187,9 @@ public class Player : MonoBehaviour {
 				camera.enabled = false; // Trava a câmera
 				anim.SetTrigger ("Dead"); // Roda a animação de morte do personagem;
 				if (!saved) {
-					Inventory.inventory.skills.Clear();
-					Inventory.inventory.consumables.Clear();
-					Inventory.inventory.keys.Clear();
+					Inventory.playerInventory.skills.Clear();
+					Inventory.playerInventory.consumables.Clear();
+					Inventory.playerInventory.keys.Clear();
 				}
 				Invoke ("ReloadScene", 3f); // Recarrega a cena após três segundos
 			} 
@@ -221,16 +221,16 @@ public class Player : MonoBehaviour {
 		if (skill == PlayerSkill.jump) {
 			FindObjectOfType<UIManager>().SetMessage(skillJump.message);
 			jumpSkill = true;
-			Inventory.inventory.AddSkill(skillJump);
+			Inventory.playerInventory.AddSkill(skillJump);
 		} else if (skill == PlayerSkill.attack) {
 			FindObjectOfType<UIManager>().SetMessage(skillAttack.message);
 			attackSkill = true;
-			Inventory.inventory.AddSkill(skillAttack);
+			Inventory.playerInventory.AddSkill(skillAttack);
 			AddWeapon(firstWeapon);
 		} else if (skill == PlayerSkill.death) {
 			FindObjectOfType<UIManager>().SetMessage(skillDeath.message);
 			deathSkill = true;
-			Inventory.inventory.AddSkill(skillDeath);
+			Inventory.playerInventory.AddSkill(skillDeath);
 		}
 	}
 
@@ -248,8 +248,8 @@ public class Player : MonoBehaviour {
 		deathSkill = gm.deathSkill;
 
 		if (gm.equipWepID > 0)
-			AddWeapon(Inventory.inventory.database.GetWeapon(gm.equipWepID));
+			AddWeapon(Inventory.playerInventory.database.GetWeapon(gm.equipWepID));
 		if (gm.equipArmID > 0)
-			AddArmor(Inventory.inventory.database.GetArmor(gm.equipArmID));
+			AddArmor(Inventory.playerInventory.database.GetArmor(gm.equipArmID));
 	}
 }

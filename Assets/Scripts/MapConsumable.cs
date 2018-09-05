@@ -20,7 +20,7 @@ public class MapConsumable : MonoBehaviour {
 		// Verifica se foi o personagem que entrou em contato com o objeto
 		if (other.CompareTag("Player")) {
 			FindObjectOfType<UIManager>().SetMessage(consumable.message);
-			Inventory.inventory.AddConsumable(consumable); // Adiciona ao inventário do jogador o consumível associada ao objeto cujo personagem entrou em contato 
+			Inventory.playerInventory.AddConsumable(consumable); // Adiciona ao inventário do jogador o consumível associada ao objeto cujo personagem entrou em contato 
 			Destroy(gameObject); // Remove o objeto do mapa
 		}
 	}
