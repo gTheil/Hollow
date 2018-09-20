@@ -68,28 +68,28 @@ public class GameManager : MonoBehaviour {
 		CameraFollow camera = FindObjectOfType<CameraFollow>(); // Referência oa script que controla a movimentação da câmera
 
 		// Instancia vetores para todos os tipos de item encontrados no inventário do jogador
-		playerSkills = new int[Inventory.playerInventory.skills.Count]; // Habilidades
-		playerConsumables = new int[Inventory.playerInventory.consumables.Count]; // Consumíveis
-		playerKeys = new int[Inventory.playerInventory.keys.Count]; // Chaves
+		playerSkills = new int[PlayerInventory.playerInventory.skills.Count]; // Habilidades
+		playerConsumables = new int[PlayerInventory.playerInventory.consumables.Count]; // Consumíveis
+		playerKeys = new int[PlayerInventory.playerInventory.keys.Count]; // Chaves
 
 		// Salva todas as habilidades encontradas no inventário
 		for (int i = 0; i < playerSkills.Length; i++) {
-			playerSkills[i] = Inventory.playerInventory.skills[i].skillID;
+			playerSkills[i] = PlayerInventory.playerInventory.skills[i].skillID;
 		}
 
 		// Salva todos os consumíveis encontrados no inventário
 		for (int i = 0; i < playerConsumables.Length; i++) {
-			playerConsumables[i] = Inventory.playerInventory.consumables[i].itemID;
+			playerConsumables[i] = PlayerInventory.playerInventory.consumables[i].itemID;
 		}
 
 		// Salva todas as chaves encontradas no inventário
 		for (int i = 0; i < playerKeys.Length; i++) {
-			playerKeys[i] = Inventory.playerInventory.keys[i].itemID;
+			playerKeys[i] = PlayerInventory.playerInventory.keys[i].itemID;
 		}
 
 		// Salva todas as habilidades encontradas no inventário da loja
 		for (int i = 0; i < shopSkills.Length; i++) {
-			shopSkills[i] = Inventory.shopInventory.skills[i].skillID;
+			shopSkills[i] = PlayerInventory.shopInventory.skills[i].skillID;
 		}
 
 		BinaryFormatter bf = new BinaryFormatter(); // Usado para serializar o arquivo em formato binário

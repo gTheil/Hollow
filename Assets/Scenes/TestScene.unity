@@ -276,7 +276,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4401880344989888, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 9.51
+      value: -3.3
       objectReference: {fileID: 0}
     - target: {fileID: 4401880344989888, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1412,8 +1412,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 225, y: -61.985004}
-  m_SizeDelta: {x: 817, y: 17.710001}
+  m_AnchoredPosition: {x: 225, y: -77.481255}
+  m_SizeDelta: {x: 817, y: 22.1375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &494026242
 MonoBehaviour:
@@ -1574,8 +1574,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 225, y: -8.8550005}
-  m_SizeDelta: {x: 817, y: 17.710001}
+  m_AnchoredPosition: {x: 225, y: -11.06875}
+  m_SizeDelta: {x: 817, y: 22.1375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &569397930
 MonoBehaviour:
@@ -2970,8 +2970,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 225, y: -44.275}
-  m_SizeDelta: {x: 817, y: 17.710001}
+  m_AnchoredPosition: {x: 225, y: -55.34375}
+  m_SizeDelta: {x: 817, y: 22.1375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &877834617
 MonoBehaviour:
@@ -3956,8 +3956,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 225, y: -26.565002}
-  m_SizeDelta: {x: 817, y: 17.710001}
+  m_AnchoredPosition: {x: 225, y: -33.206253}
+  m_SizeDelta: {x: 817, y: 22.1375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1152753213
 MonoBehaviour:
@@ -4597,7 +4597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1401460422
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5053,18 +5053,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 331327361}
-  cursor: {fileID: 901731517}
+  shopMenu: {fileID: 1482919734}
+  pauseCursor: {fileID: 901731517}
+  shopCursor: {fileID: 894989511}
   menuOptions:
   - {fileID: 983235576}
   - {fileID: 752806171}
   - {fileID: 1521911850}
   optionPanel: {fileID: 1281945018}
   itemPanel: {fileID: 382714715}
+  shopPanel: {fileID: 1401460421}
   itemList: {fileID: 1596738293797784, guid: 5b0b9140c904a124291fb57849de9359, type: 2}
-  shopList: {fileID: 1596738293797784, guid: 5b0b9140c904a124291fb57849de9359, type: 2}
-  content: {fileID: 931465808}
+  pauseContent: {fileID: 931465808}
+  shopContent: {fileID: 661687144}
   playerItems: []
+  shopItems: []
   descriptionText: {fileID: 1628104386}
+  shopDescriptionText: {fileID: 382790332}
   scrollVertical: {fileID: 14793688}
   hpText: {fileID: 569397931}
   mpText: {fileID: 1152753214}
@@ -5076,8 +5081,6 @@ MonoBehaviour:
   goldUI: {fileID: 440577454}
   itemUI: {fileID: 1519907508}
   consumableImage: {fileID: 1014667224}
-  shopItems: []
-  shopMenu: {fileID: 1482919734}
 --- !u!1 &1519907505
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ public class MapSkill : MonoBehaviour {
 		// Verifica se foi o personagem que entrou em contato com o objeto
 		Player player = other.GetComponent<Player>();
 		if (player != null) {
-			Inventory.playerInventory.AddSkill(skill); // Adiciona ao inventário do jogador a habilidade associada ao objeto cujo personagem entrou em contato 
+			PlayerInventory.playerInventory.AddSkill(skill); // Adiciona ao inventário do jogador a habilidade associada ao objeto cujo personagem entrou em contato 
 			Destroy(gameObject); // Remove o objeto do mapa
 		}
 	}

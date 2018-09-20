@@ -21,7 +21,7 @@ public class Door : MonoBehaviour {
 		// Verifica se foi o personage que entrou em contato com o objeto
 		if (other.gameObject.CompareTag("Player")){
 			// Verifica se a chave associada à esta porta está na lista de chaves do inventário do jogador
-			if(Inventory.playerInventory.CheckKey(key)) {
+			if(PlayerInventory.playerInventory.CheckKey(key)) {
 				sprite.sprite = doorOpen; // Altera a imagem da porta padrão para a imagem de "porta aberta"
 				boxCollider.enabled = false; // Desativa a caixa de colisão da porta
 			} else

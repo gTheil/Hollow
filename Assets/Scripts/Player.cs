@@ -43,7 +43,7 @@ public class Player : MonoBehaviour {
 	private bool canDamage = true; // Determina se o jogador pode receber dano
 	private SpriteRenderer sprite; // Referência à imagem do jogador
 	private bool isDead = false; // Determina se o personagem está morto
-	private CameraFollow camera; // Referência ao script que controla a movimentação da câmera
+	private CameraFollow cameraFollow; // Referência ao script que controla a movimentação da câmera
 	private GameManager gm; // Referência ao GameManager
 
 	// Inicialização
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour {
 		anim = GetComponent<Animator>(); // Inicializa o gerenciador de animações
 		attack = GetComponentInChildren<Attack>(); // Inicializa o componente "Attack"
 		sprite = GetComponent<SpriteRenderer>(); // Inicializa a imagem do jogador
-		camera = FindObjectOfType<CameraFollow>(); // Inicializa a posição da câmera
+		cameraFollow = FindObjectOfType<CameraFollow>(); // Inicializa a posição da câmera
 		gm = GameManager.gm;
 		SetPlayer();
 	}
@@ -159,7 +159,7 @@ public class Player : MonoBehaviour {
 		if (mp >= maxMP) {
 			mp = maxMP;
 		}
-		Inventory.playerInventory.RemoveConsumable(consumable); // Remove o consumível utilizado do inventário
+		PlayerInventory.playerInventory.RemoveConsumable(consumable); // Remove o consumível utilizado do inventário
 	}
 
 	// Método que retorna o valor de HP atual do personagem
@@ -184,12 +184,12 @@ public class Player : MonoBehaviour {
 				hp = 0; // Iguala sua vida a zero
 			if (deathSkill && hp == 0) {
 				isDead = true; // O coloca em estado de morte
-				camera.enabled = false; // Trava a câmera
+				cameraFollow.enabled = false; // Trava a câmera
 				anim.SetTrigger ("Dead"); // Roda a animação de morte do personagem;
 				if (!saved) {
-					Inventory.playerInventory.skills.Clear();
-					Inventory.playerInventory.consumables.Clear();
-					Inventory.playerInventory.keys.Clear();
+					PlayerInventory.playerInventory.skills.Clear();
+					PlayerInventory.playerInventory.consumables.Clear();
+					PlayerInventory.playerInventory.keys.Clear();
 				}
 				Invoke ("ReloadScene", 3f); // Recarrega a cena após três segundos
 			} 
@@ -221,16 +221,16 @@ public class Player : MonoBehaviour {
 		if (skill == PlayerSkill.jump) {
 			FindObjectOfType<UIManager>().SetMessage(skillJump.message);
 			jumpSkill = true;
-			Inventory.playerInventory.AddSkill(skillJump);
+			PlayerInventory.playerInventory.AddSkill(skillJump);
 		} else if (skill == PlayerSkill.attack) {
 			FindObjectOfType<UIManager>().SetMessage(skillAttack.message);
 			attackSkill = true;
-			Inventory.playerInventory.AddSkill(skillAttack);
+			PlayerInventory.playerInventory.AddSkill(skillAttack);
 			AddWeapon(firstWeapon);
 		} else if (skill == PlayerSkill.death) {
 			FindObjectOfType<UIManager>().SetMessage(skillDeath.message);
 			deathSkill = true;
-			Inventory.playerInventory.AddSkill(skillDeath);
+			PlayerInventory.playerInventory.AddSkill(skillDeath);
 		}
 	}
 
@@ -248,8 +248,8 @@ public class Player : MonoBehaviour {
 		deathSkill = gm.deathSkill;
 
 		if (gm.equipWepID > 0)
-			AddWeapon(Inventory.playerInventory.database.GetWeapon(gm.equipWepID));
+			AddWeapon(PlayerInventory.playerInventory.database.GetWeapon(gm.equipWepID));
 		if (gm.equipArmID > 0)
-			AddArmor(Inventory.playerInventory.database.GetArmor(gm.equipArmID));
+			AddArmor(PlayerInventory.playerInventory.database.GetArmor(gm.equipArmID));
 	}
 }
