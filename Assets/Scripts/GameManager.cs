@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour {
 		playerSkills = new int[PlayerInventory.playerInventory.skills.Count]; // Habilidades
 		playerConsumables = new int[PlayerInventory.playerInventory.consumables.Count]; // Consumíveis
 		playerKeys = new int[PlayerInventory.playerInventory.keys.Count]; // Chaves
+		shopSkills = new int[ShopInventory.shopInventory.skills.Count]; // Habilidades na loja
 
 		// Salva todas as habilidades encontradas no inventário
 		for (int i = 0; i < playerSkills.Length; i++) {

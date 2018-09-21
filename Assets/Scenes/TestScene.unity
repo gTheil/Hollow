@@ -1198,8 +1198,8 @@ RectTransform:
   m_Father: {fileID: 1482919735}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.020792522, y: 0}
-  m_AnchorMax: {x: 0.97800004, y: 0.16371547}
+  m_AnchorMin: {x: 0.020792522, y: 0.091000006}
+  m_AnchorMax: {x: 0.9802223, y: 0.16371547}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1241,7 +1241,7 @@ MonoBehaviour:
     m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -3054,7 +3054,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1482919735}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4612,7 +4612,7 @@ RectTransform:
   - {fileID: 2135109309}
   - {fileID: 1524646243}
   m_Father: {fileID: 1482919735}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.28113833, y: 0.22900002}
   m_AnchorMax: {x: 0.71900004, y: 0.59345526}
@@ -4848,6 +4848,7 @@ RectTransform:
   m_Children:
   - {fileID: 778772602}
   - {fileID: 382790330}
+  - {fileID: 1658366223}
   - {fileID: 894989511}
   - {fileID: 1401460422}
   m_Father: {fileID: 1514663141}
@@ -5070,12 +5071,14 @@ MonoBehaviour:
   shopItems: []
   descriptionText: {fileID: 1628104386}
   shopDescriptionText: {fileID: 382790332}
-  scrollVertical: {fileID: 14793688}
+  scrollVerticalPause: {fileID: 14793688}
+  scrollVerticalShop: {fileID: 1524646244}
   hpText: {fileID: 569397931}
   mpText: {fileID: 1152753214}
   goldText: {fileID: 877834618}
   atkText: {fileID: 494026243}
   msgText: {fileID: 2017397200}
+  priceText: {fileID: 1658366225}
   hpUI: {fileID: 179900958}
   mpUI: {fileID: 332235063}
   goldUI: {fileID: 440577454}
@@ -5566,6 +5569,95 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1658366222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1658366223}
+  - component: {fileID: 1658366226}
+  - component: {fileID: 1658366225}
+  - component: {fileID: 1658366224}
+  m_Layer: 5
+  m_Name: Price Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1658366223
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658366222}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1482919735}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.020792522, y: 0.027667983}
+  m_AnchorMax: {x: 0.98688895, y: 0.075189725}
+  m_AnchoredPosition: {x: -2.5, y: -5.2999954}
+  m_SizeDelta: {x: -3, y: 6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1658366224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658366222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1658366225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658366222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 22
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Pre\xE7o em Ouro: "
+--- !u!222 &1658366226
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658366222}
 --- !u!1 &1708813459
 GameObject:
   m_ObjectHideFlags: 0
@@ -5989,6 +6081,7 @@ MonoBehaviour:
   weaponEquipped: {fileID: 0}
   armorEquipped: {fileID: 0}
   saved: 0
+  database: {fileID: 114642851343165014, guid: f3de8ac574f3e404c9a96c2015369833, type: 2}
 --- !u!70 &1902850287
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -6163,7 +6256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   maxMP: 50
-  gold: 0
+  gold: 100
   positionX: -35.18
   positionY: 2.42
   cameraMinX: -28.97
@@ -6178,7 +6271,7 @@ MonoBehaviour:
   jumpSkill: 0
   attackSkill: 0
   deathSkill: 0
-  shopSkills: 0300000001000000
+  shopSkills: 010000000200000003000000
 --- !u!4 &1953950110
 Transform:
   m_ObjectHideFlags: 0

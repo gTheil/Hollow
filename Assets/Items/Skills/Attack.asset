@@ -17,3 +17,4 @@ MonoBehaviour:
     do Mouse."
   image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   message: Aprendeu Ataque!
+  price: 200

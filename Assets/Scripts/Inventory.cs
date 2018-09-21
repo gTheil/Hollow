@@ -57,4 +57,16 @@ public class Inventory : MonoBehaviour {
 		}
 		return numberOfConsumables;
 	}
+
+	// Chamado ao comprar uma habilidade da loja
+	public void RemoveSkill (Skill skill) {
+		// Verifica a posição no inventário
+		for (int i = 0; i < skills.Count; i++) {
+			// Caso a habilidade seja encontrada, remove do inventário
+			if (skills [i] == skill) {
+				skills.RemoveAt(i);
+				break;
+			}
+		}
+	}
 }

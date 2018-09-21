@@ -3,10 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// Lista de habilidades do personagem
-public enum PlayerSkill {
-	jump, attack, death
-}
 
 public class Player : MonoBehaviour {
 
@@ -29,6 +25,7 @@ public class Player : MonoBehaviour {
 	public Weapon weaponEquipped; // Referência a arma atualmente equipada no personagem
 	public Armor armorEquipped; // Referência a armadura atualmente equipada no personagem
 	public bool saved;
+	public Database database;
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
@@ -45,6 +42,7 @@ public class Player : MonoBehaviour {
 	private bool isDead = false; // Determina se o personagem está morto
 	private CameraFollow cameraFollow; // Referência ao script que controla a movimentação da câmera
 	private GameManager gm; // Referência ao GameManager
+
 
 	// Inicialização
 	void Start () {
@@ -64,7 +62,7 @@ public class Player : MonoBehaviour {
 
 			// Concede ao personagem a habilidade Pulo e a adiciona ao seu inventário assim que ele sair do chão
 			if (!jumpSkill && !onGround)
-				SetPlayerSkill(PlayerSkill.jump);
+				SetPlayerSkill(database.GetSkill(1));
 
 			// Se o comando de pulo (barra de espaço) for executado enquanto o personagem estiver no chão
 			if (Input.GetButtonDown ("Jump") && (onGround) && jumpSkill) {
@@ -176,7 +174,7 @@ public class Player : MonoBehaviour {
 	public void TakeDamage(int damage) {
 		// Concede ao personagem a habilidade Ataque e a adiciona ao inventário assim que ele receber dano
 		if (!attackSkill)
-			SetPlayerSkill(PlayerSkill.attack);
+			SetPlayerSkill(database.GetSkill(2));
 		if (canDamage) { // Caso o personagem possa receber dano
 			canDamage = false; // É colocado em um estado de invencibilidade
 			hp -= (damage - def); // Diminui a vida atual do personagem pela diferença entre o dano do inimigo e a defesa do personagem
@@ -190,6 +188,10 @@ public class Player : MonoBehaviour {
 					PlayerInventory.playerInventory.skills.Clear();
 					PlayerInventory.playerInventory.consumables.Clear();
 					PlayerInventory.playerInventory.keys.Clear();
+					ShopInventory.shopInventory.skills.Clear();
+					for (int i = 0; i < GameManager.gm.shopSkills.Length; i++) {
+						ShopInventory.shopInventory.AddSkill(database.GetSkill(GameManager.gm.shopSkills[i]));
+					}
 				}
 				Invoke ("ReloadScene", 3f); // Recarrega a cena após três segundos
 			} 
@@ -217,17 +219,17 @@ public class Player : MonoBehaviour {
 	}
 
 	// Método que habilita as habilidades do personagem
-	public void SetPlayerSkill(PlayerSkill skill) {
-		if (skill == PlayerSkill.jump) {
+	public void SetPlayerSkill(Skill skill) {
+		if (skill.skillID == 1) {
 			FindObjectOfType<UIManager>().SetMessage(skillJump.message);
 			jumpSkill = true;
 			PlayerInventory.playerInventory.AddSkill(skillJump);
-		} else if (skill == PlayerSkill.attack) {
+		} else if (skill.skillID == 2) {
 			FindObjectOfType<UIManager>().SetMessage(skillAttack.message);
 			attackSkill = true;
 			PlayerInventory.playerInventory.AddSkill(skillAttack);
 			AddWeapon(firstWeapon);
-		} else if (skill == PlayerSkill.death) {
+		} else if (skill.skillID == 3) {
 			FindObjectOfType<UIManager>().SetMessage(skillDeath.message);
 			deathSkill = true;
 			PlayerInventory.playerInventory.AddSkill(skillDeath);

@@ -71,7 +71,7 @@ public class Enemy : MonoBehaviour {
 		Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 		// Concede ao personagem a habilidade Morte e a adiciona ao inventário assim que ele matar um inimigo
 		if (!player.deathSkill)
-			player.SetPlayerSkill(PlayerSkill.death);
+			player.SetPlayerSkill(player.database.GetSkill(3));
 			Destroy(gameObject);
 	}
 

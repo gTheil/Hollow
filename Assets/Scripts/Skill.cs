@@ -10,4 +10,5 @@ public class Skill : ScriptableObject {
 	public string description; // Descrição da habilidade para visualização
 	public Sprite image; // Imagem para representar visualmente a habilidade
 	public string message; // Mensagem exibida ao desbloquear a habilidade
+	public int price; // Preço em ouro da habilidade na loja
 }
