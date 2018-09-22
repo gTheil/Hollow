@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\Panther.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerInventory.cs" />
+     <Compile Include="Assets\Scripts\RedPanther.cs" />
      <Compile Include="Assets\Scripts\SavePoint.cs" />
      <Compile Include="Assets\Scripts\ShopInventory.cs" />
      <Compile Include="Assets\Scripts\Skill.cs" />

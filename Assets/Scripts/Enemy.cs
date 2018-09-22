@@ -83,4 +83,5 @@ public class Enemy : MonoBehaviour {
 			player.GetComponent<Rigidbody2D>().AddForce(Vector2.right * knockback * (playerDistance.x / Mathf.Abs(playerDistance.x)), ForceMode2D.Impulse); // Empurra o personagem uma determinada distância
 		}
 	}
+
 }
