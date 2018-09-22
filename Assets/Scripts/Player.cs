@@ -32,6 +32,7 @@ public class Player : MonoBehaviour {
 	public Armor armorEquipped; // Referência a armadura atualmente equipada no personagem
 	public bool saved;
 	public Database database;
+	public bool deathSaveUsed;
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
@@ -48,7 +49,6 @@ public class Player : MonoBehaviour {
 	private CameraFollow cameraFollow; // Referência ao script que controla a movimentação da câmera
 	private GameManager gm; // Referência ao GameManager
 	private bool jump = false;
-	private bool deathSaveUsed = false;
 
 
 	// Inicialização
@@ -273,6 +273,8 @@ public class Player : MonoBehaviour {
 		attackSkill = gm.attackSkill;
 		deathSkill = gm.deathSkill;
 		doubleJumpSkill = gm.doubleJumpSkill;
+		attackPlusSkill = gm.attackPlusSkill;
+		deathSaveSkill = gm.deathSaveSkill;
 
 		if (gm.equipWepID > 0)
 			AddWeapon(PlayerInventory.playerInventory.database.GetWeapon(gm.equipWepID));
