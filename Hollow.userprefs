@@ -1,18 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UIManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\Inventory.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerInventory.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ShopInventory.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\UIManager.cs" Line="98" Column="23" />
-      <File FileName="Assets\Scripts\ItemList.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Door.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Skill.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Database.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="169" Column="41" />
+      <File FileName="Assets\Scripts\Player.cs" Line="193" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

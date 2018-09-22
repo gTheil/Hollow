@@ -36,6 +36,7 @@ public class UIManager : MonoBehaviour {
 	private Player player; // Referência ao jogador
 	private bool msgActive = false; // Determina se a mensagem na tela está ativa
 	private float msgTimer; // Contagem para que a mensagem na tela desapareça
+	private Database database;
 
 	// Inicialização de personagem e inventário
 	void Start () {
@@ -303,7 +304,7 @@ public class UIManager : MonoBehaviour {
 	void BuyItem() {
 		if (shopItems[optionID].skill != null) {
 			player.gold -= shopItems[optionID].skill.price;
-			player.SetPlayerSkill (shopItems [optionID].skill);
+			player.SetPlayerSkill(shopItems[optionID].skill);
 			ShopInventory.shopInventory.RemoveSkill(shopItems[optionID].skill);
 			RefreshItemList();
 			UpdateItemList(3);

@@ -22,6 +22,9 @@ class PlayerData {
 	public bool jumpSkill; // Se o jogador possui habilidade de pulo
 	public bool attackSkill; // Se o jogador possui habilidade de ataque
 	public bool deathSkill; // Se o jogador possui habilidade de morte
+	public bool doubleJumpSkill;
+	public bool attackPlusSkill;
+	public bool deathSaveSkill;
 	public int[] shopSkills; // Conjunto de habilidades da loja
 }
 
@@ -43,6 +46,9 @@ public class GameManager : MonoBehaviour {
 	public bool jumpSkill = false; // Se o jogador possui habilidade de pulo
 	public bool attackSkill = false; // Se o jogador possui habilidade de ataque
 	public bool deathSkill = false; // Se o jogador possui habilidade de morte
+	public bool doubleJumpSkill = false;
+	public bool attackPlusSkill = false;
+	public bool deathSaveSkill = false;
 	public int[] shopSkills; // Conjunto de habilidades da loja
 
 	private string filePath; // Caminho onde o arquivo de save deve ser salvo
@@ -120,6 +126,9 @@ public class GameManager : MonoBehaviour {
 		data.jumpSkill = player.jumpSkill; // Se o jogador possui habilidade de pulo
 		data.attackSkill = player.attackSkill; // Se o jogador possui habilidade de ataque
 		data.deathSkill = player.deathSkill; // Se o jogador possui habilidade de morte
+		data.doubleJumpSkill = player.doubleJumpSkill;
+		data.attackPlusSkill = player.attackPlusSkill;
+		data.deathSaveSkill = player.deathSaveSkill;
 
 		data.playerSkills = playerSkills; // Habilidades
 		data.playerConsumables = playerConsumables; // Consumíveis
@@ -155,6 +164,9 @@ public class GameManager : MonoBehaviour {
 			jumpSkill = data.jumpSkill; // Se o jogador possui habilidade de pulo
 			attackSkill = data.attackSkill; // Se o jogador possui habilidade de ataque
 			deathSkill = data.deathSkill; // Se o jogador possui habilidade de morte
+			doubleJumpSkill = data.doubleJumpSkill;
+			attackPlusSkill = data.attackPlusSkill;
+			deathSaveSkill = data.deathSaveSkill;
 			playerSkills = data.playerSkills; // Habilidades
 			playerConsumables = data.playerConsumables; // Consumíveis
 			playerKeys = data.playerKeys; // Chaves

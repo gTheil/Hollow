@@ -18,9 +18,15 @@ public class Player : MonoBehaviour {
 	public bool jumpSkill = false; // Determina se o personagem possui a habilidade Pulo
 	public bool attackSkill = false; // Determina se o personagem possui a habilidade Ataque
 	public bool deathSkill = false; // Determina se o personagem possui a habilidade Morte
+	public bool doubleJumpSkill = false;
+	public bool attackPlusSkill = false;
+	public bool deathSaveSkill = false;
 	public Skill skillJump; // Referência à habilidade Pulo que consta no inventário
 	public Skill skillAttack; // Referência à habilidade Ataque que consta no inventário
 	public Skill skillDeath; // Referência à habilidade Morte que consta no inventário
+	public Skill skillDoubleJump;
+	public Skill skillAttackPlus;
+	public Skill skillDeathSave;
 	public Weapon firstWeapon; // Referência a arma que será equipada automaticamente ao personagem desbloquear o Ataque
 	public Weapon weaponEquipped; // Referência a arma atualmente equipada no personagem
 	public Armor armorEquipped; // Referência a armadura atualmente equipada no personagem
@@ -31,7 +37,6 @@ public class Player : MonoBehaviour {
 	private float speed; // Velocidade atual do personagem
 	private bool facingRight = true; // Determina a direção em que o personagem está virado; ao inicializar, o personagem estará virado para a direita
 	private bool onGround; // Determina se o personagem está no chão ou no ar
-	//private bool jump; // Determina se o personagem está em estado de pulo
 	private Animator anim; // Gerencia as animações do personagem
 	private Attack attack; // Referência ao script de ataque para facilitar a chamada da animação da arma
 	private float nextAttack; // Contagem para possibilitar o personagem a atacar novamente
@@ -42,6 +47,8 @@ public class Player : MonoBehaviour {
 	private bool isDead = false; // Determina se o personagem está morto
 	private CameraFollow cameraFollow; // Referência ao script que controla a movimentação da câmera
 	private GameManager gm; // Referência ao GameManager
+	private bool jump = false;
+	private bool deathSaveUsed = false;
 
 
 	// Inicialização
@@ -67,16 +74,16 @@ public class Player : MonoBehaviour {
 			// Se o comando de pulo (barra de espaço) for executado enquanto o personagem estiver no chão
 			if (Input.GetButtonDown ("Jump") && (onGround) && jumpSkill) {
 				Jump (); // O personagem realizará um pulo
-				//jump = true; // Ele será permitido realizar um segundo pulo
+				jump = true; // Ele será permitido realizar um segundo pulo
 			}
 
-			/**
+
 			// Se o comando de pulo (barra de espaço) for executado no ar durante o estado de pulo
-			if (Input.GetButtonDown ("Jump") && (!onGround) && jump) {
+			if (Input.GetButtonDown ("Jump") && (!onGround) && doubleJumpSkill && jump) {
 				Jump (); // O personagem realizará um segundo pulo
 				jump = false; // Ele será impedido de executar pulos subsequentes
 			}
-			*/
+
 
 			// Se o comando de ataque 1 (botão esquerdo do mouse) for executado enquanto o personagem tem uma arma equipada e sua contagem para o próximo ataque já foi encerrada
 			if (Input.GetButtonDown ("Fire1") && attackSkill && Time.time > nextAttack && weaponEquipped != null) {
@@ -179,26 +186,30 @@ public class Player : MonoBehaviour {
 			canDamage = false; // É colocado em um estado de invencibilidade
 			hp -= (damage - def); // Diminui a vida atual do personagem pela diferença entre o dano do inimigo e a defesa do personagem
 			if (hp <= 0) // Caso o dano recebido faça a vida atual do personagem ser menor ou igual a zero
+			if (!deathSaveSkill || deathSaveUsed) {
 				hp = 0; // Iguala sua vida a zero
+			} else if (!deathSaveUsed) {
+				hp = maxHP;
+				deathSaveUsed = !deathSaveUsed;
+			}
 			if (deathSkill && hp == 0) {
-				isDead = true; // O coloca em estado de morte
-				cameraFollow.enabled = false; // Trava a câmera
-				anim.SetTrigger ("Dead"); // Roda a animação de morte do personagem;
-				if (!saved) {
-					PlayerInventory.playerInventory.skills.Clear();
-					PlayerInventory.playerInventory.consumables.Clear();
-					PlayerInventory.playerInventory.keys.Clear();
-					ShopInventory.shopInventory.skills.Clear();
-					for (int i = 0; i < GameManager.gm.shopSkills.Length; i++) {
-						ShopInventory.shopInventory.AddSkill(database.GetSkill(GameManager.gm.shopSkills[i]));
+					isDead = true; // O coloca em estado de morte
+					cameraFollow.enabled = false; // Trava a câmera
+					anim.SetTrigger ("Dead"); // Roda a animação de morte do personagem;
+					if (!saved) {
+						PlayerInventory.playerInventory.skills.Clear ();
+						PlayerInventory.playerInventory.consumables.Clear ();
+						PlayerInventory.playerInventory.keys.Clear ();
+						ShopInventory.shopInventory.skills.Clear ();
+						for (int i = 0; i < GameManager.gm.shopSkills.Length; i++) {
+							ShopInventory.shopInventory.AddSkill (database.GetSkill (GameManager.gm.shopSkills [i]));
+						}
 					}
-				}
-				Invoke ("ReloadScene", 3f); // Recarrega a cena após três segundos
-			} 
-			else // Caso contrário
+					Invoke ("ReloadScene", 3f); // Recarrega a cena após três segundos
+				} else // Caso contrário
 					StartCoroutine (DamageCoroutine ()); // Roda a rotina de dano
+			}
 		}
-	}
 
 	// Método chamado ao personagem morrer
 	void ReloadScene() {
@@ -221,18 +232,31 @@ public class Player : MonoBehaviour {
 	// Método que habilita as habilidades do personagem
 	public void SetPlayerSkill(Skill skill) {
 		if (skill.skillID == 1) {
-			FindObjectOfType<UIManager>().SetMessage(skillJump.message);
+			FindObjectOfType<UIManager> ().SetMessage (skillJump.message);
 			jumpSkill = true;
-			PlayerInventory.playerInventory.AddSkill(skillJump);
+			PlayerInventory.playerInventory.AddSkill (skillJump);
 		} else if (skill.skillID == 2) {
-			FindObjectOfType<UIManager>().SetMessage(skillAttack.message);
+			FindObjectOfType<UIManager> ().SetMessage (skillAttack.message);
 			attackSkill = true;
-			PlayerInventory.playerInventory.AddSkill(skillAttack);
-			AddWeapon(firstWeapon);
+			PlayerInventory.playerInventory.AddSkill (skillAttack);
+			AddWeapon (firstWeapon);
 		} else if (skill.skillID == 3) {
-			FindObjectOfType<UIManager>().SetMessage(skillDeath.message);
+			FindObjectOfType<UIManager> ().SetMessage (skillDeath.message);
 			deathSkill = true;
-			PlayerInventory.playerInventory.AddSkill(skillDeath);
+			PlayerInventory.playerInventory.AddSkill (skillDeath);
+		} else if (skill.skillID == 4) {
+			FindObjectOfType<UIManager> ().SetMessage (skillDoubleJump.message);
+			doubleJumpSkill = true;
+			PlayerInventory.playerInventory.AddSkill (skillDoubleJump);
+		} else if (skill.skillID == 5) {
+			FindObjectOfType<UIManager> ().SetMessage (skillAttackPlus.message);
+			attackPlusSkill = true;
+			PlayerInventory.playerInventory.AddSkill (skillAttackPlus);
+			AddWeapon (database.GetWeapon (2));
+		} else if (skill.skillID == 6) {
+			FindObjectOfType<UIManager> ().SetMessage (skillDeathSave.message);
+			deathSaveSkill = true;
+			PlayerInventory.playerInventory.AddSkill (skillDeathSave);
 		}
 	}
 
@@ -248,6 +272,7 @@ public class Player : MonoBehaviour {
 		jumpSkill = gm.jumpSkill;
 		attackSkill = gm.attackSkill;
 		deathSkill = gm.deathSkill;
+		doubleJumpSkill = gm.doubleJumpSkill;
 
 		if (gm.equipWepID > 0)
 			AddWeapon(PlayerInventory.playerInventory.database.GetWeapon(gm.equipWepID));

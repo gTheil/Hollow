@@ -272,7 +272,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4401880344989888, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6.18
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 4401880344989888, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4892,6 +4892,58 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482919734}
+--- !u!1001 &1494004160
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4401880344989888, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 18.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401880344989888, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401880344989888, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401880344989888, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401880344989888, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401880344989888, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401880344989888, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401880344989888, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114244134160942744, guid: c9b0658307b52e74db7482d8881c12fe,
+        type: 2}
+      propertyPath: consumable
+      value: 
+      objectReference: {fileID: 11400000, guid: c0fa8732076082142b570b40c0357e45,
+        type: 2}
+    - target: {fileID: 1977970872320190, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
+      propertyPath: m_Name
+      value: Black Panther (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c9b0658307b52e74db7482d8881c12fe, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1513072096
 Prefab:
   m_ObjectHideFlags: 0
@@ -6074,9 +6126,15 @@ MonoBehaviour:
   jumpSkill: 0
   attackSkill: 0
   deathSkill: 0
+  doubleJumpSkill: 0
+  attackPlusSkill: 0
+  deathSaveSkill: 0
   skillJump: {fileID: 11400000, guid: 46fa10bfe7f32dc48b1bed06f41c0196, type: 2}
   skillAttack: {fileID: 11400000, guid: 92f8fd0eb3e73b74c9b006859df073f9, type: 2}
   skillDeath: {fileID: 11400000, guid: 3175c81b3ef0cc64997d9885615f4c28, type: 2}
+  skillDoubleJump: {fileID: 11400000, guid: fa68121bb56c49346b89b7b02d10d1ac, type: 2}
+  skillAttackPlus: {fileID: 11400000, guid: 5ffa5b30b5cf87544913008dc4e5afb2, type: 2}
+  skillDeathSave: {fileID: 11400000, guid: 25890bc1a211ba94b9c569dfbf53a30b, type: 2}
   firstWeapon: {fileID: 11400000, guid: 60894a78e68168f47ad1f84d52b90917, type: 2}
   weaponEquipped: {fileID: 0}
   armorEquipped: {fileID: 0}
@@ -6271,7 +6329,10 @@ MonoBehaviour:
   jumpSkill: 0
   attackSkill: 0
   deathSkill: 0
-  shopSkills: 010000000200000003000000
+  doubleJumpSkill: 0
+  attackPlusSkill: 0
+  deathSaveSkill: 0
+  shopSkills: 040000000500000006000000
 --- !u!4 &1953950110
 Transform:
   m_ObjectHideFlags: 0

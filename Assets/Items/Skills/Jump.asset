@@ -15,5 +15,5 @@ MonoBehaviour:
   skillName: Pulo
   description: "Permite que o personagem pule ao pressionar a Barra de Espa\xE7o."
   image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  message: Aprendeu Pulo!
+  message: Desbloqueou Pulo!
   price: 50
