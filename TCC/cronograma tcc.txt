@@ -4,10 +4,10 @@
 | Definir Tecnologias     |          | V        |          |          |          |          |          |          |          |
 | Elaborar Diagramas      |          | V        | V        |          |          |          |          |          |          |
 | Desenvolver Mecânicas   |          | V        | V        | V        |          |          |          |          |          |
-| Desenvolver Inimigos    |          |          |          | O        | O        | O        |          |          |          |
-| Desenvolver Habilidades |          |          |          | O        | O        | O        |          |          |          |
-| Desenvolver Magias      |          |          |          |          | X        | X        | X        |          |          |
+| Desenvolver Inimigos    |          |          |          | V        | V        | V        |          |          |          |
+| Desenvolver Habilidades |          |          |          | V        | V        | V        |          |          |          |
+| Desenvolver Magias      |          |          |          |          |          |          | X        | X        |          |
 | Desenvolver Mapa        |          |          |          |          |          |          | X        | X        |          |
 | Implementar Arte        |          |          |          |          |          |          |          | X        | X        |
 | Implementar Áudio       |          |          |          |          |          |          |          |          | X        |
-| Escrever Documento GD   |          |          |          |          | X        | X        | X        | X        | X        |
+| Escrever Documento GD   |          |          |          |          | O        | O        | O        | X        | X        |

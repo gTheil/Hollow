@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Panther : Enemy {
-
 	// Atualizado a cada frame
 	void FixedUpdate () {
 		if (!isDead){ // Caso o inimigo esteja vivo

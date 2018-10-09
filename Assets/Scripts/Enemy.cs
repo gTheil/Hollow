@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour {
 		facingRight = !facingRight; // Inverte o valor de facingRight, fazendo o inimigo virar a esquerda se estiver virado a direita e vice-versa
 		Vector3 scale = transform.localScale; // Recebe o valor da escala do inimigo
 		scale.x *= -1; // Inverte o valor x (horizontal) da escala entre valores positivos e negativos
-		transform.localScale = scale; // Atualiza o valor da escala do inimigo com o novo valor positivo ou negativo pra virar sua imagem
+		transform.localScale = scale; // Atualiza o valor da escala do inimigo com o novo valor positivo ou negativo para virar sua imagem
 	}
 
 	// Método chamado ao inimigo entrar em contato com um ataque do personagem

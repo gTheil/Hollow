@@ -9,10 +9,19 @@ public class Database : MonoBehaviour {
 	public List<Key> keys; // Lista de chaves
 	public List<Consumable> consumables; // Lista de consumíveis
 	public List<Skill> skills; // Lista de habilidades
+	public List<Spell> spells; // Lista de magias
 
 	public Skill GetSkill (int ID) {
 		foreach (var item in skills) { // Verifica todos os itens na lista de habilidades
 			if (item.skillID == ID) // Caso o ID passado conste no item sendo verificado
+				return item; // Retorna o item
+		}
+		return null; // Caso não encontre nada, retorna nulo
+	}
+
+	public Spell GetSpell (int ID) {
+		foreach (var item in spells) { // Verifica todos os itens na lista de magias
+			if (item.spellID == ID) // Caso o ID passado conste no item sendo verificado
 				return item; // Retorna o item
 		}
 		return null; // Caso não encontre nada, retorna nulo

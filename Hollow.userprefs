@@ -1,12 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Panther.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Fireball.cs">
     <Files>
-      <File FileName="Assets\Scripts\Enemy.cs" Line="86" Column="2" />
-      <File FileName="Assets\Scripts\Panther.cs" Line="25" Column="1" />
-      <File FileName="Assets\Scripts\RedPanther.cs" Line="18" Column="167" />
-      <File FileName="Assets\Scripts\CameraTrigger.cs" Line="14" Column="74" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="84" Column="4" />
+      <File FileName="Assets\Scripts\Panther.cs" Line="16" Column="4" />
+      <File FileName="Assets\Scripts\Fireball.cs" Line="42" Column="4" />
+      <File FileName="Assets\Scripts\RedPanther.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CameraTrigger.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player.cs" Line="89" Column="107" />
+      <File FileName="Assets\Scripts\Spell.cs" Line="13" Column="83" />
+      <File FileName="Assets\Scripts\Skill.cs" Line="5" Column="1" />
+      <File FileName="Assets\Scripts\Database.cs" Line="27" Column="55" />
+      <File FileName="Assets\Scripts\Attack.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
