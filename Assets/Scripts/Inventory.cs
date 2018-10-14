@@ -10,6 +10,7 @@ public class Inventory : MonoBehaviour {
 	public List<Key> keys; // Lista de chaves do jogador
 	public List<Consumable> consumables; // Lista de consumíveis do jogador
 	public List<Skill> skills; // Lista de habilidades do jogador
+	public List<Spell> spells;
 
 	public Database database; // Referência à base de dados de itens do jogador
 
@@ -23,6 +24,10 @@ public class Inventory : MonoBehaviour {
 
 	public void AddSkill (Skill skill) {
 		skills.Add(skill); // Adiciona a habilidade desbloqueada à lista de habilidades no inventário
+	}
+
+	public void AddSpell (Spell spell) {
+		spells.Add(spell);
 	}
 
 	// Verifica se há uma chave específica na lista de chaves do inventário do jogador

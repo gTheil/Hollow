@@ -15,6 +15,7 @@ class PlayerData {
 	public float positionX, positionY; // Posição do personagem em X e Y
 	public float cameraMinX, cameraMaxX, cameraMinY, cameraMaxY; // Posições mínimas e máximas da câmera em X e Y
 	public int[] playerSkills; // Conjunto de habilidades
+	public int[] playerSpells;
 	public int[] playerConsumables; // Conjunto de consumíveis
 	public int[] playerKeys; // Conjunto de chaves
 	public int equipWepID; // Arma equipada
@@ -25,6 +26,7 @@ class PlayerData {
 	public bool doubleJumpSkill;
 	public bool attackPlusSkill;
 	public bool deathSaveSkill;
+	public bool fireballSpell;
 	public int[] shopSkills; // Conjunto de habilidades da loja
 }
 
@@ -39,6 +41,7 @@ public class GameManager : MonoBehaviour {
 	public float positionX, positionY; // Posição do personagem em X e Y
 	public float cameraMinX, cameraMaxX, cameraMinY, cameraMaxY; // Posições mínimas e máximas da câmera em X e Y
 	public int[] playerSkills; // Conjunto de habilidades
+	public int[] playerSpells;
 	public int[] playerConsumables; // Conjunto de consumíveis
 	public int[] playerKeys; // Conjunto de chaves
 	public int equipWepID; // Arma equipada
@@ -49,6 +52,7 @@ public class GameManager : MonoBehaviour {
 	public bool doubleJumpSkill = false;
 	public bool attackPlusSkill = false;
 	public bool deathSaveSkill = false;
+	public bool fireballSpell = false;
 	public int[] shopSkills; // Conjunto de habilidades da loja
 
 	private string filePath; // Caminho onde o arquivo de save deve ser salvo
@@ -75,6 +79,7 @@ public class GameManager : MonoBehaviour {
 
 		// Instancia vetores para todos os tipos de item encontrados no inventário do jogador
 		playerSkills = new int[PlayerInventory.playerInventory.skills.Count]; // Habilidades
+		playerSpells = new int[PlayerInventory.playerInventory.spells.Count];
 		playerConsumables = new int[PlayerInventory.playerInventory.consumables.Count]; // Consumíveis
 		playerKeys = new int[PlayerInventory.playerInventory.keys.Count]; // Chaves
 		shopSkills = new int[ShopInventory.shopInventory.skills.Count]; // Habilidades na loja
@@ -82,6 +87,10 @@ public class GameManager : MonoBehaviour {
 		// Salva todas as habilidades encontradas no inventário
 		for (int i = 0; i < playerSkills.Length; i++) {
 			playerSkills[i] = PlayerInventory.playerInventory.skills[i].skillID;
+		}
+
+		for (int i = 0; i < playerSpells.Length; i++) {
+			playerSpells[i] = PlayerInventory.playerInventory.spells[i].spellID;
 		}
 
 		// Salva todos os consumíveis encontrados no inventário
@@ -129,8 +138,10 @@ public class GameManager : MonoBehaviour {
 		data.doubleJumpSkill = player.doubleJumpSkill;
 		data.attackPlusSkill = player.attackPlusSkill;
 		data.deathSaveSkill = player.deathSaveSkill;
+		data.fireballSpell = player.fireballSpell;
 
 		data.playerSkills = playerSkills; // Habilidades
+		data.playerSpells = playerSpells;
 		data.playerConsumables = playerConsumables; // Consumíveis
 		data.playerKeys = playerKeys; // Chaves
 		data.shopSkills = shopSkills; // Habilidades da loja
@@ -167,7 +178,9 @@ public class GameManager : MonoBehaviour {
 			doubleJumpSkill = data.doubleJumpSkill;
 			attackPlusSkill = data.attackPlusSkill;
 			deathSaveSkill = data.deathSaveSkill;
+			fireballSpell = data.fireballSpell;
 			playerSkills = data.playerSkills; // Habilidades
+			playerSpells = data.playerSpells;
 			playerConsumables = data.playerConsumables; // Consumíveis
 			playerKeys = data.playerKeys; // Chaves
 			shopSkills = data.shopSkills; // Habilidades da loja

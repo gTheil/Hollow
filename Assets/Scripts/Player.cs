@@ -18,25 +18,27 @@ public class Player : MonoBehaviour {
 	public bool jumpSkill = false; // Determina se o personagem possui a habilidade Pulo
 	public bool attackSkill = false; // Determina se o personagem possui a habilidade Ataque
 	public bool deathSkill = false; // Determina se o personagem possui a habilidade Morte
-	public bool doubleJumpSkill = false;
-	public bool attackPlusSkill = false;
-	public bool deathSaveSkill = false;
+	public bool doubleJumpSkill = false; // Determina se o personagem possui a habilidade Pulo Duplo
+	public bool attackPlusSkill = false; // Determina se o personagem possui a habilidade Ataque Aprimorado
+	public bool deathSaveSkill = false; // Determina se o personagem possui a habilidade Segunda Chance
+	public bool fireballSpell = false;
 	public Skill skillJump; // Referência à habilidade Pulo que consta no inventário
 	public Skill skillAttack; // Referência à habilidade Ataque que consta no inventário
 	public Skill skillDeath; // Referência à habilidade Morte que consta no inventário
-	public Skill skillDoubleJump;
-	public Skill skillAttackPlus;
-	public Skill skillDeathSave;
+	public Skill skillDoubleJump; // Referência à habilidade Pulo Duplo que consta no inventário
+	public Skill skillAttackPlus; // Referência à habilidade Ataque Aprimorado que consta no inventário
+	public Skill skillDeathSave; // Referência à habilidade Segunda Chance que consta no inventário
+	public Spell spellFireball;
 	public Weapon firstWeapon; // Referência a arma que será equipada automaticamente ao personagem desbloquear o Ataque
 	public Weapon weaponEquipped; // Referência a arma atualmente equipada no personagem
 	public Armor armorEquipped; // Referência a armadura atualmente equipada no personagem
-	public bool saved;
-	public Database database;
-	public bool deathSaveUsed;
+	public Database database; // Referência ao script Database, que contém referências a todos os itens do jogo
+	public GameObject fireball; // Referência à bola de fogo
+	public bool saved; // Determina se o jogo já foi salvo
+	public bool facingRight = true; // Determina a direção em que o personagem está virado; ao inicializar, o personagem estará virado para a direita
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
-	private bool facingRight = true; // Determina a direção em que o personagem está virado; ao inicializar, o personagem estará virado para a direita
 	private bool onGround; // Determina se o personagem está no chão ou no ar
 	private Animator anim; // Gerencia as animações do personagem
 	private Attack attack; // Referência ao script de ataque para facilitar a chamada da animação da arma
@@ -49,6 +51,7 @@ public class Player : MonoBehaviour {
 	private CameraFollow cameraFollow; // Referência ao script que controla a movimentação da câmera
 	private GameManager gm; // Referência ao GameManager
 	private bool jump = false;
+	private bool deathSaveUsed; // Determina se a habilidade "Segunda Chance" foi ativada
 
 
 	// Inicialização
@@ -86,13 +89,17 @@ public class Player : MonoBehaviour {
 
 
 			// Se o comando de ataque 1 (botão esquerdo do mouse) for executado enquanto o personagem tem uma arma equipada e sua contagem para o próximo ataque já foi encerrada
-			if (Input.GetButtonDown ("Fire1") && attackSkill && Time.time > nextAttack && weaponEquipped != null) {
+			if (Input.GetButtonDown ("Fire1") && attackSkill && weaponEquipped != null) {
 				Attack (); // O personagem realizará um ataque
 			}
 
 			// Se o botão direito do mouse for pressionado e um consumível estiver equipado
 			if (Input.GetButtonDown ("Fire2") && consumable != null) {
 				QuickItem (consumable); // utiliza o item consumível equipado
+			}
+
+			if (Input.GetKeyDown (KeyCode.Z) && fireballSpell) {
+				FireballUse ();
 			}
 		}
 	}
@@ -150,6 +157,15 @@ public class Player : MonoBehaviour {
 		anim.SetTrigger("Attack"); // Roda a animação de ataque do personagem
 		attack.PlayAnimation(weaponEquipped.animation); // Roda a animação de ataque da arma equipada
 		nextAttack = Time.time + fireRate; // O personagem deverá esperar o tempo de ataque para poder atacar novamente
+	}
+
+	void FireballUse() {
+		if (mp >= database.GetSpell(1).manaCost) {
+			Instantiate (fireball, attack.transform.position, Quaternion.identity);
+			anim.SetTrigger("Attack"); // Roda a animação de ataque do personagem
+			nextAttack = Time.time + fireRate; // O personagem deverá esperar o tempo de ataque para poder atacar novamente
+			mp -= database.GetSpell(1).manaCost;
+		}
 	}
 
 	// Utiliza o consumível na barra de status
@@ -260,6 +276,14 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+	public void SetPlayerSpell(Spell spell) {
+		if (spell.spellID == 1) {
+			FindObjectOfType<UIManager> ().SetMessage (spellFireball.message);
+			fireballSpell = true;
+			PlayerInventory.playerInventory.AddSpell (spellFireball);
+		}
+	}
+
 	public void SetPlayer() {
 		Vector3 playerPosition = new Vector3(gm.positionX, gm.positionY, 0);
 		transform.position = playerPosition;
@@ -275,6 +299,7 @@ public class Player : MonoBehaviour {
 		doubleJumpSkill = gm.doubleJumpSkill;
 		attackPlusSkill = gm.attackPlusSkill;
 		deathSaveSkill = gm.deathSaveSkill;
+		fireballSpell = gm.fireballSpell;
 
 		if (gm.equipWepID > 0)
 			AddWeapon(PlayerInventory.playerInventory.database.GetWeapon(gm.equipWepID));

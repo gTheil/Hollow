@@ -17,7 +17,8 @@ public class RedPanther : Enemy {
 			if (Mathf.Abs (playerDistance.x) < wakeUpX && Mathf.Abs (playerDistance.y) < wakeUpY) { // Caso o personagem esteja a determinada distância do inimigo
 				rb.velocity = new Vector2 (speed * (playerDistance.x / Mathf.Abs(playerDistance.x)), rb.velocity.y); // Seta a velocidade na qual o RigidBody do inimigo se moverá
 				if (Time.time > nextJump) {
-					Jump ();
+					FireballUse ();
+					nextJump = Time.time + jumpRate;
 				}
 			}
 
@@ -34,4 +35,5 @@ public class RedPanther : Enemy {
 		rb.AddForce(Vector2.up * jumpForce); // Aplica uma força vertical ao personagem
 		nextJump = Time.time + jumpRate;
 	}
+
 }

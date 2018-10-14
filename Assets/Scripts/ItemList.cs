@@ -12,6 +12,7 @@ public class ItemList : MonoBehaviour {
 	public Consumable consumable; // Referência à classe de itens Consumíveis
 	public Key key; // Referência à classe de itens Chaves
 	public Skill skill; // Referência à classe de itens Habilidades
+	public Spell spell;
 
 	// Método que gera um item do tipo Arma na Lista de Itens
 	public void SetUpWeapon(Weapon menuWeapon) {
@@ -47,5 +48,10 @@ public class ItemList : MonoBehaviour {
 		image.sprite = skill.image;
 		text.text = skill.skillName;
 	}
-		
+
+	public void SetUpSpell(Spell menuSpell) {
+		spell = menuSpell;
+		image.sprite = spell.image;
+		text.text = spell.spellName;
+	}
 }

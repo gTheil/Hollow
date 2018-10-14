@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\Database.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\EnemyFireball.cs" />
      <Compile Include="Assets\Scripts\Fireball.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
@@ -69,6 +70,7 @@
      <Compile Include="Assets\Scripts\MapSkill.cs" />
      <Compile Include="Assets\Scripts\Panther.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\PlayerFireball.cs" />
      <Compile Include="Assets\Scripts\PlayerInventory.cs" />
      <Compile Include="Assets\Scripts\RedPanther.cs" />
      <Compile Include="Assets\Scripts\SavePoint.cs" />

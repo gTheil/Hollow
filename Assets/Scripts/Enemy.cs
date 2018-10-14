@@ -13,12 +13,14 @@ public class Enemy : MonoBehaviour {
 	public int attack; // Valor de dano que o inimigo causará ao personagem quando se colidirem
 	public float knockback; // Distância que o inimigo empurrará o personagem quando se colidirem
 	public int gold; // Quantidade de ouro que o inimigo concede ao morrer
+	public GameObject fireball;
+	public bool facingRight = false; // Determina a direção em que o inimigo está virado
+	public Vector2 fireballPos;
 
 	protected Transform player; // Referência ao personagem
 	protected Rigidbody2D rb; // Componente que adiciona física
 	protected Animator anim; // Gerenciador de animação
 	protected Vector3 playerDistance; // Determina a distãncia entre o inimigo e o personagem
-	protected bool facingRight = false; // Determina a direção em que o inimigo está virado
 	protected bool isDead = false; // Determina se o inimigo está morto
 	protected SpriteRenderer sprite; // Referência à imagem do inimigo
 
@@ -84,4 +86,13 @@ public class Enemy : MonoBehaviour {
 		}
 	}
 
+	protected void FireballUse() {
+		fireballPos = transform.position;
+		if (facingRight) {
+			fireballPos += new Vector2 (+2.5f, 0f);
+		} else {
+			fireballPos += new Vector2 (-2.5f, 0f);
+		}
+		Instantiate(fireball, fireballPos, Quaternion.identity);
+	}
 }
