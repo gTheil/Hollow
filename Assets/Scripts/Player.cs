@@ -22,6 +22,8 @@ public class Player : MonoBehaviour {
 	public bool attackPlusSkill = false; // Determina se o personagem possui a habilidade Ataque Aprimorado
 	public bool deathSaveSkill = false; // Determina se o personagem possui a habilidade Segunda Chance
 	public bool fireballSpell = false;
+	public bool redBuffSpell = false;
+	public bool blueBuffSpell = false;
 	public Skill skillJump; // Referência à habilidade Pulo que consta no inventário
 	public Skill skillAttack; // Referência à habilidade Ataque que consta no inventário
 	public Skill skillDeath; // Referência à habilidade Morte que consta no inventário
@@ -29,6 +31,8 @@ public class Player : MonoBehaviour {
 	public Skill skillAttackPlus; // Referência à habilidade Ataque Aprimorado que consta no inventário
 	public Skill skillDeathSave; // Referência à habilidade Segunda Chance que consta no inventário
 	public Spell spellFireball;
+	public Spell spellRedBuff;
+	public Spell spellBlueBuff;
 	public Weapon firstWeapon; // Referência a arma que será equipada automaticamente ao personagem desbloquear o Ataque
 	public Weapon weaponEquipped; // Referência a arma atualmente equipada no personagem
 	public Armor armorEquipped; // Referência a armadura atualmente equipada no personagem
@@ -36,6 +40,7 @@ public class Player : MonoBehaviour {
 	public GameObject fireball; // Referência à bola de fogo
 	public bool saved; // Determina se o jogo já foi salvo
 	public bool facingRight = true; // Determina a direção em que o personagem está virado; ao inicializar, o personagem estará virado para a direita
+	public bool redBuff = false;
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
@@ -52,6 +57,7 @@ public class Player : MonoBehaviour {
 	private GameManager gm; // Referência ao GameManager
 	private bool jump = false;
 	private bool deathSaveUsed; // Determina se a habilidade "Segunda Chance" foi ativada
+	private bool blueBuff = false;
 
 
 	// Inicialização
@@ -101,6 +107,14 @@ public class Player : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.Z) && fireballSpell) {
 				FireballUse ();
 			}
+
+			if (Input.GetKeyDown (KeyCode.X) && redBuffSpell) {
+				RedBuffUse ();
+			}
+
+			if (Input.GetKeyDown (KeyCode.C) && blueBuffSpell) {
+				BlueBuffUse ();
+			}
 		}
 	}
 
@@ -109,8 +123,14 @@ public class Player : MonoBehaviour {
 		if (!isDead && Time.time > nextAttack) { // Caso o personagem esteja vivo e o menu fechado
 			float h = Input.GetAxisRaw ("Horizontal"); // Variável que controla a posição X (horizontal) do personagem
 
-			if (canDamage)
-				rb.velocity = new Vector2 (h * speed, rb.velocity.y); // Variável que controla o movimento na horizontal e vertical do personagem
+			if (canDamage){
+				if (redBuff)
+					rb.velocity = new Vector2 (h * (speed * 2), rb.velocity.y); // Variável que controla o movimento na horizontal e vertical do personagem
+				else if (blueBuff)
+					rb.velocity = new Vector2 (h * (speed / 2), rb.velocity.y);
+				else
+					rb.velocity = new Vector2 (h * speed, rb.velocity.y);
+			}
 
 			anim.SetFloat("Speed", Mathf.Abs(h)); // Roda a animação de movimento enquanto o personagem estiver se movimentando
 
@@ -129,7 +149,7 @@ public class Player : MonoBehaviour {
 	// Efetua o pulo do personagem
 	void Jump () {
 		rb.velocity = Vector2.zero; // Zera a velocidade do personagem
-		rb.AddForce(Vector2.up * jumpForce); // Aplica uma força vertical ao personagem
+		rb.AddForce(Vector2.up * jumpForce);
 	}
 
 	// Efetua a inversão da imagem do personagem
@@ -168,6 +188,22 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+	void RedBuffUse() {
+		redBuff = !redBuff;
+		if (redBuff) {
+			mp -= database.GetSpell(2).manaCost;
+			blueBuff = false;
+		}
+	}
+
+	void BlueBuffUse() {
+		blueBuff = !blueBuff;
+		if (blueBuff) {
+			mp -= database.GetSpell(3).manaCost;
+			redBuff = false;
+		}
+	}
+
 	// Utiliza o consumível na barra de status
 	public void QuickItem (Consumable consumable) {
 		hp += consumable.hpGain; // Aumenta o valor de vida do personagem de acordo com o aumento de vida do consumível utilizado
@@ -200,7 +236,12 @@ public class Player : MonoBehaviour {
 			SetPlayerSkill(database.GetSkill(2));
 		if (canDamage) { // Caso o personagem possa receber dano
 			canDamage = false; // É colocado em um estado de invencibilidade
-			hp -= (damage - def); // Diminui a vida atual do personagem pela diferença entre o dano do inimigo e a defesa do personagem
+			if (redBuff)
+				hp -= ((damage - def) * 2);
+			else if (blueBuff)
+				hp -= ((damage - def) / 2);
+			else
+				hp -= (damage - def); // Diminui a vida atual do personagem pela diferença entre o dano do inimigo e a defesa do personagem
 			if (hp <= 0) // Caso o dano recebido faça a vida atual do personagem ser menor ou igual a zero
 			if (!deathSaveSkill || deathSaveUsed) {
 				hp = 0; // Iguala sua vida a zero

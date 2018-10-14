@@ -6083,6 +6083,8 @@ MonoBehaviour:
   attackPlusSkill: 0
   deathSaveSkill: 0
   fireballSpell: 0
+  redBuffSpell: 0
+  blueBuffSpell: 0
   skillJump: {fileID: 11400000, guid: 46fa10bfe7f32dc48b1bed06f41c0196, type: 2}
   skillAttack: {fileID: 11400000, guid: 92f8fd0eb3e73b74c9b006859df073f9, type: 2}
   skillDeath: {fileID: 11400000, guid: 3175c81b3ef0cc64997d9885615f4c28, type: 2}
@@ -6090,6 +6092,8 @@ MonoBehaviour:
   skillAttackPlus: {fileID: 11400000, guid: 5ffa5b30b5cf87544913008dc4e5afb2, type: 2}
   skillDeathSave: {fileID: 11400000, guid: 25890bc1a211ba94b9c569dfbf53a30b, type: 2}
   spellFireball: {fileID: 11400000, guid: 2e4a3443867a03a409fbbf9deaf71590, type: 2}
+  spellRedBuff: {fileID: 0}
+  spellBlueBuff: {fileID: 0}
   firstWeapon: {fileID: 11400000, guid: 60894a78e68168f47ad1f84d52b90917, type: 2}
   weaponEquipped: {fileID: 0}
   armorEquipped: {fileID: 0}
@@ -6269,8 +6273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55029a02063f90d4a8e7f6746cc79129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  maxMP: 100
+  maxHP: 1000
+  maxMP: 1000
   gold: 100
   positionX: -35.18
   positionY: 2.42
