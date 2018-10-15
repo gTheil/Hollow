@@ -36,7 +36,11 @@ public class Attack : MonoBehaviour {
 			if (player.redBuff)
 				enemy.TakeDamage((damage) * 2);
 			else
-				enemy.TakeDamage((damage) * 2);
+				enemy.TakeDamage(damage);
+			if (enemy.redBuffOn && !player.redBuffSpell)
+				player.SetPlayerSpell (player.database.GetSpell (2));
+			else if (enemy.blueBuffOn && !player.blueBuffSpell)
+				player.SetPlayerSpell (player.database.GetSpell (3));
 		}
 	}
 }

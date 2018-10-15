@@ -53,6 +53,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Armor.cs" />
      <Compile Include="Assets\Scripts\Attack.cs" />
+     <Compile Include="Assets\Scripts\BasicEnemy.cs" />
+     <Compile Include="Assets\Scripts\BlueSkeleton.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CameraTrigger.cs" />
      <Compile Include="Assets\Scripts\Consumable.cs" />
@@ -68,7 +70,6 @@
      <Compile Include="Assets\Scripts\MapConsumable.cs" />
      <Compile Include="Assets\Scripts\MapKey.cs" />
      <Compile Include="Assets\Scripts\MapSkill.cs" />
-     <Compile Include="Assets\Scripts\Panther.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerFireball.cs" />
      <Compile Include="Assets\Scripts\PlayerInventory.cs" />

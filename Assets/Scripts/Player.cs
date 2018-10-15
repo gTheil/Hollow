@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
 	public float jumpForce; // Força vertical aplicada ao RigidBody do personagem durante o pulo
 	public float fireRate; // Intervalo de tempo durante o qual um ataque é executado
 	public Consumable consumable; // Consumível que estará presente na barra de status do personagem para uso rápido ao ser selecionado
+	public Spell spell; // Magia que estará presente na barra de status do personagem para uso rápido ao ser selecionada
 	public int maxHP; // Valor máximo de vida do personagem
 	public int maxMP; // Valor máximo de mana do personagem
 	public int def; // Valor de defesa do personagem
@@ -73,7 +74,7 @@ public class Player : MonoBehaviour {
 	
 	// Atualiza a cada frame
 	void Update () {
-		if (!isDead && Time.time > nextAttack) { // Caso o personagem esteja vivo e o menu fechado 
+		if (!isDead && Time.time > nextAttack && !FindObjectOfType<UIManager>().pauseActive && !FindObjectOfType<UIManager>().shopActive) { // Caso o personagem esteja vivo e o menu fechado 
 			onGround = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground")); // Dispara uma linha da posição atual do personagem até a posição do chão
 
 			// Concede ao personagem a habilidade Pulo e a adiciona ao seu inventário assim que ele sair do chão
@@ -81,39 +82,31 @@ public class Player : MonoBehaviour {
 				SetPlayerSkill(database.GetSkill(1));
 
 			// Se o comando de pulo (barra de espaço) for executado enquanto o personagem estiver no chão
-			if (Input.GetButtonDown ("Jump") && (onGround) && jumpSkill) {
+			if (Input.GetKeyDown(KeyCode.UpArrow) && (onGround) && jumpSkill) {
 				Jump (); // O personagem realizará um pulo
 				jump = true; // Ele será permitido realizar um segundo pulo
 			}
 
 
 			// Se o comando de pulo (barra de espaço) for executado no ar durante o estado de pulo
-			if (Input.GetButtonDown ("Jump") && (!onGround) && doubleJumpSkill && jump) {
+			if (Input.GetKeyDown(KeyCode.UpArrow) && (!onGround) && doubleJumpSkill && jump) {
 				Jump (); // O personagem realizará um segundo pulo
 				jump = false; // Ele será impedido de executar pulos subsequentes
 			}
 
 
 			// Se o comando de ataque 1 (botão esquerdo do mouse) for executado enquanto o personagem tem uma arma equipada e sua contagem para o próximo ataque já foi encerrada
-			if (Input.GetButtonDown ("Fire1") && attackSkill && weaponEquipped != null) {
+			if (Input.GetKeyDown(KeyCode.Space) && attackSkill && weaponEquipped != null) {
 				Attack (); // O personagem realizará um ataque
 			}
 
+			if (Input.GetKeyDown (KeyCode.Z) && spell != null) {
+				QuickSpell (spell);
+			}
+
 			// Se o botão direito do mouse for pressionado e um consumível estiver equipado
-			if (Input.GetButtonDown ("Fire2") && consumable != null) {
+			if (Input.GetKeyDown(KeyCode.X) && consumable != null) {
 				QuickItem (consumable); // utiliza o item consumível equipado
-			}
-
-			if (Input.GetKeyDown (KeyCode.Z) && fireballSpell) {
-				FireballUse ();
-			}
-
-			if (Input.GetKeyDown (KeyCode.X) && redBuffSpell) {
-				RedBuffUse ();
-			}
-
-			if (Input.GetKeyDown (KeyCode.C) && blueBuffSpell) {
-				BlueBuffUse ();
 			}
 		}
 	}
@@ -149,7 +142,10 @@ public class Player : MonoBehaviour {
 	// Efetua o pulo do personagem
 	void Jump () {
 		rb.velocity = Vector2.zero; // Zera a velocidade do personagem
-		rb.AddForce(Vector2.up * jumpForce);
+		if (blueBuff)
+			rb.AddForce(Vector2.up * (jumpForce / 1.5f));
+		else
+			rb.AddForce(Vector2.up * jumpForce);
 	}
 
 	// Efetua a inversão da imagem do personagem
@@ -193,7 +189,9 @@ public class Player : MonoBehaviour {
 		if (redBuff) {
 			mp -= database.GetSpell(2).manaCost;
 			blueBuff = false;
-		}
+			FindObjectOfType<UIManager> ().SetMessage ("Ativou Adrenalina!");
+		} else
+			FindObjectOfType<UIManager> ().SetMessage ("Desativou Adrenalina!");
 	}
 
 	void BlueBuffUse() {
@@ -201,11 +199,14 @@ public class Player : MonoBehaviour {
 		if (blueBuff) {
 			mp -= database.GetSpell(3).manaCost;
 			redBuff = false;
-		}
+			FindObjectOfType<UIManager> ().SetMessage ("Ativou Fortaleza!");
+		} else
+			FindObjectOfType<UIManager> ().SetMessage ("Desativou Fortaleza!");
 	}
 
 	// Utiliza o consumível na barra de status
 	public void QuickItem (Consumable consumable) {
+		if (Inventory.playerInventory.CountConsumable(consumable) > 0) {
 		hp += consumable.hpGain; // Aumenta o valor de vida do personagem de acordo com o aumento de vida do consumível utilizado
 		// Impede que o valor atual de vida do personagem ultrapasse o valor máximo
 		if (hp >= maxHP) {
@@ -217,6 +218,16 @@ public class Player : MonoBehaviour {
 			mp = maxMP;
 		}
 		PlayerInventory.playerInventory.RemoveConsumable(consumable); // Remove o consumível utilizado do inventário
+		}
+	}
+
+	public void QuickSpell (Spell spell) {
+		if (spell.spellID == 1 && fireballSpell)
+			FireballUse ();
+		else if (spell.spellID == 2 && redBuffSpell)
+			RedBuffUse ();
+		else if (spell.spellID == 3 && blueBuffSpell)
+			BlueBuffUse ();
 	}
 
 	// Método que retorna o valor de HP atual do personagem
@@ -322,7 +333,15 @@ public class Player : MonoBehaviour {
 			FindObjectOfType<UIManager> ().SetMessage (spellFireball.message);
 			fireballSpell = true;
 			PlayerInventory.playerInventory.AddSpell (spellFireball);
-		}
+		} else if (spell.spellID == 2) {
+			FindObjectOfType<UIManager> ().SetMessage (spellRedBuff.message);
+			redBuffSpell = true;
+			PlayerInventory.playerInventory.AddSpell (spellRedBuff);
+		} else if (spell.spellID == 3) {
+			FindObjectOfType<UIManager> ().SetMessage (spellBlueBuff.message);
+			blueBuffSpell = true;
+			PlayerInventory.playerInventory.AddSpell (spellBlueBuff);
+		} 
 	}
 
 	public void SetPlayer() {
@@ -341,6 +360,8 @@ public class Player : MonoBehaviour {
 		attackPlusSkill = gm.attackPlusSkill;
 		deathSaveSkill = gm.deathSaveSkill;
 		fireballSpell = gm.fireballSpell;
+		redBuffSpell = gm.redBuffSpell;
+		blueBuffSpell = gm.blueBuffSpell;
 
 		if (gm.equipWepID > 0)
 			AddWeapon(PlayerInventory.playerInventory.database.GetWeapon(gm.equipWepID));

@@ -20,13 +20,17 @@ public class PlayerFireball : Fireball {
 	// Update is called once per frame
 	void Update () {
 		rb.velocity = new Vector2(speed, 0f);
+		Destroy (gameObject, 3f);
 	}
 
-	void OnCollisionEnter2D(Collision2D other) {
-		Enemy enemy = other.gameObject.GetComponent<Enemy>();
+	void OnTriggerEnter2D(Collider2D other) {
+		Enemy enemy = other.GetComponent<Enemy>();
 		if (enemy != null) {
-			enemy.TakeDamage(attack); // Causa dano ao personagem
+			if (player.redBuff)
+				enemy.TakeDamage ((attack * 2)); // Causa dano ao personagem
+			else
+				enemy.TakeDamage(attack);
+			Destroy(gameObject);
 		}
-		Destroy(gameObject);
 	}
 }

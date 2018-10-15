@@ -15,16 +15,15 @@ public class PlayerInventory : Inventory {
 
 		// Faz com que o inventário permaneça o mesmo caso outra cena seja carregada
 		DontDestroyOnLoad(gameObject);
-	}
-
-	// Inicialização para carregamento do inventário
-	void Start () {
 		LoadInventory();
 	}
 
 	void LoadInventory() {
 		for (int i = 0; i < GameManager.gm.playerSkills.Length; i++) {
 			AddSkill(database.GetSkill(GameManager.gm.playerSkills[i]));
+		}
+		for (int i = 0; i < GameManager.gm.playerSpells.Length; i++) {
+			AddSpell(database.GetSpell(GameManager.gm.playerSpells[i]));
 		}
 		for (int i = 0; i < GameManager.gm.playerConsumables.Length; i++) {
 			AddConsumable(database.GetConsumable(GameManager.gm.playerConsumables[i]));

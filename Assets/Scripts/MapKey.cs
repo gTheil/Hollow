@@ -13,6 +13,9 @@ public class MapKey : MonoBehaviour {
 		// Atribui ao objeto no mapa a imagem da chave associada a ele
 		sprite = GetComponent<SpriteRenderer>();
 		sprite.sprite = key.image;
+
+		if (Inventory.playerInventory.CheckKey (key))
+			Destroy (gameObject);
 	}
 
 	// Chamado ao personagem entrar em contato com o objeto no mapa

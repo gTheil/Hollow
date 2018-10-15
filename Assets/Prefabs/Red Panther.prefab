@@ -119,18 +119,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wakeUpX: 10
   wakeUpY: 5
-  speed: 2.5
+  speed: 5
   hp: 100
   drop: {fileID: 1177782873489132, guid: 883267e1366f4574b84e8a93fed70a2d, type: 2}
   consumable: {fileID: 0}
   attack: 20
-  knockback: 7
+  knockback: {x: 7, y: 7}
   gold: 50
-  fireball: {fileID: 1238519114517468, guid: 7ffa108c01445bd4ab0392f11a103a32, type: 2}
   facingRight: 0
-  fireballPos: {x: 0, y: 0}
-  jumpForce: 500
-  jumpRate: 1
+  buffable: 0
+  buffDuration: 5
+  redBuffOn: 0
+  blueBuffOn: 0
+  jumpForce: 600
+  jumpRate: 1.5
 --- !u!212 &212994501116025878
 SpriteRenderer:
   m_ObjectHideFlags: 1

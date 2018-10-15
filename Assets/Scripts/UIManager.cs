@@ -24,10 +24,10 @@ public class UIManager : MonoBehaviour {
 	public Scrollbar scrollVerticalShop; // Variável que controla a rolagem vertical da lista de itens
 	public Text hpText, mpText, goldText, atkText, msgText, priceText; // Variáveis que contêm os textos dos atributos do personagem
 	public Text hpUI, mpUI, goldUI, itemUI; // Variáveis que contêm os textos da barra de status
-	public Image consumableImage; // Imagem do consumível equipado
+	public Image consumableImage, spellImage; // Imagem do consumível equipado
 
-	private bool pauseActive = false; // Determina se o jogador está com o menu aberto
-	private bool shopActive = false; // Determina se o jogador está com o menu aberto
+	public bool pauseActive = false; // Determina se o jogador está com o menu aberto
+	public bool shopActive = false; // Determina se o jogador está com o menu aberto
 	private int optionID = 0; // Posição do cursor no array de opções selecionáveis
 	private Inventory playerInventory; // Referência ao inventário do jogador
 	private Inventory shopInventory; // Referência ao inventário do jogador
@@ -77,7 +77,7 @@ public class UIManager : MonoBehaviour {
 			}
 		}
 
-		if (Input.GetKeyDown (KeyCode.P)) { // Ao jogador pressionar o botão de menu
+		if (Input.GetKeyDown (KeyCode.C)) { // Ao jogador pressionar o botão de menu
 			if (!shopActive) {
 				pauseActive = !pauseActive; // Abre o menu se o mesmo estiver fechado, fecha-o se estiver aberto
 				optionID = 0; // Reseta a posição do cursor para a primeira opção selecionável
@@ -90,28 +90,6 @@ public class UIManager : MonoBehaviour {
 					Time.timeScale = 0; // Pausa o jogo
 				} else {
 					pauseMenu.SetActive (false);
-					Time.timeScale = 1; // Despausa o jogo
-				}
-			}
-		}
-
-		if (Input.GetKeyDown(KeyCode.O)) { // Ao jogador pressionar o botão de menu
-			if (!pauseActive) {
-				shopActive = !shopActive; // Abre o menu se o mesmo estiver fechado, fecha-o se estiver aberto
-				optionID = 0; // Reseta a posição do cursor para a primeira opção selecionável
-				shopPanel.SetActive (true); // Ativa o painel de itens no menu
-				shopListActive = true; // Desativa a lista de itens
-				RefreshItemList (); // Limpa a lista de itens
-				UpdateItemList (3); // Gera a os itens dentro da lista de acordo com a opção selecionada
-				if (shopItems.Count > 0)
-					UpdateDescription (1);
-				else
-					shopDescriptionText.text = "";
-				if (shopActive) {
-					shopMenu.SetActive (true);
-					Time.timeScale = 0; // Pausa o jogo
-				} else {
-					shopMenu.SetActive (false);
 					Time.timeScale = 1; // Despausa o jogo
 				}
 			}
@@ -163,7 +141,7 @@ public class UIManager : MonoBehaviour {
 				itemListActive = true; // Ativa a lista de itens
 			} else if (Input.GetButtonDown ("Submit") && itemListActive) { // Ao jogador selecionar um item dentro da lista
 				if (playerItems.Count > 0) {
-					UseItem(); // O item é equipado ou utilizado
+					EquipItem(); // O item é equipado ou utilizado
 				}
 			}
 		}
@@ -220,11 +198,13 @@ public class UIManager : MonoBehaviour {
 	void UpdateDescription(int option){
 		if (option == 0) {
 			if (playerItems [optionID].skill != null) // Caso hajam habilidades na lista de itens
-			descriptionText.text = playerItems [optionID].skill.description; // Atribui ao campo de descrição o texto de descrição da habilidade selecionada
+				descriptionText.text = playerItems [optionID].skill.description; // Atribui ao campo de descrição o texto de descrição da habilidade selecionada
+			else if (playerItems [optionID].spell != null)
+				descriptionText.text = playerItems [optionID].spell.description;
 			else if (playerItems [optionID].consumable != null) // Caso hajam consumíveis na lista de itens
-			descriptionText.text = playerItems [optionID].consumable.description; // Atribui ao campo de descrição o texto de descrição do consumível selecionado
+				descriptionText.text = playerItems [optionID].consumable.description; // Atribui ao campo de descrição o texto de descrição do consumível selecionado
 			else if (playerItems [optionID].key != null) // Caso hajam chaves na lista de itens
-			descriptionText.text = playerItems [optionID].key.description; // Atribui ao campo de descrição o texto de descrição da chave selecionada
+				descriptionText.text = playerItems [optionID].key.description; // Atribui ao campo de descrição o texto de descrição da chave selecionada
 		} else if (option == 1) {
 			if (shopItems [optionID].skill != null) { // Caso hajam habilidades na lista de itens
 				shopDescriptionText.text = shopItems [optionID].skill.description;
@@ -255,7 +235,15 @@ public class UIManager : MonoBehaviour {
 				scrollVerticalPause.value = 1; // Reseta a posição da barra de rolagem
 			}
 		}
-		else if (option == 1) { // Caso seja a segunda opção
+		else if (option == 1) { // Caso seja a primeira opção
+			for (int i = 0; i < playerInventory.spells.Count; i++) { // Para cada habilidade no inventário
+				GameObject tempItem = Instantiate(itemList, pauseContent.transform); // Instancia a lista de itens para que possa ser manipulada
+				tempItem.GetComponent<ItemList>().SetUpSpell(playerInventory.spells[i]); // Adiciona a habilidade do inventário à lista de itens
+				playerItems.Add(tempItem.GetComponent<ItemList>());
+				scrollVerticalPause.value = 1; // Reseta a posição da barra de rolagem
+			}
+		}
+		else if (option == 2) { // Caso seja a segunda opção
 			for (int i = 0; i < playerInventory.consumables.Count; i++) { // Para cada consumível no inventário
 				GameObject tempItem = Instantiate(itemList, pauseContent.transform); // Instancia a lista de itens para que possa ser manipulada
 				tempItem.GetComponent<ItemList>().SetUpConsumable(playerInventory.consumables[i]); // Adiciona o consumível do inventário à lista de itens
@@ -263,7 +251,7 @@ public class UIManager : MonoBehaviour {
 				scrollVerticalPause.value = 1; // Reseta a posição da barra de rolagem
 			}
 		}
-		else if (option == 2) { // Caso seja a terceira opção
+		else if (option == 3) { // Caso seja a terceira opção
 			for (int i = 0; i < playerInventory.keys.Count; i++) { // Para cada chave no inventário
 				GameObject tempItem = Instantiate(itemList, pauseContent.transform); // Instancia a lista de itens para que possa ser manipulada
 				tempItem.GetComponent<ItemList>().SetUpKey(playerInventory.keys[i]); // Adiciona a chave do inventário à lista de itens
@@ -271,7 +259,7 @@ public class UIManager : MonoBehaviour {
 				scrollVerticalPause.value = 1; // Reseta a posição da barra de rolagem
 			}
 		}
-		else if (option == 3) { // Caso seja a terceira opção
+		else if (option == 4) { // Caso seja a terceira opção
 			for (int i = 0; i < shopInventory.skills.Count; i++) { // Para cada chave no inventário
 				GameObject tempItem = Instantiate(itemList, shopContent.transform); // Instancia a lista de itens para que possa ser manipulada
 				tempItem.GetComponent<ItemList>().SetUpSkill(shopInventory.skills[i]); // Adiciona a chave do inventário à lista de itens
@@ -291,10 +279,16 @@ public class UIManager : MonoBehaviour {
 	}
 
 	// Método que chama funções de equipar armas/armaduras e utilizar consumíveis
-	void UseItem() {
+	void EquipItem() {
 		if (playerItems[optionID].consumable != null) { // Caso hajam consumíveis na lista e um seja selecionado
 			player.consumable = playerItems[optionID].consumable; // Equipa no slot de uso rápido o consumível selecionado
 			consumableImage.sprite = playerItems[optionID].consumable.image; // Atualiza a imagem do item de uso rápido na barra de status
+			pauseActive = false; // Fecha a tela de menu
+			pauseMenu.SetActive(false); // Desativa o menu
+			Time.timeScale = 1; // Despausa o jogo
+		} else if (playerItems[optionID].spell != null) {
+			player.spell = playerItems [optionID].spell;
+			spellImage.sprite = playerItems [optionID].spell.image;
 			pauseActive = false; // Fecha a tela de menu
 			pauseMenu.SetActive(false); // Desativa o menu
 			Time.timeScale = 1; // Despausa o jogo
@@ -307,7 +301,7 @@ public class UIManager : MonoBehaviour {
 			player.SetPlayerSkill(shopItems[optionID].skill);
 			ShopInventory.shopInventory.RemoveSkill(shopItems[optionID].skill);
 			RefreshItemList();
-			UpdateItemList(3);
+			UpdateItemList(4);
 		}
 	}
 
@@ -326,5 +320,27 @@ public class UIManager : MonoBehaviour {
 		color.a = 0; // Tira o valor alpha da cor da mensagem
 		msgText.color = color;
 		msgActive = true;
+	}
+
+	public void CallShop() {
+		if (!pauseActive) {
+			shopActive = !shopActive; // Abre o menu se o mesmo estiver fechado, fecha-o se estiver aberto
+			optionID = 0; // Reseta a posição do cursor para a primeira opção selecionável
+			shopPanel.SetActive (true); // Ativa o painel de itens no menu
+			shopListActive = true; // Desativa a lista de itens
+			RefreshItemList (); // Limpa a lista de itens
+			UpdateItemList (4); // Gera a os itens dentro da lista de acordo com a opção selecionada
+			if (shopItems.Count > 0)
+				UpdateDescription (1);
+			else
+				shopDescriptionText.text = "";
+			if (shopActive) {
+				shopMenu.SetActive (true);
+				Time.timeScale = 0; // Pausa o jogo
+			} else {
+				shopMenu.SetActive (false);
+				Time.timeScale = 1; // Despausa o jogo
+			}
+		}
 	}
 }

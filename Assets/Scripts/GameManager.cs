@@ -27,6 +27,8 @@ class PlayerData {
 	public bool attackPlusSkill;
 	public bool deathSaveSkill;
 	public bool fireballSpell;
+	public bool redBuffSpell;
+	public bool blueBuffSpell;
 	public int[] shopSkills; // Conjunto de habilidades da loja
 }
 
@@ -53,6 +55,8 @@ public class GameManager : MonoBehaviour {
 	public bool attackPlusSkill = false;
 	public bool deathSaveSkill = false;
 	public bool fireballSpell = false;
+	public bool redBuffSpell = false;
+	public bool blueBuffSpell = false;
 	public int[] shopSkills; // Conjunto de habilidades da loja
 
 	private string filePath; // Caminho onde o arquivo de save deve ser salvo
@@ -139,6 +143,8 @@ public class GameManager : MonoBehaviour {
 		data.attackPlusSkill = player.attackPlusSkill;
 		data.deathSaveSkill = player.deathSaveSkill;
 		data.fireballSpell = player.fireballSpell;
+		data.redBuffSpell = player.redBuffSpell;
+		data.blueBuffSpell = player.blueBuffSpell;
 
 		data.playerSkills = playerSkills; // Habilidades
 		data.playerSpells = playerSpells;
@@ -179,6 +185,8 @@ public class GameManager : MonoBehaviour {
 			attackPlusSkill = data.attackPlusSkill;
 			deathSaveSkill = data.deathSaveSkill;
 			fireballSpell = data.fireballSpell;
+			redBuffSpell = data.redBuffSpell;
+			blueBuffSpell = data.blueBuffSpell;
 			playerSkills = data.playerSkills; // Habilidades
 			playerSpells = data.playerSpells;
 			playerConsumables = data.playerConsumables; // Consumíveis

@@ -11,11 +11,13 @@ public class Enemy : MonoBehaviour {
 	public GameObject drop; // Referência ao item que o inimigo deixará para trás ao morrer
 	public Consumable consumable; // O item específico que será deixado para trás
 	public int attack; // Valor de dano que o inimigo causará ao personagem quando se colidirem
-	public float knockback; // Distância que o inimigo empurrará o personagem quando se colidirem
+	public Vector2 knockback;
 	public int gold; // Quantidade de ouro que o inimigo concede ao morrer
-	public GameObject fireball;
-	public bool facingRight = false; // Determina a direção em que o inimigo está virado
-	public Vector2 fireballPos;
+	public bool facingRight; // Determina a direção em que o inimigo está virado
+	public bool buffable = false;
+	public float buffDuration;
+	public bool redBuffOn = false;
+	public bool blueBuffOn = false;
 
 	protected Transform player; // Referência ao personagem
 	protected Rigidbody2D rb; // Componente que adiciona física
@@ -23,6 +25,9 @@ public class Enemy : MonoBehaviour {
 	protected Vector3 playerDistance; // Determina a distãncia entre o inimigo e o personagem
 	protected bool isDead = false; // Determina se o inimigo está morto
 	protected SpriteRenderer sprite; // Referência à imagem do inimigo
+	protected bool isBuffed = false;
+	protected float buffEnd;
+	protected bool woke = false;
 
 	// Inicialização
 	void Start () {
@@ -42,7 +47,12 @@ public class Enemy : MonoBehaviour {
 
 	// Método chamado ao inimigo entrar em contato com um ataque do personagem
 	public void TakeDamage(int damage) {
-		hp -= damage; // Diminui a vida do inimigo pelo dano do ataque
+		if (redBuffOn)
+			hp -= (damage * 2); // Diminui a vida do inimigo pelo dano do ataque
+		else if (blueBuffOn)
+			hp -= (damage / 2);
+		else
+			hp -= damage;
 		if (hp <= 0) { // Caso sua vida chegue a zero
 			isDead = true; // Colocado em estado de morte
 			rb.velocity = Vector2.zero; // Seu corpo para de se mover
@@ -73,26 +83,22 @@ public class Enemy : MonoBehaviour {
 		Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 		// Concede ao personagem a habilidade Morte e a adiciona ao inventário assim que ele matar um inimigo
 		if (!player.deathSkill)
-			player.SetPlayerSkill(player.database.GetSkill(3));
-			Destroy(gameObject);
+			player.SetPlayerSkill (player.database.GetSkill (3));
+		Destroy(gameObject);
 	}
 
 	// Método chamado ao inimigo colidir com o personagem
 	protected void OnCollisionEnter2D(Collision2D other) {
 		Player player = other.gameObject.GetComponent<Player>();
 		if (player != null) {
-			player.TakeDamage(attack); // Causa dano ao personagem
-			player.GetComponent<Rigidbody2D>().AddForce(Vector2.right * knockback * (playerDistance.x / Mathf.Abs(playerDistance.x)), ForceMode2D.Impulse); // Empurra o personagem uma determinada distância
+			if (redBuffOn) {
+				player.TakeDamage ((attack * 2)); // Causa dano ao personagem
+				if (!player.redBuffSpell)
+					player.SetPlayerSpell (player.database.GetSpell (2));
+			} else
+				player.TakeDamage (attack);
+			Vector2 kbForce = new Vector2(knockback.x * (playerDistance.x / Mathf.Abs(playerDistance.x)), knockback.y);
+			player.GetComponent<Rigidbody2D>().AddForce(kbForce, ForceMode2D.Impulse); // Empurra o personagem uma determinada distância
 		}
-	}
-
-	protected void FireballUse() {
-		fireballPos = transform.position;
-		if (facingRight) {
-			fireballPos += new Vector2 (+2.5f, 0f);
-		} else {
-			fireballPos += new Vector2 (-2.5f, 0f);
-		}
-		Instantiate(fireball, fireballPos, Quaternion.identity);
 	}
 }

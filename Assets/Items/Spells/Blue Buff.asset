@@ -13,7 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellID: 3
   spellName: Fortaleza
-  description: Corta pela metade sua velocidade, altura de pulo e dano recebido.
-  image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  description: 'Corta pela metade sua velocidade, altura de pulo e dano recebido.
+    Use novamente para desativar o efeito. Custo de Mana: 50'
+  image: {fileID: 21300020, guid: fc26f483f9de71146874da8abe8a1053, type: 3}
   message: Desbloqueou Fortaleza!
   manaCost: 50
