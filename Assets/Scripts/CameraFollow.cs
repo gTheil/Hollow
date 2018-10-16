@@ -9,6 +9,7 @@ public class CameraFollow : MonoBehaviour
 	public float ySmooth = 8f;		// How smoothly the camera catches up with it's target movement in the y axis.
 	public Vector2 maxXAndY;		// The maximum x and y coordinates the camera can have.
 	public Vector2 minXAndY;		// The minimum x and y coordinates the camera can have.
+	public GameManager gm; // Referência ao GameManager
 
 
 	private Transform player;		// Reference to the player's transform.
@@ -22,8 +23,8 @@ public class CameraFollow : MonoBehaviour
 	// Inicialização dos valores de posição da câmera de acordo com o GameManager
 	void Start ()
 	{
-		maxXAndY = new Vector2(GameManager.gm.cameraMaxX, GameManager.gm.cameraMaxY);
-		minXAndY = new Vector2(GameManager.gm.cameraMinX, GameManager.gm.cameraMinY);
+		maxXAndY = new Vector2(gm.cameraMaxX, gm.cameraMaxY);
+		minXAndY = new Vector2(gm.cameraMinX, gm.cameraMinY);
 	}
 
 

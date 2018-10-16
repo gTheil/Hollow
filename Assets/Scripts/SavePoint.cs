@@ -11,8 +11,6 @@ public class SavePoint : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.B)) {
 				FindObjectOfType<UIManager> ().SetMessage ("Jogo Salvo!");
 				GameManager.gm.Save (); // Salva os dados do personagem
-				Player player = FindObjectOfType<Player> ();
-				player.saved = true;
 			} else if (Input.GetKeyDown (KeyCode.V)) {
 				FindObjectOfType<UIManager>().CallShop();
 			}

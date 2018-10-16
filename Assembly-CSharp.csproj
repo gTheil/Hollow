@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\ItemList.cs" />
      <Compile Include="Assets\Scripts\Key.cs" />
      <Compile Include="Assets\Scripts\MapConsumable.cs" />
+     <Compile Include="Assets\Scripts\MapGold.cs" />
      <Compile Include="Assets\Scripts\MapKey.cs" />
      <Compile Include="Assets\Scripts\MapSkill.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />

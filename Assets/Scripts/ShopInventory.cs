@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ShopInventory : Inventory {
 
+	private GameManager gm; // Referência ao GameManager
+
 	// Inicialização do inventário, impede que haja mais de um inventário em cena para que itens não sejam perdidos ao serem adicionados
 	void Awake () {
 		if (shopInventory == null) {
@@ -14,17 +16,18 @@ public class ShopInventory : Inventory {
 		}
 
 		// Faz com que o inventário permaneça o mesmo caso outra cena seja carregada
-		DontDestroyOnLoad(gameObject);
+		//DontDestroyOnLoad(gameObject);
 	}
 
 	// Inicialização para carregamento do inventário
 	void Start () {
+		gm = GameManager.gm;
 		LoadInventory();
 	}
 
 	void LoadInventory() {
-		for (int i = 0; i < GameManager.gm.shopSkills.Length; i++) {
-			AddSkill(database.GetSkill(GameManager.gm.shopSkills[i]));
+		for (int i = 0; i < gm.shopSkills.Length; i++) {
+			AddSkill(database.GetSkill(gm.shopSkills[i]));
 		}
 	}
 }

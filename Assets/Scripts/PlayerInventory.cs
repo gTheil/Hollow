@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerInventory : Inventory {
 
+	private GameManager gm; // Referência ao GameManager
+
 	// Inicialização do inventário, impede que haja mais de um inventário em cena para que itens não sejam perdidos ao serem adicionados
 	void Awake () {
 		if (playerInventory == null) {
@@ -14,22 +16,26 @@ public class PlayerInventory : Inventory {
 		}
 
 		// Faz com que o inventário permaneça o mesmo caso outra cena seja carregada
-		DontDestroyOnLoad(gameObject);
+		//DontDestroyOnLoad(gameObject);
+	}
+
+	void Start () {
+		gm = GameManager.gm;
 		LoadInventory();
 	}
 
 	void LoadInventory() {
-		for (int i = 0; i < GameManager.gm.playerSkills.Length; i++) {
-			AddSkill(database.GetSkill(GameManager.gm.playerSkills[i]));
+		for (int i = 0; i < gm.playerSkills.Length; i++) {
+			AddSkill(database.GetSkill(gm.playerSkills[i]));
 		}
-		for (int i = 0; i < GameManager.gm.playerSpells.Length; i++) {
-			AddSpell(database.GetSpell(GameManager.gm.playerSpells[i]));
+		for (int i = 0; i < gm.playerSpells.Length; i++) {
+			AddSpell(database.GetSpell(gm.playerSpells[i]));
 		}
-		for (int i = 0; i < GameManager.gm.playerConsumables.Length; i++) {
-			AddConsumable(database.GetConsumable(GameManager.gm.playerConsumables[i]));
+		for (int i = 0; i < gm.playerConsumables.Length; i++) {
+			AddConsumable(database.GetConsumable(gm.playerConsumables[i]));
 		}
-		for (int i = 0; i < GameManager.gm.playerKeys.Length; i++) {
-			AddKey(database.GetKey(GameManager.gm.playerKeys[i]));
+		for (int i = 0; i < gm.playerKeys.Length; i++) {
+			AddKey(database.GetKey(gm.playerKeys[i]));
 		}
 	}
 }

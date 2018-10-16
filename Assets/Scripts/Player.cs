@@ -39,9 +39,9 @@ public class Player : MonoBehaviour {
 	public Armor armorEquipped; // Referência a armadura atualmente equipada no personagem
 	public Database database; // Referência ao script Database, que contém referências a todos os itens do jogo
 	public GameObject fireball; // Referência à bola de fogo
-	public bool saved; // Determina se o jogo já foi salvo
 	public bool facingRight = true; // Determina a direção em que o personagem está virado; ao inicializar, o personagem estará virado para a direita
 	public bool redBuff = false;
+	public GameManager gm; // Referência ao GameManager
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
@@ -55,11 +55,9 @@ public class Player : MonoBehaviour {
 	private SpriteRenderer sprite; // Referência à imagem do jogador
 	private bool isDead = false; // Determina se o personagem está morto
 	private CameraFollow cameraFollow; // Referência ao script que controla a movimentação da câmera
-	private GameManager gm; // Referência ao GameManager
 	private bool jump = false;
 	private bool deathSaveUsed; // Determina se a habilidade "Segunda Chance" foi ativada
 	private bool blueBuff = false;
-
 
 	// Inicialização
 	void Start () {
@@ -68,7 +66,6 @@ public class Player : MonoBehaviour {
 		attack = GetComponentInChildren<Attack>(); // Inicializa o componente "Attack"
 		sprite = GetComponent<SpriteRenderer>(); // Inicializa a imagem do jogador
 		cameraFollow = FindObjectOfType<CameraFollow>(); // Inicializa a posição da câmera
-		gm = GameManager.gm;
 		SetPlayer();
 	}
 	
@@ -264,15 +261,6 @@ public class Player : MonoBehaviour {
 					isDead = true; // O coloca em estado de morte
 					cameraFollow.enabled = false; // Trava a câmera
 					anim.SetTrigger ("Dead"); // Roda a animação de morte do personagem;
-					if (!saved) {
-						PlayerInventory.playerInventory.skills.Clear ();
-						PlayerInventory.playerInventory.consumables.Clear ();
-						PlayerInventory.playerInventory.keys.Clear ();
-						ShopInventory.shopInventory.skills.Clear ();
-						for (int i = 0; i < GameManager.gm.shopSkills.Length; i++) {
-							ShopInventory.shopInventory.AddSkill (database.GetSkill (GameManager.gm.shopSkills [i]));
-						}
-					}
 					Invoke ("ReloadScene", 3f); // Recarrega a cena após três segundos
 				} else // Caso contrário
 					StartCoroutine (DamageCoroutine ()); // Roda a rotina de dano
