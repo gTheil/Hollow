@@ -15,14 +15,11 @@ public class PlayerInventory : Inventory {
 			Destroy(gameObject);
 		}
 
-		// Faz com que o inventário permaneça o mesmo caso outra cena seja carregada
-		//DontDestroyOnLoad(gameObject);
-	}
-
-	void Start () {
 		gm = GameManager.gm;
 		LoadInventory();
 	}
+
+
 
 	void LoadInventory() {
 		for (int i = 0; i < gm.playerSkills.Length; i++) {

@@ -4,7 +4,7 @@
     <Files>
       <File FileName="Assets\Scripts\BasicEnemy.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Attack.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerFireball.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerFireball.cs" Line="12" Column="46" />
       <File FileName="Assets\Scripts\EnemyFireball.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\RedPanther.cs" Line="1" Column="1" />
@@ -15,14 +15,14 @@
       <File FileName="Assets\Scripts\Database.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\UIManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ItemList.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SavePoint.cs" Line="11" Column="39" />
-      <File FileName="Assets\Scripts\PlayerInventory.cs" Line="19" Column="5" />
+      <File FileName="Assets\Scripts\SavePoint.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerInventory.cs" Line="22" Column="2" />
       <File FileName="Assets\Scripts\Player.cs" Line="44" Column="53" />
       <File FileName="Assets\Scripts\Inventory.cs" Line="35" Column="23" />
-      <File FileName="Assets\Scripts\MapKey.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="112" Column="20" />
+      <File FileName="Assets\Scripts\MapKey.cs" Line="10" Column="2" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CameraFollow.cs" Line="26" Column="41" />
-      <File FileName="Assets\Scripts\ShopInventory.cs" Line="19" Column="5" />
+      <File FileName="Assets\Scripts\ShopInventory.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
