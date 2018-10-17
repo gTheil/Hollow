@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Weapon.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManager.cs">
     <Files>
       <File FileName="Assets\Scripts\RedPanther.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\BlueSkeleton.cs" Line="1" Column="1" />
@@ -18,9 +18,10 @@
       <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CameraFollow.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ShopInventory.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Weapon.cs" Line="14" Column="62" />
-      <File FileName="Assets\Scripts\Attack.cs" Line="43" Column="58" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="21" Column="8" />
+      <File FileName="Assets\Scripts\Weapon.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Attack.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MapGold.cs" Line="19" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
