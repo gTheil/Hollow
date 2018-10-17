@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  attack: 25
+  attack: 5
   knockback: 5
 --- !u!212 &212809016847590432
 SpriteRenderer:

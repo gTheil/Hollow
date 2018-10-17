@@ -119,20 +119,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wakeUpX: 10
   wakeUpY: 5
-  speed: 5
+  speed: 3
   hp: 200
   drop: {fileID: 1177782873489132, guid: 883267e1366f4574b84e8a93fed70a2d, type: 2}
   consumable: {fileID: 0}
-  attack: 50
+  attack: 10
   knockback: {x: 7, y: 7}
   gold: 50
   facingRight: 0
-  buffable: 0
+  buffable: 1
   buffDuration: 5
   redBuffOn: 0
   blueBuffOn: 0
+  playerDistance: {x: 0, y: 0, z: 0}
   fireball: {fileID: 1238519114517468, guid: 7ffa108c01445bd4ab0392f11a103a32, type: 2}
-  fireRate: 2
+  fireRate: 3
 --- !u!212 &212424327199502010
 SpriteRenderer:
   m_ObjectHideFlags: 1

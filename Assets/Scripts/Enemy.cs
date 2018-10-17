@@ -18,11 +18,11 @@ public class Enemy : MonoBehaviour {
 	public float buffDuration;
 	public bool redBuffOn = false;
 	public bool blueBuffOn = false;
+	public Vector3 playerDistance; // Determina a distãncia entre o inimigo e o personagem
 
 	protected Transform player; // Referência ao personagem
 	protected Rigidbody2D rb; // Componente que adiciona física
 	protected Animator anim; // Gerenciador de animação
-	protected Vector3 playerDistance; // Determina a distãncia entre o inimigo e o personagem
 	protected bool isDead = false; // Determina se o inimigo está morto
 	protected SpriteRenderer sprite; // Referência à imagem do inimigo
 	protected bool isBuffed = false;
