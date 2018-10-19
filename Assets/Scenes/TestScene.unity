@@ -160,12 +160,12 @@ Prefab:
     - target: {fileID: 61515536632795400, guid: 972c2910ccb5bac4e8acd3477eeb02f7,
         type: 2}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.63
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 61515536632795400, guid: 972c2910ccb5bac4e8acd3477eeb02f7,
         type: 2}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.16
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 212337429803990024, guid: 972c2910ccb5bac4e8acd3477eeb02f7,
         type: 2}
@@ -190,6 +190,11 @@ Prefab:
     - target: {fileID: 114554688466806326, guid: 972c2910ccb5bac4e8acd3477eeb02f7,
         type: 2}
       propertyPath: blueBuffSpell
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61515536632795400, guid: 972c2910ccb5bac4e8acd3477eeb02f7,
+        type: 2}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -74,8 +74,10 @@ public class Player : MonoBehaviour {
 		if (!isDead && Time.time > nextAttack && !FindObjectOfType<UIManager>().pauseActive && !FindObjectOfType<UIManager>().shopActive) { // Caso o personagem esteja vivo e o menu fechado 
 			onGround = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground")); // Dispara uma linha da posição atual do personagem até a posição do chão
 
-			if (onGround)
+			if (onGround) {
 				anim.SetBool ("Ground", true);
+				jump = false;
+			}
 
 			// Concede ao personagem a habilidade Pulo e a adiciona ao seu inventário assim que ele sair do chão
 			if (!jumpSkill && !onGround)
