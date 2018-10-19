@@ -1,18 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player.cs">
     <Files>
       <File FileName="Assets\Scripts\RedPanther.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\BlueSkeleton.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CameraTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Spell.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Skill.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Database.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\UIManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ItemList.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SavePoint.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlayerInventory.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player.cs" Line="116" Column="17" />
+      <File FileName="Assets\Scripts\Player.cs" Line="149" Column="31" />
       <File FileName="Assets\Scripts\Inventory.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MapKey.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
@@ -20,8 +18,9 @@
       <File FileName="Assets\Scripts\ShopInventory.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Weapon.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Attack.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MapGold.cs" Line="19" Column="1" />
+      <File FileName="Assets\Scripts\MapGold.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BasicEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EnemyFireball.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -42,9 +42,9 @@ public class RedPanther : Enemy {
 				}
 				anim.SetFloat ("Speed", Mathf.Abs (rb.velocity.x)); // O inimigo se move, com animação, horizontalmente na determinada velocidade
 
-				if (rb.velocity.x > 1 && !facingRight) // Se o inimigo estiver virado para a esquerda e se movimentar para a direita
+				if (rb.velocity.x > 1 && !facingRight && playerDistance.x > 0) // Se o inimigo estiver virado para a esquerda e se movimentar para a direita
 					Flip (); // Vira sua imagem a direita
-				else if (rb.velocity.x < 1 && facingRight) // Se o inimigo estiver virado para a direita e se movimentar para a esquerda
+				else if (rb.velocity.x < 1 && facingRight && playerDistance.x < 0) // Se o inimigo estiver virado para a direita e se movimentar para a esquerda
 					Flip (); // Vira sua imagem a esquerda
 			} else {
 				rb.velocity = new Vector2 (0, 0);

@@ -74,6 +74,9 @@ public class Player : MonoBehaviour {
 		if (!isDead && Time.time > nextAttack && !FindObjectOfType<UIManager>().pauseActive && !FindObjectOfType<UIManager>().shopActive) { // Caso o personagem esteja vivo e o menu fechado 
 			onGround = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground")); // Dispara uma linha da posição atual do personagem até a posição do chão
 
+			if (onGround)
+				anim.SetBool ("Ground", true);
+
 			// Concede ao personagem a habilidade Pulo e a adiciona ao seu inventário assim que ele sair do chão
 			if (!jumpSkill && !onGround)
 				SetPlayerSkill(database.GetSkill(1));
@@ -122,7 +125,8 @@ public class Player : MonoBehaviour {
 					rb.velocity = new Vector2 (h * speed, rb.velocity.y);
 			}
 
-			anim.SetFloat("Speed", Mathf.Abs(h)); // Roda a animação de movimento enquanto o personagem estiver se movimentando
+			if (onGround)
+				anim.SetFloat("Speed", Mathf.Abs(h)); // Roda a animação de movimento enquanto o personagem estiver se movimentando
 
 			// Se a posição horizontal for maior que 0, ou seja, o personagem estiver se movendo para a direita, a função Flip é chamada para virar a imagem do personagem
 			if (h > 0 && !facingRight) {
@@ -139,6 +143,11 @@ public class Player : MonoBehaviour {
 	// Efetua o pulo do personagem
 	void Jump () {
 		rb.velocity = Vector2.zero; // Zera a velocidade do personagem
+		if (!jump)
+			anim.SetTrigger("Jump");
+		else
+			anim.SetTrigger("DoubleJump");
+		anim.SetBool ("Ground", false);
 		if (blueBuff)
 			rb.AddForce(Vector2.up * (jumpForce / 1.5f));
 		else
