@@ -30,7 +30,7 @@ public class JumpingPanther : Enemy {
 					RedBuffUse ();
 				}
 				if (redBuffOn)
-					rb.velocity = new Vector2 ((speed * 2) * (playerDistance.x / Mathf.Abs (playerDistance.x)), rb.velocity.y); // Seta a velocidade na qual o RigidBody do inimigo se moverá
+					rb.velocity = new Vector2 ((speed * 1.5f) * (playerDistance.x / Mathf.Abs (playerDistance.x)), rb.velocity.y); // Seta a velocidade na qual o RigidBody do inimigo se moverá
 				else
 					rb.velocity = new Vector2 (speed * (playerDistance.x / Mathf.Abs (playerDistance.x)), rb.velocity.y);
 				if (Time.time > nextJump) {
