@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyFireball : Fireball {
 
+	private Attack attackObj;
 	private Player player;
 	private Enemy enemy;
 	private Vector3 playerDistance;
@@ -13,6 +14,7 @@ public class EnemyFireball : Fireball {
 		rb = GetComponent<Rigidbody2D>();
 		enemy = Enemy.FindObjectOfType<Enemy>();
 		player = Player.FindObjectOfType<Player> ();
+		attackObj = Attack.FindObjectOfType<Attack> ();
 		playerDistance = player.transform.position - transform.position;
 
 		if (!enemy.facingRight) {
@@ -35,9 +37,11 @@ public class EnemyFireball : Fireball {
 			} else {
 				player.TakeDamage (attack); // Causa dano ao personagem
 			}
-			player.GetComponent<Rigidbody2D>().AddForce(Vector2.right * knockback * (playerDistance.x / Mathf.Abs(playerDistance.x)), ForceMode2D.Impulse); // Empurra o personagem uma determinada distância
+			player.GetComponent<Rigidbody2D> ().AddForce (Vector2.right * knockback * (playerDistance.x / Mathf.Abs (playerDistance.x)), ForceMode2D.Impulse); // Empurra o personagem uma determinada distância
 			if (!player.fireballSpell)
 				player.SetPlayerSpell (player.database.GetSpell (1));
+			Destroy (gameObject);
+		} else if (attackObj != null) {
 			Destroy (gameObject);
 		}
 	}
