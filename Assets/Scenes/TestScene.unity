@@ -3072,7 +3072,7 @@ Prefab:
     - target: {fileID: 114470215254492242, guid: c7f65c6ff096d3946b870dc4c35f324e,
         type: 2}
       propertyPath: fireballSpell
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114470215254492242, guid: c7f65c6ff096d3946b870dc4c35f324e,
         type: 2}
@@ -3097,7 +3097,7 @@ Prefab:
     - target: {fileID: 114470215254492242, guid: c7f65c6ff096d3946b870dc4c35f324e,
         type: 2}
       propertyPath: doubleJumpSkill
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114470215254492242, guid: c7f65c6ff096d3946b870dc4c35f324e,
         type: 2}
