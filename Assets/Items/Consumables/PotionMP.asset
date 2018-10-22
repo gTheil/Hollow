@@ -14,7 +14,7 @@ MonoBehaviour:
   itemID: 2
   itemName: "Po\xE7\xE3o de Mana"
   description: Restaura 50 de Mana.
-  image: {fileID: 21300020, guid: a3a39e3162b2f7b4e8b89435945d943a, type: 3}
+  image: {fileID: 21300000, guid: 96ee5d0be8b1c194dbe2e1dec3415078, type: 3}
   hpGain: 0
   mpGain: 50
   message: "Coletou Po\xE7\xE3o de Mana!"

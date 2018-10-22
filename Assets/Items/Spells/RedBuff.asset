@@ -15,6 +15,6 @@ MonoBehaviour:
   spellName: Adrenalina
   description: 'Dobra sua velocidade, dano causado, e dano recebido. Use novamente
     para desativar o efeito. Custo de Mana: 50'
-  image: {fileID: 21300018, guid: fc26f483f9de71146874da8abe8a1053, type: 3}
+  image: {fileID: 21300000, guid: 2c841dd98f932c245ad81392f59932a5, type: 3}
   message: Desbloqueou Adrenalina!
   manaCost: 50

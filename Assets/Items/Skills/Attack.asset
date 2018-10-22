@@ -15,6 +15,6 @@ MonoBehaviour:
   skillName: Ataque
   description: "Permite que o personagem ataque ao pressionar o Bot\xE3o Esquerdo
     do Mouse."
-  image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  image: {fileID: 21300000, guid: 5fbce8b822c02914f9012ab6c08e7d46, type: 3}
   message: Desbloqueou Ataque!
   price: 200

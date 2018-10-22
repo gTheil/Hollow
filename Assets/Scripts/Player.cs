@@ -58,6 +58,7 @@ public class Player : MonoBehaviour {
 	private bool jump = false;
 	private bool deathSaveUsed; // Determina se a habilidade "Segunda Chance" foi ativada
 	private bool blueBuff = false;
+	private Vector2 fireballPos;
 
 	// Inicialização
 	void Start () {
@@ -184,8 +185,13 @@ public class Player : MonoBehaviour {
 	}
 
 	void FireballUse() {
+		fireballPos = transform.position;
+		if (facingRight)
+			fireballPos += new Vector2 (+0.6f, +0.3f);
+		else
+			fireballPos += new Vector2 (-0.6f, +0.3f);
 		if (mp >= database.GetSpell(1).manaCost) {
-			Instantiate (fireball, attack.transform.position, Quaternion.identity);
+			Instantiate (fireball, fireballPos, Quaternion.identity);
 			anim.SetTrigger("Attack"); // Roda a animação de ataque do personagem
 			nextAttack = Time.time + fireRate; // O personagem deverá esperar o tempo de ataque para poder atacar novamente
 			mp -= database.GetSpell(1).manaCost;

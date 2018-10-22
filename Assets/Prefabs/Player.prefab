@@ -214,7 +214,7 @@ MonoBehaviour:
   maxSpeed: 7
   groundCheck: {fileID: 4300554768947190}
   jumpForce: 700
-  fireRate: 0.625
+  fireRate: 0.444
   consumable: {fileID: 0}
   spell: {fileID: 0}
   maxHP: 100
