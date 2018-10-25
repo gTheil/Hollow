@@ -6,7 +6,7 @@ public class Fireball : MonoBehaviour {
 
 	public float speed; // Determina a velocidade com que a bola de fogo se move
 	public int attack; // Valor de dano que a bola de fogo causará ao personagem quando se colidirem
-	public float knockback; // Distância que a bola de fogo empurrará o personagem quando se colidirem
+	public Vector2 knockback; // Distância que a bola de fogo empurrará o personagem quando se colidirem
 
 	protected Rigidbody2D rb;
 

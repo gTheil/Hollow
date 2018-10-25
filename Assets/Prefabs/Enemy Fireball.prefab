@@ -119,7 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   attack: 5
-  knockback: 5
+  knockback: {x: 7, y: 7}
 --- !u!212 &212809016847590432
 SpriteRenderer:
   m_ObjectHideFlags: 1

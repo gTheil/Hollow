@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyFireball : Fireball {
 
-	private Attack attackObj;
 	private Player player;
 	private Enemy enemy;
 	private Vector3 playerDistance;
@@ -14,12 +13,11 @@ public class EnemyFireball : Fireball {
 		rb = GetComponent<Rigidbody2D>();
 		enemy = Enemy.FindObjectOfType<Enemy>();
 		player = Player.FindObjectOfType<Player> ();
-		attackObj = Attack.FindObjectOfType<Attack> ();
 		playerDistance = player.transform.position - transform.position;
 
-		if (!enemy.facingRight) {
+		if (playerDistance.x < 0) {
 			speed *= -1;
-			Flip();
+			Flip ();
 		}
 	}
 	
@@ -32,17 +30,16 @@ public class EnemyFireball : Fireball {
 	void OnTriggerEnter2D(Collider2D other) {
 		Player player = other.GetComponent<Player>();
 		if (player != null) {
+			Destroy (gameObject);
 			if (enemy.redBuffOn) {
 				player.TakeDamage ((attack * 2)); // Causa dano ao personagem
 			} else {
 				player.TakeDamage (attack); // Causa dano ao personagem
 			}
-			player.GetComponent<Rigidbody2D> ().AddForce (Vector2.right * knockback * (playerDistance.x / Mathf.Abs (playerDistance.x)), ForceMode2D.Impulse); // Empurra o personagem uma determinada distância
+			Vector2 kbForce = new Vector2(knockback.x * (playerDistance.x / Mathf.Abs(playerDistance.x)), knockback.y);
+			player.GetComponent<Rigidbody2D>().AddForce(kbForce, ForceMode2D.Impulse); // Empurra o personagem uma determinada distância
 			if (!player.fireballSpell)
 				player.SetPlayerSpell (player.database.GetSpell (1));
-			Destroy (gameObject);
-		} else if (attackObj != null) {
-			Destroy (gameObject);
 		}
 	}
 }

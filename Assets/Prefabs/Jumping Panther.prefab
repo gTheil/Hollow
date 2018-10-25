@@ -119,12 +119,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wakeUpX: 10
   wakeUpY: 5
-  speed: 3
+  speed: 4
   hp: 100
   drop: {fileID: 1177782873489132, guid: 883267e1366f4574b84e8a93fed70a2d, type: 2}
   consumable: {fileID: 11400000, guid: c0fa8732076082142b570b40c0357e45, type: 2}
   attack: 10
-  knockback: {x: 3, y: 3}
+  knockback: {x: 7, y: 7}
   gold: 50
   facingRight: 0
   buffable: 0
