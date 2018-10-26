@@ -20,7 +20,7 @@ public class PlayerFireball : Fireball {
 	// Update is called once per frame
 	void Update () {
 		rb.velocity = new Vector2(speed, 0f);
-		Destroy (gameObject, 3f);
+		Destroy (gameObject, 1f);
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {

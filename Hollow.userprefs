@@ -1,19 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyFireball.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerFireball.cs">
     <Files>
-      <File FileName="Assets\Scripts\Fireball.cs" Line="9" Column="26" />
-      <File FileName="Assets\Scripts\Player.cs" Line="75" Column="17" />
-      <File FileName="Assets\Scripts\FireballSkeleton.cs" Line="60" Column="19" />
+      <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FireballSkeleton.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\JumpingPanther.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EnemyFireball.cs" Line="21" Column="4" />
-      <File FileName="Assets\Scripts\PlayerFireball.cs" Line="28" Column="23" />
+      <File FileName="Assets\Scripts\EnemyFireball.cs" Line="27" Column="25" />
+      <File FileName="Assets\Scripts\PlayerFireball.cs" Line="23" Column="25" />
       <File FileName="Assets\Scripts\Attack.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Door.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerInventory.cs" Line="7" Column="2" />
+      <File FileName="Assets\Scripts\PlayerInventory.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MapKey.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="14" Column="2" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

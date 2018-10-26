@@ -647,7 +647,7 @@ TextureImporter:
       name: Metroidvania Tileset_27
       rect:
         serializedVersion: 2
-        x: 176
+        x: 175
         y: 224
         width: 16
         height: 16
@@ -871,7 +871,7 @@ TextureImporter:
       name: Metroidvania Tileset_43
       rect:
         serializedVersion: 2
-        x: 176
+        x: 175
         y: 208
         width: 16
         height: 16
@@ -1095,7 +1095,7 @@ TextureImporter:
       name: Metroidvania Tileset_59
       rect:
         serializedVersion: 2
-        x: 176
+        x: 175
         y: 192
         width: 16
         height: 16
@@ -1319,9 +1319,9 @@ TextureImporter:
       name: Metroidvania Tileset_75
       rect:
         serializedVersion: 2
-        x: 176
+        x: 175
         y: 176
-        width: 16
+        width: 17
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1487,9 +1487,9 @@ TextureImporter:
       name: Metroidvania Tileset_87
       rect:
         serializedVersion: 2
-        x: 176
+        x: 175
         y: 160
-        width: 16
+        width: 17
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
