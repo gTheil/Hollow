@@ -8,10 +8,12 @@ public class CameraTrigger : MonoBehaviour {
 	public Vector2 minXAndY; // Coordenadas X e Y mínimas que a câmera pode ter
 
 	private CameraFollow cameraFollow; // Referência ao script que controla a movimentação da câmera
+	private Enemy enemy;
 
 	// Inicialização
 	void Start () {
 		cameraFollow = FindObjectOfType<CameraFollow>(); // Inicializa a câmera
+		enemy = FindObjectOfType<Enemy>();
 	}
 
 	// Ao colidir com o personagem
@@ -19,6 +21,8 @@ public class CameraTrigger : MonoBehaviour {
 		if (other.CompareTag("Player")) {
 			cameraFollow.maxXAndY = maxXAndY; // Passa as coordenadas máximas da transição para a câmera
 			cameraFollow.minXAndY = minXAndY; // Passa as coordenadas mínimas da transição para a câmera
+		} if (other.CompareTag("Enemy")) {
+			enemy.transform.position = enemy.startPos;
 		}
 	}
 

@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour {
 	public bool redBuffOn = false;
 	public bool blueBuffOn = false;
 	public Vector3 playerDistance; // Determina a distãncia entre o inimigo e o personagem
+	public Vector2 startPos;
 
 	protected Transform player; // Referência ao personagem
 	protected Rigidbody2D rb; // Componente que adiciona física
@@ -35,6 +36,7 @@ public class Enemy : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D>(); // Inicializa a física do inimigo
 		anim = GetComponent<Animator>(); // Inicializa o gerenciador de animação do inimigo
 		sprite = GetComponent<SpriteRenderer>(); // Inicializa a imagem do inimigo
+		startPos = new Vector2(transform.position.x, transform.position.y);
 	}
 
 	// Método que vira a imagem do inimigo
@@ -93,10 +95,13 @@ public class Enemy : MonoBehaviour {
 		if (player != null) {
 			if (redBuffOn) {
 				player.TakeDamage ((attack * 2)); // Causa dano ao personagem
+				player.canDamage = false; // É colocado em um estado de invencibilidade
 				if (!player.redBuffSpell)
 					player.SetPlayerSpell (player.database.GetSpell (2));
-			} else
+			} else {
 				player.TakeDamage (attack);
+				player.canDamage = false; // É colocado em um estado de invencibilidade
+			}
 			Vector2 kbForce = new Vector2(knockback.x * (playerDistance.x / Mathf.Abs(playerDistance.x)), knockback.y);
 			player.GetComponent<Rigidbody2D>().AddForce(kbForce, ForceMode2D.Impulse); // Empurra o personagem uma determinada distância
 		}

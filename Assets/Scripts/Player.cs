@@ -51,7 +51,7 @@ public class Player : MonoBehaviour {
 	private float nextAttack; // Contagem para possibilitar o personagem a atacar novamente
 	private int hp; // Valor atual de vida do personagem
 	private int mp; // Valor atual de mana do personagem
-	private bool canDamage = true; // Determina se o jogador pode receber dano
+	public bool canDamage = true; // Determina se o jogador pode receber dano
 	private SpriteRenderer sprite; // Referência à imagem do jogador
 	private bool isDead = false; // Determina se o personagem está morto
 	private CameraFollow cameraFollow; // Referência ao script que controla a movimentação da câmera
@@ -260,7 +260,7 @@ public class Player : MonoBehaviour {
 		if (!attackSkill)
 			SetPlayerSkill(database.GetSkill(2));
 		if (canDamage) { // Caso o personagem possa receber dano
-			canDamage = false; // É colocado em um estado de invencibilidade
+			
 			if (redBuff)
 				hp -= ((damage - def) * 2);
 			else if (blueBuff)

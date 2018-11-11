@@ -79,6 +79,7 @@
      <Compile Include="Assets\Scripts\ShopInventory.cs" />
      <Compile Include="Assets\Scripts\Skill.cs" />
      <Compile Include="Assets\Scripts\Spell.cs" />
+     <Compile Include="Assets\Scripts\Spike.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
  <Reference Include="UnityEngine.UI">

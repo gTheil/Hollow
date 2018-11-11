@@ -33,8 +33,10 @@ public class EnemyFireball : Fireball {
 			Destroy (gameObject);
 			if (enemy.redBuffOn) {
 				player.TakeDamage ((attack * 2)); // Causa dano ao personagem
+				player.canDamage = false; // É colocado em um estado de invencibilidade
 			} else {
 				player.TakeDamage (attack); // Causa dano ao personagem
+				player.canDamage = false; // É colocado em um estado de invencibilidade
 			}
 			Vector2 kbForce = new Vector2(knockback.x * (playerDistance.x / Mathf.Abs(playerDistance.x)), knockback.y);
 			player.GetComponent<Rigidbody2D>().AddForce(kbForce, ForceMode2D.Impulse); // Empurra o personagem uma determinada distância
