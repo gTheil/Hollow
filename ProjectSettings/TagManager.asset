@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RedPanther
   - Enemy
+  - Transition
   layers:
   - Default
   - TransparentFX

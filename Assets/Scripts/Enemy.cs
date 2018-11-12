@@ -19,7 +19,6 @@ public class Enemy : MonoBehaviour {
 	public bool redBuffOn = false;
 	public bool blueBuffOn = false;
 	public Vector3 playerDistance; // Determina a distãncia entre o inimigo e o personagem
-	public Vector2 startPos;
 
 	protected Transform player; // Referência ao personagem
 	protected Rigidbody2D rb; // Componente que adiciona física
@@ -36,7 +35,6 @@ public class Enemy : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D>(); // Inicializa a física do inimigo
 		anim = GetComponent<Animator>(); // Inicializa o gerenciador de animação do inimigo
 		sprite = GetComponent<SpriteRenderer>(); // Inicializa a imagem do inimigo
-		startPos = new Vector2(transform.position.x, transform.position.y);
 	}
 
 	// Método que vira a imagem do inimigo
