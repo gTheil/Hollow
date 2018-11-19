@@ -4,8 +4,8 @@
     <Files>
       <File FileName="Assets\Scripts\CameraTrigger.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\UIManager.cs" Line="312" Column="40" />
-      <File FileName="Assets\Scripts\Player.cs" Line="211" Column="3" />
+      <File FileName="Assets\Scripts\UIManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player.cs" Line="8" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
