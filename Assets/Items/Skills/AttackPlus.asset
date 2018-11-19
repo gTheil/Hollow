@@ -16,4 +16,4 @@ MonoBehaviour:
   description: Dobra o dano do ataque.
   image: {fileID: 21300000, guid: 39efa20726decea4e8ca088d400012ae, type: 3}
   message: Desbloqueou Ataque Aprimorado!
-  price: 100
+  price: 750

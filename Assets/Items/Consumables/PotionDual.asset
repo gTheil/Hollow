@@ -14,7 +14,7 @@ MonoBehaviour:
   itemID: 3
   itemName: "Po\xE7\xE3o Dupla"
   description: Restaura 100 de Vida e Mana.
-  image: {fileID: 21300022, guid: a3a39e3162b2f7b4e8b89435945d943a, type: 3}
+  image: {fileID: 21300000, guid: 6e1ef7d1882ca5846b65afe71c02b12f, type: 3}
   hpGain: 100
   mpGain: 100
   message: "Coletou Po\xE7\xE3o Dupla!"

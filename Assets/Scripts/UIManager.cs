@@ -307,7 +307,7 @@ public class UIManager : MonoBehaviour {
 
 	// Método que atualiza os textos dos recursos na barra de status
 	void UpdateUI() {
-		hpUI.text = player.GetHP().ToString();
+		hpUI.text = "Vida: " + player.GetHP().ToString();
 		mpUI.text = "Mana: " + player.GetMP();
 		goldUI.text = "Ouro: " + player.gold;
 		itemUI.text = "x" + playerInventory.CountConsumable(player.consumable);

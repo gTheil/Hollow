@@ -199,23 +199,27 @@ public class Player : MonoBehaviour {
 	}
 
 	void RedBuffUse() {
-		redBuff = !redBuff;
-		if (redBuff) {
-			mp -= database.GetSpell(2).manaCost;
-			blueBuff = false;
-			FindObjectOfType<UIManager> ().SetMessage ("Ativou Adrenalina!");
-		} else
-			FindObjectOfType<UIManager> ().SetMessage ("Desativou Adrenalina!");
+		if (!redBuff && mp >= database.GetSpell (2).manaCost || redBuff) {
+			redBuff = !redBuff;
+			if (redBuff) {
+				mp -= database.GetSpell (2).manaCost;
+				blueBuff = false;
+				FindObjectOfType<UIManager> ().SetMessage ("Ativou Adrenalina!");
+			} else
+				FindObjectOfType<UIManager> ().SetMessage ("Desativou Adrenalina!");
+		}
 	}
 
 	void BlueBuffUse() {
-		blueBuff = !blueBuff;
-		if (blueBuff) {
-			mp -= database.GetSpell(3).manaCost;
-			redBuff = false;
-			FindObjectOfType<UIManager> ().SetMessage ("Ativou Fortaleza!");
-		} else
-			FindObjectOfType<UIManager> ().SetMessage ("Desativou Fortaleza!");
+		if (!blueBuff && mp >= database.GetSpell (3).manaCost || blueBuff) {
+			blueBuff = !blueBuff;
+			if (blueBuff) {
+				mp -= database.GetSpell (3).manaCost;
+				redBuff = false;
+				FindObjectOfType<UIManager> ().SetMessage ("Ativou Fortaleza!");
+			} else
+				FindObjectOfType<UIManager> ().SetMessage ("Desativou Fortaleza!");
+		}
 	}
 
 	// Utiliza o consumível na barra de status

@@ -16,4 +16,4 @@ MonoBehaviour:
   description: Permite que o personagem execute um pulo seguido do outro.
   image: {fileID: 21300026, guid: 0d0c8aa7e31b1ef41bee322e6b1acda5, type: 3}
   message: Desbloqueou Pulo Duplo!
-  price: 100
+  price: 500

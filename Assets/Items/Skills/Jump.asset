@@ -16,4 +16,4 @@ MonoBehaviour:
   description: "Permite que o personagem pule ao pressionar a Barra de Espa\xE7o."
   image: {fileID: 21300012, guid: 0d0c8aa7e31b1ef41bee322e6b1acda5, type: 3}
   message: Desbloqueou Pulo!
-  price: 50
+  price: 0

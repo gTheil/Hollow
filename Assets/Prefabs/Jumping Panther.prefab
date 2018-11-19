@@ -123,7 +123,7 @@ MonoBehaviour:
   hp: 100
   drop: {fileID: 1177782873489132, guid: 883267e1366f4574b84e8a93fed70a2d, type: 2}
   consumable: {fileID: 11400000, guid: c0fa8732076082142b570b40c0357e45, type: 2}
-  attack: 10
+  attack: 20
   knockback: {x: 7, y: 7}
   gold: 50
   facingRight: 0
@@ -132,6 +132,7 @@ MonoBehaviour:
   redBuffOn: 0
   blueBuffOn: 0
   playerDistance: {x: 0, y: 0, z: 0}
+  startPos: {x: 0, y: 0}
   jumpForce: 500
   jumpRate: 1.5
 --- !u!212 &212177798035760812
