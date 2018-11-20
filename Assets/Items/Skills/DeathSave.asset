@@ -17,4 +17,4 @@ MonoBehaviour:
     apenas uma vez.
   image: {fileID: 21300030, guid: 0d0c8aa7e31b1ef41bee322e6b1acda5, type: 3}
   message: Desbloqueou Segunda Chance!
-  price: 1000
+  price: 500
