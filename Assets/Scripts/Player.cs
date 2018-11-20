@@ -42,6 +42,14 @@ public class Player : MonoBehaviour {
 	public bool facingRight = true; // Determina a direção em que o personagem está virado; ao inicializar, o personagem estará virado para a direita
 	public bool redBuff = false;
 	public GameManager gm; // Referência ao GameManager
+	public AudioClip clipJump;
+	public AudioClip clipAttack;
+	public AudioClip clipFireball;
+	public AudioClip clipBuffOn;
+	public AudioClip clipBuffOff;
+	public AudioClip clipConsumable;
+	public AudioClip clipDamage;
+	public AudioClip clipDeath;
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
@@ -59,6 +67,16 @@ public class Player : MonoBehaviour {
 	private bool deathSaveUsed; // Determina se a habilidade "Segunda Chance" foi ativada
 	private bool blueBuff = false;
 	private Vector2 fireballPos;
+	private AudioSource audioJump;
+	private AudioSource audioAttack;
+	private AudioSource audioFireball;
+	private AudioSource audioBuffOn;
+	private AudioSource audioBuffOff;
+	private AudioSource audioConsumable;
+	private AudioSource audioDamage;
+	private AudioSource audioDeath;
+	private AudioManager am;
+
 
 	// Inicialização
 	void Start () {
@@ -67,6 +85,15 @@ public class Player : MonoBehaviour {
 		attack = GetComponentInChildren<Attack>(); // Inicializa o componente "Attack"
 		sprite = GetComponent<SpriteRenderer>(); // Inicializa a imagem do jogador
 		cameraFollow = FindObjectOfType<CameraFollow>(); // Inicializa a posição da câmera
+		am = FindObjectOfType<AudioManager>();
+		audioJump = am.AddAudio (clipJump, false, false, 1f);
+		audioAttack = am.AddAudio (clipAttack, false, false, 1f);
+		audioFireball = am.AddAudio (clipFireball, false, false, 1f);
+		audioBuffOn = am.AddAudio (clipBuffOn, false, false, 1f);
+		audioBuffOff = am.AddAudio (clipBuffOff, false, false, 1f);
+		audioConsumable = am.AddAudio (clipConsumable, false, false, 1f);
+		audioDamage = am.AddAudio (clipDamage, false, false, 1f);
+		audioDeath = am.AddAudio (clipDeath, false, false, 1f);
 		SetPlayer();
 	}
 	
@@ -145,6 +172,7 @@ public class Player : MonoBehaviour {
 
 	// Efetua o pulo do personagem
 	void Jump () {
+		audioJump.Play();
 		rb.velocity = Vector2.zero; // Zera a velocidade do personagem
 		if (!jump)
 			anim.SetTrigger("Jump");
@@ -179,12 +207,14 @@ public class Player : MonoBehaviour {
 
 	// Efetua o ataque do personagem
 	void Attack () {
+		audioAttack.Play();
 		anim.SetTrigger("Attack"); // Roda a animação de ataque do personagem
 		attack.PlayAnimation(weaponEquipped.animation); // Roda a animação de ataque da arma equipada
 		nextAttack = Time.time + fireRate; // O personagem deverá esperar o tempo de ataque para poder atacar novamente
 	}
 
 	void FireballUse() {
+		audioFireball.Play();
 		fireballPos = transform.position;
 		if (facingRight)
 			fireballPos += new Vector2 (+0.6f, +0.3f);
@@ -202,11 +232,14 @@ public class Player : MonoBehaviour {
 		if (!redBuff && mp >= database.GetSpell (2).manaCost || redBuff) {
 			redBuff = !redBuff;
 			if (redBuff) {
+				audioBuffOn.Play();
 				mp -= database.GetSpell (2).manaCost;
 				blueBuff = false;
 				FindObjectOfType<UIManager> ().SetMessage ("Ativou Adrenalina!");
-			} else
+			} else {
+				audioBuffOff.Play();
 				FindObjectOfType<UIManager> ().SetMessage ("Desativou Adrenalina!");
+			}
 		}
 	}
 
@@ -214,17 +247,21 @@ public class Player : MonoBehaviour {
 		if (!blueBuff && mp >= database.GetSpell (3).manaCost || blueBuff) {
 			blueBuff = !blueBuff;
 			if (blueBuff) {
+				audioBuffOn.Play ();
 				mp -= database.GetSpell (3).manaCost;
 				redBuff = false;
 				FindObjectOfType<UIManager> ().SetMessage ("Ativou Fortaleza!");
-			} else
+			} else {
+				audioBuffOff.Play();
 				FindObjectOfType<UIManager> ().SetMessage ("Desativou Fortaleza!");
+			}
 		}
 	}
 
 	// Utiliza o consumível na barra de status
 	public void QuickItem (Consumable consumable) {
 		if (Inventory.playerInventory.CountConsumable(consumable) > 0) {
+		audioConsumable.Play();	
 		hp += consumable.hpGain; // Aumenta o valor de vida do personagem de acordo com o aumento de vida do consumível utilizado
 		// Impede que o valor atual de vida do personagem ultrapasse o valor máximo
 		if (hp >= maxHP) {
@@ -264,7 +301,7 @@ public class Player : MonoBehaviour {
 		if (!attackSkill)
 			SetPlayerSkill(database.GetSkill(2));
 		if (canDamage) { // Caso o personagem possa receber dano
-			
+			audioDamage.Play();
 			if (redBuff)
 				hp -= ((damage - def) * 2);
 			else if (blueBuff)
@@ -279,6 +316,7 @@ public class Player : MonoBehaviour {
 				deathSaveUsed = !deathSaveUsed;
 			}
 			if (deathSkill && hp == 0) {
+					audioDeath.Play();
 					isDead = true; // O coloca em estado de morte
 					cameraFollow.enabled = false; // Trava a câmera
 					anim.SetTrigger ("Dead"); // Roda a animação de morte do personagem;
