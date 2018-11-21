@@ -17,4 +17,4 @@ MonoBehaviour:
     inimigo atingido. Custo de Mana: 10'
   image: {fileID: 21300014, guid: 4506076b0eca4e24e9ff11b47799aa9c, type: 3}
   message: Desbloqueou Bola de Fogo!
-  manaCost: 10
+  manaCost: 20

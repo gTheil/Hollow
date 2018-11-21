@@ -179,10 +179,7 @@ public class Player : MonoBehaviour {
 		else
 			anim.SetTrigger("DoubleJump");
 		anim.SetBool ("Ground", false);
-		if (blueBuff)
-			rb.AddForce(Vector2.up * (jumpForce / 1.5f));
-		else
-			rb.AddForce(Vector2.up * jumpForce);
+		rb.AddForce(Vector2.up * jumpForce);
 	}
 
 	// Efetua a inversão da imagem do personagem
@@ -214,13 +211,13 @@ public class Player : MonoBehaviour {
 	}
 
 	void FireballUse() {
-		audioFireball.Play();
 		fireballPos = transform.position;
 		if (facingRight)
 			fireballPos += new Vector2 (+0.6f, +0.3f);
 		else
 			fireballPos += new Vector2 (-0.6f, +0.3f);
 		if (mp >= database.GetSpell(1).manaCost) {
+			audioFireball.Play();
 			Instantiate (fireball, fireballPos, Quaternion.identity);
 			anim.SetTrigger("Attack"); // Roda a animação de ataque do personagem
 			nextAttack = Time.time + fireRate; // O personagem deverá esperar o tempo de ataque para poder atacar novamente
@@ -298,8 +295,6 @@ public class Player : MonoBehaviour {
 	// Método chamado ao personagem colidir com um inimigo
 	public void TakeDamage(int damage) {
 		// Concede ao personagem a habilidade Ataque e a adiciona ao inventário assim que ele receber dano
-		if (!attackSkill)
-			SetPlayerSkill(database.GetSkill(2));
 		if (canDamage) { // Caso o personagem possa receber dano
 			audioDamage.Play();
 			if (redBuff)

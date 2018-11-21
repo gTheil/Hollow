@@ -93,6 +93,8 @@ public class Enemy : MonoBehaviour {
 	protected void OnCollisionEnter2D(Collision2D other) {
 		Player player = other.gameObject.GetComponent<Player>();
 		if (player != null) {
+			if (!player.attackSkill)
+				player.SetPlayerSkill(player.database.GetSkill(2));
 			if (redBuffOn) {
 				player.TakeDamage ((attack * 2)); // Causa dano ao personagem
 				player.canDamage = false; // É colocado em um estado de invencibilidade

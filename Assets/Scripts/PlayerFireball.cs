@@ -26,6 +26,8 @@ public class PlayerFireball : Fireball {
 	void OnTriggerEnter2D(Collider2D other) {
 		Enemy enemy = other.GetComponent<Enemy>();
 		if (enemy != null) {
+			if (enemy.blueBuffOn && !player.blueBuffSpell)
+				player.SetPlayerSpell (player.database.GetSpell (3));
 			if (player.redBuff)
 				enemy.TakeDamage ((attack * 2)); // Causa dano ao personagem
 			else

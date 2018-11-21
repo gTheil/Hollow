@@ -118,8 +118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  attack: 25
-  knockback: 3
+  attack: 35
+  knockback: {x: 0, y: 0}
 --- !u!212 &212336306225614038
 SpriteRenderer:
   m_ObjectHideFlags: 1
