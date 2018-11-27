@@ -7,9 +7,12 @@ public class UIManager : MonoBehaviour {
 
 	public GameObject pauseMenu; // Referência ao menu principal
 	public GameObject shopMenu; // Referência ao menu principal
+	public GameObject exitMenu;
 	public Transform pauseCursor; // Referência ao cursor para a navegação no menu
 	public Transform shopCursor; // Referência ao cursor para a navegação no menu
+	public Transform exitCursor;
 	public Transform[] menuOptions; // Array de opções selecionáveis no menu principal
+	public Transform[] exitOptions;
 	public GameObject optionPanel; // Painel que contém as opções selecionáveis no menu principal
 	public GameObject itemPanel; // Painel que contém a lista de itens a serem exibidos
 	public GameObject shopPanel; // Painel que contém a lista de itens a serem exibidos
@@ -28,6 +31,7 @@ public class UIManager : MonoBehaviour {
 
 	public bool pauseActive = false; // Determina se o jogador está com o menu aberto
 	public bool shopActive = false; // Determina se o jogador está com o menu aberto
+	public bool exitActive = false;
 	private int optionID = 0; // Posição do cursor no array de opções selecionáveis
 	private Inventory playerInventory; // Referência ao inventário do jogador
 	private Inventory shopInventory; // Referência ao inventário do jogador
@@ -78,7 +82,7 @@ public class UIManager : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown (KeyCode.C)) { // Ao jogador pressionar o botão de menu
-			if (!shopActive) {
+			if (!shopActive && !exitActive) {
 				pauseActive = !pauseActive; // Abre o menu se o mesmo estiver fechado, fecha-o se estiver aberto
 				optionID = 0; // Reseta a posição do cursor para a primeira opção selecionável
 				optionPanel.SetActive (true); // Ativa o painel de opções
@@ -90,6 +94,20 @@ public class UIManager : MonoBehaviour {
 					Time.timeScale = 0; // Pausa o jogo
 				} else {
 					pauseMenu.SetActive (false);
+					Time.timeScale = 1; // Despausa o jogo
+				}
+			}
+		}
+
+		if (Input.GetKeyDown (KeyCode.Escape)) { // Ao jogador pressionar o botão de menu
+			if (!shopActive && !pauseActive) {
+				exitActive = !exitActive; // Abre o menu se o mesmo estiver fechado, fecha-o se estiver aberto
+				optionID = 0; // Reseta a posição do cursor para a primeira opção selecionável
+				if (exitActive) {
+					exitMenu.SetActive (true);
+					Time.timeScale = 0; // Pausa o jogo
+				} else {
+					exitMenu.SetActive (false);
 					Time.timeScale = 1; // Despausa o jogo
 				}
 			}
@@ -188,6 +206,32 @@ public class UIManager : MonoBehaviour {
 					} else {
 						shopDescriptionText.text = "Você não possui ouro suficiente.";
 					}
+				}
+			}
+		}
+
+		if (exitActive) { // Se o menu estiver aberto
+			Vector3 cursorPosition = new Vector3(); // Variável que determina a posição do cursor
+			cursorPosition = exitOptions[optionID].position;
+			exitCursor.position = new Vector3 (cursorPosition.x - 100, cursorPosition.y, cursorPosition.z);
+			if (Input.GetKeyDown (KeyCode.DownArrow)) { // Ao jogador pressionar a seta para baixo
+				if (optionID >= exitOptions.Length - 1) {
+					optionID = exitOptions.Length - 1; // Impede o jogador de descer o cursor abaixo do último item
+				} else
+					optionID++; // Move o cursor para a próxima opção
+			} else if (Input.GetKeyDown(KeyCode.UpArrow)) { // Ao jogador pressionar a seta para cima
+				if (optionID == 0)
+					optionID = 0; // Impede o jogador de subir o cursor acima da primeira opção
+				else
+					optionID--; // Move o cursor para a opção anterior
+			} if (Input.GetButtonDown ("Submit")) { // Ao jogador selecionar uma das opções
+				if (optionID == 0)
+					Application.Quit();
+				else if (optionID == 1) {
+					exitActive = !exitActive;
+					exitMenu.SetActive (false); // Desativa o painel de opções do menu
+					optionID = 0; // Posiciona o cursor no primeiro item da lista
+					Time.timeScale = 1; // Despausa o jogo
 				}
 			}
 		}
@@ -323,7 +367,7 @@ public class UIManager : MonoBehaviour {
 	}
 
 	public void CallShop() {
-		if (!pauseActive) {
+		if (!pauseActive && !exitActive) {
 			shopActive = !shopActive; // Abre o menu se o mesmo estiver fechado, fecha-o se estiver aberto
 			optionID = 0; // Reseta a posição do cursor para a primeira opção selecionável
 			shopPanel.SetActive (true); // Ativa o painel de itens no menu

@@ -108,7 +108,7 @@ MonoBehaviour:
   m_MinSize: {x: 753, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 1
-  controlID: 22288
+  controlID: 4446
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_MinSize: {x: 753, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 22289
+  controlID: 4447
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_MinSize: {x: 476, y: 492}
   m_MaxSize: {x: 14006, y: 14042}
   vertical: 1
-  controlID: 22213
+  controlID: 4448
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 22214
+  controlID: 4449
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_MinSize: {x: 476, y: 271}
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
-  controlID: 22305
+  controlID: 4502
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -439,14 +439,14 @@ MonoBehaviour:
     height: 343
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 13078.575492429945
+  lastFramingTime: 859.2780890968911
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 60.34327, y: 23.893719, z: 0.046875}
+    m_Target: {x: 161.00227, y: 147.38423, z: 0}
     speed: 2
-    m_Value: {x: 60.34327, y: 23.893719, z: 0.046875}
+    m_Value: {x: 161.00227, y: 147.38423, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -474,9 +474,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 16.063725
+    m_Target: 367.13153
     speed: 2
-    m_Value: 16.063725
+    m_Value: 367.13153
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -628,9 +628,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3e390000
-    m_LastClickedID: 14654
-    m_ExpandedIDs: 54aff9ff9efbffff0000000080360000a6360000be360000e43600006e3700009c380000b6380000b639000072200100f02a0100
+    m_SelectedIDs: 8687ffff
+    m_LastClickedID: -30842
+    m_ExpandedIDs: dc76ffff8687ffff828effff5c95ffff3aa6ffffe0a7ffff1caaffff10beffff52dcffff5cdcffffd2e3ffffa6e4ffffdae5fffffcf9ffff94fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -649,7 +649,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
   m_ExpandedScenes:
-  - TestScene
+  - IntroScene
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -758,13 +758,13 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Felipe\Documents\Unity\Hollow
+  m_LastProjectPath: C:\Users\Felipe Theil\Documents\Unity\Hollow
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b6280000
     m_LastClickedID: 10422
-    m_ExpandedIDs: 00000000c22700006028000070280000c8280000e62800007a290000022a0000142c00002c2c00007a2c00008e2c0000d82c0000982d0000ce2d00002a330000543300007033000026360000bc3d0000
+    m_ExpandedIDs: 00000000cc2700006c2800007a280000d2280000f0280000842900000c2a00001e2c0000362c0000842c0000982c0000e22c0000a22d0000d82d0000343300005e3300007a3300007835000030360000fe360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -789,10 +789,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 205.66669}
+    scrollPos: {x: 0, y: 76}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c22700006028000070280000c8280000e62800007a290000022a0000142c00002c2c00007a2c00008e2c0000d82c0000982d0000ce2d00002a330000543300007033000026360000bc3d0000
+    m_ExpandedIDs: 00000000cc2700006c2800007a280000d2280000f0280000842900000c2a00001e2c0000362c0000842c0000982c0000e22c0000a22d0000d82d0000343300005e3300007a3300007835000030360000fe360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
