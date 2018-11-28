@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour {
 
+	public AudioClip clipHurt;
+
 	private Animator anim; // Gerencia as animações de ataque
 	private int damage; // Dano causado pelo ataque aos inimigos
 	private Player player;
+	private AudioSource audioHurt;
+	private AudioManager am;
 
 	// Inicialização
 	void Start () {
 		anim = GetComponent<Animator>(); // Inicializa o gerenciador de animações
 		player = GetComponentInParent<Player>();
+		am = FindObjectOfType<AudioManager>();
+		audioHurt = am.AddAudio (clipHurt, false, false, 1f);
 	}
 
 	// Método chamado para executar uma animação
@@ -33,6 +39,7 @@ public class Attack : MonoBehaviour {
 	private void OnTriggerEnter2D(Collider2D other) {
 		Enemy enemy = other.GetComponent<Enemy>();
 		if (enemy != null) {
+			audioHurt.Play();
 			if (player.redBuff)
 				enemy.TakeDamage((damage) * 2);
 			else

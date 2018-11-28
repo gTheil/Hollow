@@ -13,8 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillID: 2
   skillName: Ataque
-  description: "Permite que o personagem ataque ao pressionar o Bot\xE3o Esquerdo
-    do Mouse."
+  description: "Permite realizar um ataque ao pressionar a Barra de Espa\xE7o."
   image: {fileID: 21300000, guid: 5fbce8b822c02914f9012ab6c08e7d46, type: 3}
   message: Desbloqueou Ataque!
   price: 0

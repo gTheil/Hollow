@@ -13,7 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillID: 4
   skillName: Pulo Duplo
-  description: Permite que o personagem execute um pulo seguido do outro.
+  description: Aprimora a habilidade Pulo, permitindo realizar um segundo pulo no
+    ar.
   image: {fileID: 21300026, guid: 0d0c8aa7e31b1ef41bee322e6b1acda5, type: 3}
   message: Desbloqueou Pulo Duplo!
   price: 500

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Key2
   m_EditorClassIdentifier: 
   itemID: 2
-  keyName: Chave Dois
-  description: Abre a segunda porta.
+  keyName: Chave Prateada
+  description: "Com esta chave, voc\xEA poder\xE1 abrir uma porta na \xC1rea Inicial."
   image: {fileID: 21300006, guid: cd46791bbdf5b7a48a817294b51eb53e, type: 3}
-  message: Coletou Chave Dois!
+  message: Coletou Chave Prateada!

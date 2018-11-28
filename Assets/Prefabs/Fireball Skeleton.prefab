@@ -133,6 +133,9 @@ MonoBehaviour:
   blueBuffOn: 0
   playerDistance: {x: 0, y: 0, z: 0}
   startPos: {x: 0, y: 0}
+  clipDeath: {fileID: 8300000, guid: c026b6fb7e77e58408c578614dd30c56, type: 3}
+  clipFireball: {fileID: 8300000, guid: 70fbaf44b69fd4740a81065efbf4b594, type: 3}
+  clipBuff: {fileID: 8300000, guid: c5e6f06ab30e5c449804272cb116c104, type: 3}
   fireball: {fileID: 1238519114517468, guid: 7ffa108c01445bd4ab0392f11a103a32, type: 2}
   fireRate: 3
 --- !u!212 &212577586992756810

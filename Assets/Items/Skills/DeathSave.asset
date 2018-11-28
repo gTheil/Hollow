@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillID: 6
   skillName: Segunda Chance
-  description: Ao sofrer um golpe fatal, restaura totalmente a Vida do personagem,
+  description: Aprimora a habilidade Morte, restaurando sua Vida e impedindo sua morte,
     apenas uma vez.
   image: {fileID: 21300030, guid: 0d0c8aa7e31b1ef41bee322e6b1acda5, type: 3}
   message: Desbloqueou Segunda Chance!

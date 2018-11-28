@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class PlayerFireball : Fireball {
 
+	public AudioClip clipHurt;
+
 	private Player player;
+	private AudioSource audioHurt;
+	private AudioManager am;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +19,9 @@ public class PlayerFireball : Fireball {
 			speed *= -1;
 			Flip();
 		}
+
+		am = FindObjectOfType<AudioManager>();
+		audioHurt = am.AddAudio (clipHurt, false, false, 1f);
 	}
 
 	// Update is called once per frame
@@ -26,6 +33,7 @@ public class PlayerFireball : Fireball {
 	void OnTriggerEnter2D(Collider2D other) {
 		Enemy enemy = other.GetComponent<Enemy>();
 		if (enemy != null) {
+			audioHurt.Play();
 			if (enemy.blueBuffOn && !player.blueBuffSpell)
 				player.SetPlayerSpell (player.database.GetSpell (3));
 			if (player.redBuff)

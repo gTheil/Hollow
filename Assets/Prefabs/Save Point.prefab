@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c6414e3dfe84c4ca182f20e2b969b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clipContact: {fileID: 8300000, guid: 6d8a80ad05771f54d897d161d7a0bc56, type: 3}
 --- !u!212 &212692787564684034
 SpriteRenderer:
   m_ObjectHideFlags: 1

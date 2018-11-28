@@ -120,6 +120,7 @@ MonoBehaviour:
   speed: 8
   attack: 35
   knockback: {x: 0, y: 0}
+  clipHurt: {fileID: 8300000, guid: 42aa8e79cab852a4fb76bf5761c8175a, type: 3}
 --- !u!212 &212336306225614038
 SpriteRenderer:
   m_ObjectHideFlags: 1

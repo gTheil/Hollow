@@ -46,10 +46,10 @@ public class Player : MonoBehaviour {
 	public AudioClip clipAttack;
 	public AudioClip clipFireball;
 	public AudioClip clipBuffOn;
-	public AudioClip clipBuffOff;
 	public AudioClip clipConsumable;
 	public AudioClip clipDamage;
 	public AudioClip clipDeath;
+	public AudioClip clipSkill;
 
 	private Rigidbody2D rb; // RigidBody, componente que adiciona física
 	private float speed; // Velocidade atual do personagem
@@ -71,10 +71,10 @@ public class Player : MonoBehaviour {
 	private AudioSource audioAttack;
 	private AudioSource audioFireball;
 	private AudioSource audioBuffOn;
-	private AudioSource audioBuffOff;
 	private AudioSource audioConsumable;
 	private AudioSource audioDamage;
 	private AudioSource audioDeath;
+	private AudioSource audioSkill;
 	private AudioManager am;
 
 
@@ -90,16 +90,16 @@ public class Player : MonoBehaviour {
 		audioAttack = am.AddAudio (clipAttack, false, false, 1f);
 		audioFireball = am.AddAudio (clipFireball, false, false, 1f);
 		audioBuffOn = am.AddAudio (clipBuffOn, false, false, 1f);
-		audioBuffOff = am.AddAudio (clipBuffOff, false, false, 1f);
 		audioConsumable = am.AddAudio (clipConsumable, false, false, 1f);
 		audioDamage = am.AddAudio (clipDamage, false, false, 1f);
 		audioDeath = am.AddAudio (clipDeath, false, false, 1f);
+		audioSkill = am.AddAudio (clipSkill, false, false, 1f);
 		SetPlayer();
 	}
 	
 	// Atualiza a cada frame
 	void Update () {
-		if (!isDead && Time.time > nextAttack && !FindObjectOfType<UIManager>().pauseActive && !FindObjectOfType<UIManager>().shopActive) { // Caso o personagem esteja vivo e o menu fechado 
+		if (!isDead && Time.time > nextAttack && !FindObjectOfType<UIManager>().pauseActive && !FindObjectOfType<UIManager>().shopActive && !FindObjectOfType<UIManager>().exitActive) { // Caso o personagem esteja vivo e o menu fechado 
 			onGround = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground")); // Dispara uma linha da posição atual do personagem até a posição do chão
 
 			if (onGround) {
@@ -234,7 +234,7 @@ public class Player : MonoBehaviour {
 				blueBuff = false;
 				FindObjectOfType<UIManager> ().SetMessage ("Ativou Adrenalina!");
 			} else {
-				audioBuffOff.Play();
+				audioBuffOn.Play();
 				FindObjectOfType<UIManager> ().SetMessage ("Desativou Adrenalina!");
 			}
 		}
@@ -249,7 +249,7 @@ public class Player : MonoBehaviour {
 				redBuff = false;
 				FindObjectOfType<UIManager> ().SetMessage ("Ativou Fortaleza!");
 			} else {
-				audioBuffOff.Play();
+				audioBuffOn.Play();
 				FindObjectOfType<UIManager> ().SetMessage ("Desativou Fortaleza!");
 			}
 		}
@@ -341,6 +341,7 @@ public class Player : MonoBehaviour {
 
 	// Método que habilita as habilidades do personagem
 	public void SetPlayerSkill(Skill skill) {
+		audioSkill.Play();
 		if (skill.skillID == 1) {
 			FindObjectOfType<UIManager> ().SetMessage (skillJump.message);
 			jumpSkill = true;

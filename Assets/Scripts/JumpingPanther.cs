@@ -37,6 +37,7 @@ public class JumpingPanther : Enemy {
 					Jump ();
 				}
 				if (redBuffOn && Time.time > buffEnd) {
+					audioBuff.Play();
 					redBuffOn = false;
 					FindObjectOfType<UIManager> ().SetMessage ("Inimigo Desativou Adrenalina!");
 				}
@@ -60,6 +61,7 @@ public class JumpingPanther : Enemy {
 	}
 
 	void RedBuffUse() {
+		audioBuff.Play();
 		redBuffOn = true;
 		FindObjectOfType<UIManager> ().SetMessage ("Inimigo Ativou Adrenalina!");
 		isBuffed = true;

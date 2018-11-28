@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Key1
   m_EditorClassIdentifier: 
   itemID: 1
-  keyName: Chave Um
-  description: Abre a primeira porta.
+  keyName: Chave Dourada
+  description: "Com esta chave, voc\xEA poder\xE1 abrir uma porta na \xC1rea Inicial."
   image: {fileID: 21300004, guid: cd46791bbdf5b7a48a817294b51eb53e, type: 3}
-  message: Coletou Chave Um!
+  message: Coletou Chave Dourada!

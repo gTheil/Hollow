@@ -39,6 +39,7 @@ public class FireballSkeleton : Enemy {
 					FireballUse ();
 				}
 				if (blueBuffOn && Time.time > buffEnd) {
+					audioBuff.Play();
 					blueBuffOn = false;
 					FindObjectOfType<UIManager> ().SetMessage ("Inimigo Desativou Fortaleza!");
 				}
@@ -60,11 +61,13 @@ public class FireballSkeleton : Enemy {
 			fireballPos.x += 0.3f;
 		else
 			fireballPos.x -= 0.3f;
+		audioFireball.Play();
 		Instantiate(fireball, fireballPos, Quaternion.identity);
 		nextFire = Time.time + fireRate;
 	}
 
 	void BlueBuffUse() {
+		audioBuff.Play();
 		blueBuffOn = true;
 		FindObjectOfType<UIManager> ().SetMessage ("Inimigo Ativou Fortaleza!");
 		isBuffed = true;

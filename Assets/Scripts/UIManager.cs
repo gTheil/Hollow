@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
 
@@ -28,10 +29,10 @@ public class UIManager : MonoBehaviour {
 	public Text hpText, mpText, goldText, atkText, msgText, priceText; // Variáveis que contêm os textos dos atributos do personagem
 	public Text hpUI, mpUI, goldUI, itemUI; // Variáveis que contêm os textos da barra de status
 	public Image consumableImage, spellImage; // Imagem do consumível equipado
-
 	public bool pauseActive = false; // Determina se o jogador está com o menu aberto
 	public bool shopActive = false; // Determina se o jogador está com o menu aberto
 	public bool exitActive = false;
+
 	private int optionID = 0; // Posição do cursor no array de opções selecionáveis
 	private Inventory playerInventory; // Referência ao inventário do jogador
 	private Inventory shopInventory; // Referência ao inventário do jogador
@@ -225,9 +226,10 @@ public class UIManager : MonoBehaviour {
 				else
 					optionID--; // Move o cursor para a opção anterior
 			} if (Input.GetButtonDown ("Submit")) { // Ao jogador selecionar uma das opções
-				if (optionID == 0)
-					Application.Quit();
-				else if (optionID == 1) {
+				if (optionID == 0) {
+					Time.timeScale = 1; // Despausa o jogo
+					SceneManager.LoadScene ("IntroScene");
+				} else if (optionID == 1) {
 					exitActive = !exitActive;
 					exitMenu.SetActive (false); // Desativa o painel de opções do menu
 					optionID = 0; // Posiciona o cursor no primeiro item da lista

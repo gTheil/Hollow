@@ -133,6 +133,7 @@ MonoBehaviour:
   blueBuffOn: 0
   playerDistance: {x: 0, y: 0, z: 0}
   startPos: {x: 0, y: 0}
+  clipDeath: {fileID: 8300000, guid: c026b6fb7e77e58408c578614dd30c56, type: 3}
 --- !u!212 &212370934146231560
 SpriteRenderer:
   m_ObjectHideFlags: 1

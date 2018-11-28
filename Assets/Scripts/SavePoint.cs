@@ -4,7 +4,16 @@ using UnityEngine;
 
 public class SavePoint : MonoBehaviour {
 
+	public AudioClip clipContact;
+
 	private bool contact = false;
+	private AudioSource audioContact;
+	private AudioManager am;
+
+	void Start() {
+		am = FindObjectOfType<AudioManager>();
+		audioContact = am.AddAudio (clipContact, false, false, 1f);
+	}
 
 	void Update() {
 		if (contact) {
@@ -20,6 +29,7 @@ public class SavePoint : MonoBehaviour {
 	// Ao jogador entrar em contato com o save point
 	public void OnTriggerEnter2D(Collider2D other) {
 		if (other.CompareTag("Player")) {
+			audioContact.Play();
 			contact = true;
 			FindObjectOfType<UIManager>().SetMessage("Pressione V para acessar a loja\nPressiona B para salvar o jogo");
 		}

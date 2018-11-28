@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillID: 3
   skillName: Morte
-  description: Permite que o personagem morra ao chegar a 0 de HP. Ops!
+  description: "Permite morrer quando sua Vida chegar \xE0 zero."
   image: {fileID: 21300028, guid: 0d0c8aa7e31b1ef41bee322e6b1acda5, type: 3}
   message: Desbloqueou Morte!
   price: 0

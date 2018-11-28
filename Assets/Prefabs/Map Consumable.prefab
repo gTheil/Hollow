@@ -79,6 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   consumable: {fileID: 11400000, guid: 4adf5971b7f492f4f97b7d2f3056be83, type: 2}
+  clipGet: {fileID: 8300000, guid: 35812136af6cc3246acf0796a6b93d24, type: 3}
 --- !u!212 &212584911709899304
 SpriteRenderer:
   m_ObjectHideFlags: 1

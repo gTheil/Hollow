@@ -80,6 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: {fileID: 11400000, guid: 79f48920a0db6e8448934002cb50be72, type: 2}
   doorOpen: {fileID: 21300314, guid: 4701c3e5032558a4aabe6c45e504126f, type: 3}
+  clipOpen: {fileID: 8300000, guid: c2929610abb3a6f4f92a767bcc9678ac, type: 3}
 --- !u!212 &212009446604248222
 SpriteRenderer:
   m_ObjectHideFlags: 1

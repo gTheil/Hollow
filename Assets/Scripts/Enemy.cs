@@ -20,6 +20,9 @@ public class Enemy : MonoBehaviour {
 	public bool blueBuffOn = false;
 	public Vector3 playerDistance; // Determina a distãncia entre o inimigo e o personagem
 	public Vector2 startPos;
+	public AudioClip clipDeath;
+	public AudioClip clipFireball;
+	public AudioClip clipBuff;
 
 	protected Transform player; // Referência ao personagem
 	protected Rigidbody2D rb; // Componente que adiciona física
@@ -29,6 +32,10 @@ public class Enemy : MonoBehaviour {
 	protected bool isBuffed = false;
 	protected float buffEnd;
 	protected bool woke = false;
+	protected AudioSource audioDeath;
+	protected AudioSource audioFireball;
+	protected AudioSource audioBuff;
+	protected AudioManager am;
 
 	// Inicialização
 	void Start () {
@@ -37,6 +44,10 @@ public class Enemy : MonoBehaviour {
 		anim = GetComponent<Animator>(); // Inicializa o gerenciador de animação do inimigo
 		sprite = GetComponent<SpriteRenderer>(); // Inicializa a imagem do inimigo
 		startPos = new Vector2(transform.position.x, transform.position.y);
+		am = FindObjectOfType<AudioManager>();
+		audioDeath = am.AddAudio (clipDeath, false, false, 1f);
+		audioFireball = am.AddAudio (clipFireball, false, false, 1f);
+		audioBuff = am.AddAudio (clipBuff, false, false, 1f);
 	}
 
 	// Método que vira a imagem do inimigo
@@ -86,6 +97,7 @@ public class Enemy : MonoBehaviour {
 		// Concede ao personagem a habilidade Morte e a adiciona ao inventário assim que ele matar um inimigo
 		if (!player.deathSkill)
 			player.SetPlayerSkill (player.database.GetSkill (3));
+		audioDeath.Play();
 		Destroy(gameObject);
 	}
 
