@@ -111,6 +111,12 @@ public class UIManager : MonoBehaviour {
 					exitMenu.SetActive (false);
 					Time.timeScale = 1; // Despausa o jogo
 				}
+			} else if (shopActive || pauseActive) {
+				pauseMenu.SetActive(false);
+				pauseActive = false;
+				shopMenu.SetActive(false);
+				shopActive = false;
+				Time.timeScale = 1; // Despausa o jogo
 			}
 		}
 

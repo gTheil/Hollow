@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UIManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player.cs" Line="344" Column="21" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="50" Column="36" />
-      <File FileName="Assets\Scripts\Attack.cs" Line="20" Column="56" />
+      <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Attack.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlayerFireball.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\UIManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UIManager.cs" Line="119" Column="5" />
       <File FileName="Assets\Scripts\TitleManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\EndManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MapGold.cs" Line="1" Column="1" />
@@ -15,9 +15,9 @@
       <File FileName="Assets\Scripts\Door.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MapConsumable.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MapKey.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FireballSkeleton.cs" Line="42" Column="23" />
-      <File FileName="Assets\Scripts\SavePoint.cs" Line="32" Column="21" />
-      <File FileName="Assets\Scripts\JumpingPanther.cs" Line="40" Column="7" />
+      <File FileName="Assets\Scripts\FireballSkeleton.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SavePoint.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\JumpingPanther.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

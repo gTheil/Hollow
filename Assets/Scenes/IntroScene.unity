@@ -389,7 +389,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Controles\n\nSetas Direcionais: Movimento\n\nSeta para Cima: Pulo\n\nBarra
     de Espa\xE7o: Ataque\n\nTecla Z: Utilizar Magia\n\nTecla X: Utilizar Consum\xEDvel\n\nTecla
-    C: Abrir e Fechar Menu\n\nTecla Esc: Sair do Jogo\n"
+    C: Menu de Pausa\n\nTecla Esc: Sair do Jogo\n"
 --- !u!222 &382885868
 CanvasRenderer:
   m_ObjectHideFlags: 0
