@@ -14,7 +14,7 @@ MonoBehaviour:
   spellID: 1
   spellName: Bola de Fogo
   description: 'Dispara um bola de fogo em linha reta, causando 25 de dano ao primeiro
-    inimigo atingido. Custo de Mana: 10'
+    inimigo atingido. Custo de Mana: 20'
   image: {fileID: 21300014, guid: 4506076b0eca4e24e9ff11b47799aa9c, type: 3}
   message: Desbloqueou Bola de Fogo!
   manaCost: 20

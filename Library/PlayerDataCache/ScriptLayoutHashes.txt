@@ -135,7 +135,6 @@ a519813cafe6dd22a40a09717bb0d3c7 Assembly-CSharp.dll:.MapKey
 0fad551c338162df6879fe4b1540d228 Assembly-CSharp.dll:.Player
 3c04aaf07191038f16506f8345d82234 Assembly-CSharp.dll:.PlayerFireball
 12c3cf97a95dd86c695153868258f5b7 Assembly-CSharp.dll:.Inventory
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BGMManager
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 e3de7727665f0c3a590cbbee09515c27 Assembly-CSharp.dll:.Enemy
